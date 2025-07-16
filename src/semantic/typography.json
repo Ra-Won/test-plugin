@@ -1,0 +1,1122 @@
+{
+  "family": {
+    "main": {
+      "jsonValue": "Inter",
+      "cssValue": "var(--type-family-inter)"
+    }
+  },
+  "heading": {
+    "5-xl": {
+      "light": {
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:166"
+          },
+          "cssValue": "var(--type-size-10-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:162"
+          },
+          "cssValue": "var(--type-line-height-10-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
+      },
+      "regular": {
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:166"
+          },
+          "cssValue": "var(--type-size-10-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:162"
+          },
+          "cssValue": "var(--type-line-height-10-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
+      },
+      "semi-bold": {
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:166"
+          },
+          "cssValue": "var(--type-size-10-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:162"
+          },
+          "cssValue": "var(--type-line-height-10-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
+      }
+    },
+    "4-xl": {
+      "light": {
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:160"
+          },
+          "cssValue": "var(--type-size-9-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:166"
+          },
+          "cssValue": "var(--type-line-height-9-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
+      },
+      "regular": {
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:160"
+          },
+          "cssValue": "var(--type-size-9-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:166"
+          },
+          "cssValue": "var(--type-line-height-9-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
+      },
+      "semi-bold": {
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:160"
+          },
+          "cssValue": "var(--type-size-9-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:166"
+          },
+          "cssValue": "var(--type-line-height-9-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
+      }
+    },
+    "3-xl": {
+      "light": {
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:168"
+          },
+          "cssValue": "var(--type-size-8-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:160"
+          },
+          "cssValue": "var(--type-line-height-8-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
+      },
+      "regular": {
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:168"
+          },
+          "cssValue": "var(--type-size-8-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:160"
+          },
+          "cssValue": "var(--type-line-height-8-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
+      },
+      "semi-bold": {
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:168"
+          },
+          "cssValue": "var(--type-size-8-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:160"
+          },
+          "cssValue": "var(--type-line-height-8-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
+      }
+    },
+    "2-xl": {
+      "light": {
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:165"
+          },
+          "cssValue": "var(--type-size-7-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:168"
+          },
+          "cssValue": "var(--type-line-height-7-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
+      },
+      "regular": {
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:165"
+          },
+          "cssValue": "var(--type-size-7-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:168"
+          },
+          "cssValue": "var(--type-line-height-7-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
+      },
+      "semi-bold": {
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:165"
+          },
+          "cssValue": "var(--type-size-7-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:168"
+          },
+          "cssValue": "var(--type-line-height-7-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
+      }
+    },
+    "xl": {
+      "light": {
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:167"
+          },
+          "cssValue": "var(--type-size-6-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:165"
+          },
+          "cssValue": "var(--type-line-height-6-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
+      },
+      "regular": {
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:167"
+          },
+          "cssValue": "var(--type-size-6-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:165"
+          },
+          "cssValue": "var(--type-line-height-6-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
+      },
+      "semi-bold": {
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:167"
+          },
+          "cssValue": "var(--type-size-6-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:165"
+          },
+          "cssValue": "var(--type-line-height-6-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
+      }
+    },
+    "l": {
+      "light": {
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:164"
+          },
+          "cssValue": "var(--type-size-5-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:167"
+          },
+          "cssValue": "var(--type-line-height-5-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
+      },
+      "regular": {
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:164"
+          },
+          "cssValue": "var(--type-size-5-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:167"
+          },
+          "cssValue": "var(--type-line-height-5-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
+      },
+      "semi-bold": {
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:164"
+          },
+          "cssValue": "var(--type-size-5-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:167"
+          },
+          "cssValue": "var(--type-line-height-5-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
+      }
+    },
+    "m": {
+      "light": {
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:146"
+          },
+          "cssValue": "var(--type-size-3-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:164"
+          },
+          "cssValue": "var(--type-line-height-3-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -0.5,
+          "cssValue": "var(--type-letter-spacing-s)"
+        }
+      },
+      "regular": {
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:146"
+          },
+          "cssValue": "var(--type-size-3-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:164"
+          },
+          "cssValue": "var(--type-line-height-3-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -0.5,
+          "cssValue": "var(--type-letter-spacing-s)"
+        }
+      },
+      "semi-bold": {
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:146"
+          },
+          "cssValue": "var(--type-size-3-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:164"
+          },
+          "cssValue": "var(--type-line-height-3-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -0.5,
+          "cssValue": "var(--type-letter-spacing-s)"
+        }
+      }
+    },
+    "s": {
+      "light": {
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:147"
+          },
+          "cssValue": "var(--type-size-2-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:156"
+          },
+          "cssValue": "var(--type-line-height-2-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -0.5,
+          "cssValue": "var(--type-letter-spacing-s)"
+        }
+      },
+      "regular": {
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:147"
+          },
+          "cssValue": "var(--type-size-2-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:156"
+          },
+          "cssValue": "var(--type-line-height-2-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -0.5,
+          "cssValue": "var(--type-letter-spacing-s)"
+        }
+      },
+      "semi-bold": {
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:147"
+          },
+          "cssValue": "var(--type-size-2-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:156"
+          },
+          "cssValue": "var(--type-line-height-2-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": -0.5,
+          "cssValue": "var(--type-letter-spacing-s)"
+        }
+      }
+    },
+    "xs": {
+      "light": {
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:169"
+          },
+          "cssValue": "var(--type-size-l)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:146"
+          },
+          "cssValue": "var(--type-line-height-l)"
+        },
+        "letterSpacing": {
+          "jsonValue": -0.5,
+          "cssValue": "var(--type-letter-spacing-s)"
+        }
+      },
+      "regular": {
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:169"
+          },
+          "cssValue": "var(--type-size-l)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:146"
+          },
+          "cssValue": "var(--type-line-height-l)"
+        },
+        "letterSpacing": {
+          "jsonValue": -0.5,
+          "cssValue": "var(--type-letter-spacing-s)"
+        }
+      },
+      "semi-bold": {
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:169"
+          },
+          "cssValue": "var(--type-size-l)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:146"
+          },
+          "cssValue": "var(--type-line-height-l)"
+        },
+        "letterSpacing": {
+          "jsonValue": -0.5,
+          "cssValue": "var(--type-letter-spacing-s)"
+        }
+      }
+    },
+    "2-xs": {
+      "light": {
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:153"
+          },
+          "cssValue": "var(--type-size-m)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:147"
+          },
+          "cssValue": "var(--type-line-height-m)"
+        },
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
+      },
+      "regular": {
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:153"
+          },
+          "cssValue": "var(--type-size-m)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:147"
+          },
+          "cssValue": "var(--type-line-height-m)"
+        },
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
+      },
+      "semi-bold": {
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:153"
+          },
+          "cssValue": "var(--type-size-m)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:147"
+          },
+          "cssValue": "var(--type-line-height-m)"
+        },
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
+      }
+    }
+  },
+  "body": {
+    "xl": {
+      "light": {
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:149"
+          },
+          "cssValue": "var(--type-size-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:74:53"
+          },
+          "cssValue": "var(--type-line-height-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
+      },
+      "regular": {
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:149"
+          },
+          "cssValue": "var(--type-size-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:74:53"
+          },
+          "cssValue": "var(--type-line-height-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
+      },
+      "semi-bold": {
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:149"
+          },
+          "cssValue": "var(--type-size-xl)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:74:53"
+          },
+          "cssValue": "var(--type-line-height-xl)"
+        },
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
+      }
+    },
+    "l": {
+      "light": {
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:169"
+          },
+          "cssValue": "var(--type-size-l)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:146"
+          },
+          "cssValue": "var(--type-line-height-l)"
+        },
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
+      },
+      "regular": {
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:169"
+          },
+          "cssValue": "var(--type-size-l)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:146"
+          },
+          "cssValue": "var(--type-line-height-l)"
+        },
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
+      },
+      "semi-bold": {
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:169"
+          },
+          "cssValue": "var(--type-size-l)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:146"
+          },
+          "cssValue": "var(--type-line-height-l)"
+        },
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
+      }
+    },
+    "m": {
+      "light": {
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:153"
+          },
+          "cssValue": "var(--type-size-m)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:147"
+          },
+          "cssValue": "var(--type-line-height-m)"
+        },
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
+      },
+      "regular": {
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:153"
+          },
+          "cssValue": "var(--type-size-m)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:147"
+          },
+          "cssValue": "var(--type-line-height-m)"
+        },
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
+      },
+      "semi-bold": {
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:153"
+          },
+          "cssValue": "var(--type-size-m)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:147"
+          },
+          "cssValue": "var(--type-line-height-m)"
+        },
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
+      }
+    },
+    "s": {
+      "light": {
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:150"
+          },
+          "cssValue": "var(--type-size-s)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:149"
+          },
+          "cssValue": "var(--type-line-height-s)"
+        },
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
+      },
+      "regular": {
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:150"
+          },
+          "cssValue": "var(--type-size-s)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:149"
+          },
+          "cssValue": "var(--type-line-height-s)"
+        },
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
+      },
+      "semi-bold": {
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:150"
+          },
+          "cssValue": "var(--type-size-s)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:149"
+          },
+          "cssValue": "var(--type-line-height-s)"
+        },
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
+      }
+    },
+    "xs": {
+      "light": {
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:151"
+          },
+          "cssValue": "var(--type-size-xs)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:169"
+          },
+          "cssValue": "var(--type-line-height-xs)"
+        },
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
+      },
+      "regular": {
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:151"
+          },
+          "cssValue": "var(--type-size-xs)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:169"
+          },
+          "cssValue": "var(--type-line-height-xs)"
+        },
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
+      },
+      "semi-bold": {
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
+        "size": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:151"
+          },
+          "cssValue": "var(--type-size-xs)"
+        },
+        "lineHeight": {
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:169"
+          },
+          "cssValue": "var(--type-line-height-xs)"
+        },
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
+      }
+    }
+  }
+}
