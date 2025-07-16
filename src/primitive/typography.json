@@ -1,1 +1,21 @@
-{}
+{
+  "letter-spacing": {
+    "xs": -1,
+    "s": -0.5,
+    "none": 0,
+    "m": 0.5,
+    "l": 1
+  },
+  "family": {
+    "inter": "Inter",
+    "ibmPlexSans": "IBM Plex Sans",
+    "archivo": "Archivo"
+  },
+  "weight": {
+    "light": "Light",
+    "regular": "Regular",
+    "semiBold": "Semi Bold",
+    "medium": "Medium",
+    "bold": "Bold"
+  }
+}
