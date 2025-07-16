@@ -1,21 +1,41 @@
 {
-  "letter-spacing": {
-    "xs": -1,
-    "s": -0.5,
-    "none": 0,
-    "m": 0.5,
-    "l": 1
+  "-size": {
+    "-x-s": "var(--unit-10)",
+    "-s": "var(--unit-12)",
+    "-m": "var(--unit-14)",
+    "-l": "var(--unit-16)",
+    "-x-l": "var(--unit-18)",
+    "2-x-l": "var(--unit-20)",
+    "3-x-l": "var(--unit-24)",
+    "4-x-l": "var(--unit-28)",
+    "5-x-l": "var(--unit-32)",
+    "6-xl": "var(--unit-40)",
+    "7-x-l": "var(--unit-48)",
+    "8-x-l": "var(--unit-56)",
+    "9-x-l": "var(--unit-64)",
+    "10-x-l": "var(--unit-72)"
   },
-  "family": {
-    "inter": "Inter",
-    "ibmPlexSans": "IBM Plex Sans",
-    "archivo": "Archivo"
+  "-letter--spacing": {
+    "-x-s": -1,
+    "-s": -0.5,
+    "-none": 0,
+    "-m": 0.5,
+    "-l": 1
   },
-  "weight": {
-    "light": "Light",
-    "regular": "Regular",
-    "semiBold": "Semi Bold",
-    "medium": "Medium",
-    "bold": "Bold"
+  "-line--height": {
+    "6-xl": "var(--unit-48)",
+    "5-x-l": "var(--unit-40)",
+    "4-x-l": "var(--unit-36)",
+    "9-x-l": "var(--unit-72)",
+    "3-x-l": "var(--unit-32)",
+    "2-x-l": "var(--unit-28)",
+    "8-x-l": "var(--unit-64)",
+    "-x-l": "var(--unit-26)",
+    "-m": "var(--unit-20)",
+    "10-x-l": "var(--unit-80)",
+    "-s": "var(--unit-18)",
+    "-l": "var(--unit-24)",
+    "7-x-l": "var(--unit-56)",
+    "-x-s": "var(--unit-16)"
   }
 }
