@@ -2,7 +2,7 @@
   "family": {
     "main": {
       "jsonValue": "Inter",
-      "cssValue": "var(--type-family-inter)"
+      "cssValue": "var(--type-Family-Inter)"
     }
   },
   "heading": {
@@ -10,73 +10,73 @@
       "light": {
         "weight": {
           "jsonValue": "Light",
-          "cssValue": "var(--type-weight-light)"
+          "cssValue": "var(--type-Weight-Light)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:166"
           },
-          "cssValue": "var(--type-size-10-xl)"
+          "cssValue": "var(--type-Size-10XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:162"
           },
-          "cssValue": "var(--type-line-height-10-xl)"
+          "cssValue": "var(--type-Line Height-10XL)"
         },
         "letterSpacing": {
           "jsonValue": -1,
-          "cssValue": "var(--type-letter-spacing-xs)"
+          "cssValue": "var(--type-Letter Spacing-XS)"
         }
       },
       "regular": {
         "weight": {
           "jsonValue": "Regular",
-          "cssValue": "var(--type-weight-regular)"
+          "cssValue": "var(--type-Weight-Regular)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:166"
           },
-          "cssValue": "var(--type-size-10-xl)"
+          "cssValue": "var(--type-Size-10XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:162"
           },
-          "cssValue": "var(--type-line-height-10-xl)"
+          "cssValue": "var(--type-Line Height-10XL)"
         },
         "letterSpacing": {
           "jsonValue": -1,
-          "cssValue": "var(--type-letter-spacing-xs)"
+          "cssValue": "var(--type-Letter Spacing-XS)"
         }
       },
       "semi-bold": {
         "weight": {
           "jsonValue": "Semi Bold",
-          "cssValue": "var(--type-weight-semi-bold)"
+          "cssValue": "var(--type-Weight-Semi Bold)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:166"
           },
-          "cssValue": "var(--type-size-10-xl)"
+          "cssValue": "var(--type-Size-10XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:162"
           },
-          "cssValue": "var(--type-line-height-10-xl)"
+          "cssValue": "var(--type-Line Height-10XL)"
         },
         "letterSpacing": {
           "jsonValue": -1,
-          "cssValue": "var(--type-letter-spacing-xs)"
+          "cssValue": "var(--type-Letter Spacing-XS)"
         }
       }
     },
@@ -84,73 +84,73 @@
       "light": {
         "weight": {
           "jsonValue": "Light",
-          "cssValue": "var(--type-weight-light)"
+          "cssValue": "var(--type-Weight-Light)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:160"
           },
-          "cssValue": "var(--type-size-9-xl)"
+          "cssValue": "var(--type-Size-9XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:166"
           },
-          "cssValue": "var(--type-line-height-9-xl)"
+          "cssValue": "var(--type-Line Height-9XL)"
         },
         "letterSpacing": {
           "jsonValue": -1,
-          "cssValue": "var(--type-letter-spacing-xs)"
+          "cssValue": "var(--type-Letter Spacing-XS)"
         }
       },
       "regular": {
         "weight": {
           "jsonValue": "Regular",
-          "cssValue": "var(--type-weight-regular)"
+          "cssValue": "var(--type-Weight-Regular)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:160"
           },
-          "cssValue": "var(--type-size-9-xl)"
+          "cssValue": "var(--type-Size-9XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:166"
           },
-          "cssValue": "var(--type-line-height-9-xl)"
+          "cssValue": "var(--type-Line Height-9XL)"
         },
         "letterSpacing": {
           "jsonValue": -1,
-          "cssValue": "var(--type-letter-spacing-xs)"
+          "cssValue": "var(--type-Letter Spacing-XS)"
         }
       },
       "semi-bold": {
         "weight": {
           "jsonValue": "Semi Bold",
-          "cssValue": "var(--type-weight-semi-bold)"
+          "cssValue": "var(--type-Weight-Semi Bold)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:160"
           },
-          "cssValue": "var(--type-size-9-xl)"
+          "cssValue": "var(--type-Size-9XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:166"
           },
-          "cssValue": "var(--type-line-height-9-xl)"
+          "cssValue": "var(--type-Line Height-9XL)"
         },
         "letterSpacing": {
           "jsonValue": -1,
-          "cssValue": "var(--type-letter-spacing-xs)"
+          "cssValue": "var(--type-Letter Spacing-XS)"
         }
       }
     },
@@ -158,73 +158,73 @@
       "light": {
         "weight": {
           "jsonValue": "Light",
-          "cssValue": "var(--type-weight-light)"
+          "cssValue": "var(--type-Weight-Light)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:168"
           },
-          "cssValue": "var(--type-size-8-xl)"
+          "cssValue": "var(--type-Size-8XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:160"
           },
-          "cssValue": "var(--type-line-height-8-xl)"
+          "cssValue": "var(--type-Line Height-8XL)"
         },
         "letterSpacing": {
           "jsonValue": -1,
-          "cssValue": "var(--type-letter-spacing-xs)"
+          "cssValue": "var(--type-Letter Spacing-XS)"
         }
       },
       "regular": {
         "weight": {
           "jsonValue": "Regular",
-          "cssValue": "var(--type-weight-regular)"
+          "cssValue": "var(--type-Weight-Regular)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:168"
           },
-          "cssValue": "var(--type-size-8-xl)"
+          "cssValue": "var(--type-Size-8XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:160"
           },
-          "cssValue": "var(--type-line-height-8-xl)"
+          "cssValue": "var(--type-Line Height-8XL)"
         },
         "letterSpacing": {
           "jsonValue": -1,
-          "cssValue": "var(--type-letter-spacing-xs)"
+          "cssValue": "var(--type-Letter Spacing-XS)"
         }
       },
       "semi-bold": {
         "weight": {
           "jsonValue": "Semi Bold",
-          "cssValue": "var(--type-weight-semi-bold)"
+          "cssValue": "var(--type-Weight-Semi Bold)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:168"
           },
-          "cssValue": "var(--type-size-8-xl)"
+          "cssValue": "var(--type-Size-8XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:160"
           },
-          "cssValue": "var(--type-line-height-8-xl)"
+          "cssValue": "var(--type-Line Height-8XL)"
         },
         "letterSpacing": {
           "jsonValue": -1,
-          "cssValue": "var(--type-letter-spacing-xs)"
+          "cssValue": "var(--type-Letter Spacing-XS)"
         }
       }
     },
@@ -232,73 +232,73 @@
       "light": {
         "weight": {
           "jsonValue": "Light",
-          "cssValue": "var(--type-weight-light)"
+          "cssValue": "var(--type-Weight-Light)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:165"
           },
-          "cssValue": "var(--type-size-7-xl)"
+          "cssValue": "var(--type-Size-7XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:168"
           },
-          "cssValue": "var(--type-line-height-7-xl)"
+          "cssValue": "var(--type-Line Height-7XL)"
         },
         "letterSpacing": {
           "jsonValue": -1,
-          "cssValue": "var(--type-letter-spacing-xs)"
+          "cssValue": "var(--type-Letter Spacing-XS)"
         }
       },
       "regular": {
         "weight": {
           "jsonValue": "Regular",
-          "cssValue": "var(--type-weight-regular)"
+          "cssValue": "var(--type-Weight-Regular)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:165"
           },
-          "cssValue": "var(--type-size-7-xl)"
+          "cssValue": "var(--type-Size-7XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:168"
           },
-          "cssValue": "var(--type-line-height-7-xl)"
+          "cssValue": "var(--type-Line Height-7XL)"
         },
         "letterSpacing": {
           "jsonValue": -1,
-          "cssValue": "var(--type-letter-spacing-xs)"
+          "cssValue": "var(--type-Letter Spacing-XS)"
         }
       },
       "semi-bold": {
         "weight": {
           "jsonValue": "Semi Bold",
-          "cssValue": "var(--type-weight-semi-bold)"
+          "cssValue": "var(--type-Weight-Semi Bold)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:165"
           },
-          "cssValue": "var(--type-size-7-xl)"
+          "cssValue": "var(--type-Size-7XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:168"
           },
-          "cssValue": "var(--type-line-height-7-xl)"
+          "cssValue": "var(--type-Line Height-7XL)"
         },
         "letterSpacing": {
           "jsonValue": -1,
-          "cssValue": "var(--type-letter-spacing-xs)"
+          "cssValue": "var(--type-Letter Spacing-XS)"
         }
       }
     },
@@ -306,73 +306,73 @@
       "light": {
         "weight": {
           "jsonValue": "Light",
-          "cssValue": "var(--type-weight-light)"
+          "cssValue": "var(--type-Weight-Light)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:167"
           },
-          "cssValue": "var(--type-size-6-xl)"
+          "cssValue": "var(--type-Size-6Xl)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:165"
           },
-          "cssValue": "var(--type-line-height-6-xl)"
+          "cssValue": "var(--type-Line Height-6Xl)"
         },
         "letterSpacing": {
           "jsonValue": -1,
-          "cssValue": "var(--type-letter-spacing-xs)"
+          "cssValue": "var(--type-Letter Spacing-XS)"
         }
       },
       "regular": {
         "weight": {
           "jsonValue": "Regular",
-          "cssValue": "var(--type-weight-regular)"
+          "cssValue": "var(--type-Weight-Regular)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:167"
           },
-          "cssValue": "var(--type-size-6-xl)"
+          "cssValue": "var(--type-Size-6Xl)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:165"
           },
-          "cssValue": "var(--type-line-height-6-xl)"
+          "cssValue": "var(--type-Line Height-6Xl)"
         },
         "letterSpacing": {
           "jsonValue": -1,
-          "cssValue": "var(--type-letter-spacing-xs)"
+          "cssValue": "var(--type-Letter Spacing-XS)"
         }
       },
       "semi-bold": {
         "weight": {
           "jsonValue": "Semi Bold",
-          "cssValue": "var(--type-weight-semi-bold)"
+          "cssValue": "var(--type-Weight-Semi Bold)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:167"
           },
-          "cssValue": "var(--type-size-6-xl)"
+          "cssValue": "var(--type-Size-6Xl)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:165"
           },
-          "cssValue": "var(--type-line-height-6-xl)"
+          "cssValue": "var(--type-Line Height-6Xl)"
         },
         "letterSpacing": {
           "jsonValue": -1,
-          "cssValue": "var(--type-letter-spacing-xs)"
+          "cssValue": "var(--type-Letter Spacing-XS)"
         }
       }
     },
@@ -380,73 +380,73 @@
       "light": {
         "weight": {
           "jsonValue": "Light",
-          "cssValue": "var(--type-weight-light)"
+          "cssValue": "var(--type-Weight-Light)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:164"
           },
-          "cssValue": "var(--type-size-5-xl)"
+          "cssValue": "var(--type-Size-5XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:167"
           },
-          "cssValue": "var(--type-line-height-5-xl)"
+          "cssValue": "var(--type-Line Height-5XL)"
         },
         "letterSpacing": {
           "jsonValue": -1,
-          "cssValue": "var(--type-letter-spacing-xs)"
+          "cssValue": "var(--type-Letter Spacing-XS)"
         }
       },
       "regular": {
         "weight": {
           "jsonValue": "Regular",
-          "cssValue": "var(--type-weight-regular)"
+          "cssValue": "var(--type-Weight-Regular)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:164"
           },
-          "cssValue": "var(--type-size-5-xl)"
+          "cssValue": "var(--type-Size-5XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:167"
           },
-          "cssValue": "var(--type-line-height-5-xl)"
+          "cssValue": "var(--type-Line Height-5XL)"
         },
         "letterSpacing": {
           "jsonValue": -1,
-          "cssValue": "var(--type-letter-spacing-xs)"
+          "cssValue": "var(--type-Letter Spacing-XS)"
         }
       },
       "semi-bold": {
         "weight": {
           "jsonValue": "Semi Bold",
-          "cssValue": "var(--type-weight-semi-bold)"
+          "cssValue": "var(--type-Weight-Semi Bold)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:164"
           },
-          "cssValue": "var(--type-size-5-xl)"
+          "cssValue": "var(--type-Size-5XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:167"
           },
-          "cssValue": "var(--type-line-height-5-xl)"
+          "cssValue": "var(--type-Line Height-5XL)"
         },
         "letterSpacing": {
           "jsonValue": -1,
-          "cssValue": "var(--type-letter-spacing-xs)"
+          "cssValue": "var(--type-Letter Spacing-XS)"
         }
       }
     },
@@ -454,73 +454,73 @@
       "light": {
         "weight": {
           "jsonValue": "Light",
-          "cssValue": "var(--type-weight-light)"
+          "cssValue": "var(--type-Weight-Light)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:146"
           },
-          "cssValue": "var(--type-size-3-xl)"
+          "cssValue": "var(--type-Size-3XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:164"
           },
-          "cssValue": "var(--type-line-height-3-xl)"
+          "cssValue": "var(--type-Line Height-3XL)"
         },
         "letterSpacing": {
           "jsonValue": -0.5,
-          "cssValue": "var(--type-letter-spacing-s)"
+          "cssValue": "var(--type-Letter Spacing-S)"
         }
       },
       "regular": {
         "weight": {
           "jsonValue": "Regular",
-          "cssValue": "var(--type-weight-regular)"
+          "cssValue": "var(--type-Weight-Regular)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:146"
           },
-          "cssValue": "var(--type-size-3-xl)"
+          "cssValue": "var(--type-Size-3XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:164"
           },
-          "cssValue": "var(--type-line-height-3-xl)"
+          "cssValue": "var(--type-Line Height-3XL)"
         },
         "letterSpacing": {
           "jsonValue": -0.5,
-          "cssValue": "var(--type-letter-spacing-s)"
+          "cssValue": "var(--type-Letter Spacing-S)"
         }
       },
       "semi-bold": {
         "weight": {
           "jsonValue": "Semi Bold",
-          "cssValue": "var(--type-weight-semi-bold)"
+          "cssValue": "var(--type-Weight-Semi Bold)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:146"
           },
-          "cssValue": "var(--type-size-3-xl)"
+          "cssValue": "var(--type-Size-3XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:164"
           },
-          "cssValue": "var(--type-line-height-3-xl)"
+          "cssValue": "var(--type-Line Height-3XL)"
         },
         "letterSpacing": {
           "jsonValue": -0.5,
-          "cssValue": "var(--type-letter-spacing-s)"
+          "cssValue": "var(--type-Letter Spacing-S)"
         }
       }
     },
@@ -528,73 +528,73 @@
       "light": {
         "weight": {
           "jsonValue": "Light",
-          "cssValue": "var(--type-weight-light)"
+          "cssValue": "var(--type-Weight-Light)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:147"
           },
-          "cssValue": "var(--type-size-2-xl)"
+          "cssValue": "var(--type-Size-2XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:156"
           },
-          "cssValue": "var(--type-line-height-2-xl)"
+          "cssValue": "var(--type-Line Height-2XL)"
         },
         "letterSpacing": {
           "jsonValue": -0.5,
-          "cssValue": "var(--type-letter-spacing-s)"
+          "cssValue": "var(--type-Letter Spacing-S)"
         }
       },
       "regular": {
         "weight": {
           "jsonValue": "Regular",
-          "cssValue": "var(--type-weight-regular)"
+          "cssValue": "var(--type-Weight-Regular)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:147"
           },
-          "cssValue": "var(--type-size-2-xl)"
+          "cssValue": "var(--type-Size-2XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:156"
           },
-          "cssValue": "var(--type-line-height-2-xl)"
+          "cssValue": "var(--type-Line Height-2XL)"
         },
         "letterSpacing": {
           "jsonValue": -0.5,
-          "cssValue": "var(--type-letter-spacing-s)"
+          "cssValue": "var(--type-Letter Spacing-S)"
         }
       },
       "semi-bold": {
         "weight": {
           "jsonValue": "Semi Bold",
-          "cssValue": "var(--type-weight-semi-bold)"
+          "cssValue": "var(--type-Weight-Semi Bold)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:147"
           },
-          "cssValue": "var(--type-size-2-xl)"
+          "cssValue": "var(--type-Size-2XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:156"
           },
-          "cssValue": "var(--type-line-height-2-xl)"
+          "cssValue": "var(--type-Line Height-2XL)"
         },
         "letterSpacing": {
           "jsonValue": -0.5,
-          "cssValue": "var(--type-letter-spacing-s)"
+          "cssValue": "var(--type-Letter Spacing-S)"
         }
       }
     },
@@ -602,73 +602,73 @@
       "light": {
         "weight": {
           "jsonValue": "Light",
-          "cssValue": "var(--type-weight-light)"
+          "cssValue": "var(--type-Weight-Light)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:169"
           },
-          "cssValue": "var(--type-size-l)"
+          "cssValue": "var(--type-Size-L)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:146"
           },
-          "cssValue": "var(--type-line-height-l)"
+          "cssValue": "var(--type-Line Height-L)"
         },
         "letterSpacing": {
           "jsonValue": -0.5,
-          "cssValue": "var(--type-letter-spacing-s)"
+          "cssValue": "var(--type-Letter Spacing-S)"
         }
       },
       "regular": {
         "weight": {
           "jsonValue": "Regular",
-          "cssValue": "var(--type-weight-regular)"
+          "cssValue": "var(--type-Weight-Regular)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:169"
           },
-          "cssValue": "var(--type-size-l)"
+          "cssValue": "var(--type-Size-L)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:146"
           },
-          "cssValue": "var(--type-line-height-l)"
+          "cssValue": "var(--type-Line Height-L)"
         },
         "letterSpacing": {
           "jsonValue": -0.5,
-          "cssValue": "var(--type-letter-spacing-s)"
+          "cssValue": "var(--type-Letter Spacing-S)"
         }
       },
       "semi-bold": {
         "weight": {
           "jsonValue": "Semi Bold",
-          "cssValue": "var(--type-weight-semi-bold)"
+          "cssValue": "var(--type-Weight-Semi Bold)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:169"
           },
-          "cssValue": "var(--type-size-l)"
+          "cssValue": "var(--type-Size-L)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:146"
           },
-          "cssValue": "var(--type-line-height-l)"
+          "cssValue": "var(--type-Line Height-L)"
         },
         "letterSpacing": {
           "jsonValue": -0.5,
-          "cssValue": "var(--type-letter-spacing-s)"
+          "cssValue": "var(--type-Letter Spacing-S)"
         }
       }
     },
@@ -676,73 +676,73 @@
       "light": {
         "weight": {
           "jsonValue": "Light",
-          "cssValue": "var(--type-weight-light)"
+          "cssValue": "var(--type-Weight-Light)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:153"
           },
-          "cssValue": "var(--type-size-m)"
+          "cssValue": "var(--type-Size-M)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:147"
           },
-          "cssValue": "var(--type-line-height-m)"
+          "cssValue": "var(--type-Line Height-M)"
         },
         "letterSpacing": {
           "jsonValue": 0,
-          "cssValue": "var(--type-letter-spacing-none)"
+          "cssValue": "var(--type-Letter Spacing-None)"
         }
       },
       "regular": {
         "weight": {
           "jsonValue": "Regular",
-          "cssValue": "var(--type-weight-regular)"
+          "cssValue": "var(--type-Weight-Regular)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:153"
           },
-          "cssValue": "var(--type-size-m)"
+          "cssValue": "var(--type-Size-M)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:147"
           },
-          "cssValue": "var(--type-line-height-m)"
+          "cssValue": "var(--type-Line Height-M)"
         },
         "letterSpacing": {
           "jsonValue": 0,
-          "cssValue": "var(--type-letter-spacing-none)"
+          "cssValue": "var(--type-Letter Spacing-None)"
         }
       },
       "semi-bold": {
         "weight": {
           "jsonValue": "Semi Bold",
-          "cssValue": "var(--type-weight-semi-bold)"
+          "cssValue": "var(--type-Weight-Semi Bold)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:153"
           },
-          "cssValue": "var(--type-size-m)"
+          "cssValue": "var(--type-Size-M)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:147"
           },
-          "cssValue": "var(--type-line-height-m)"
+          "cssValue": "var(--type-Line Height-M)"
         },
         "letterSpacing": {
           "jsonValue": 0,
-          "cssValue": "var(--type-letter-spacing-none)"
+          "cssValue": "var(--type-Letter Spacing-None)"
         }
       }
     }
@@ -752,73 +752,73 @@
       "light": {
         "weight": {
           "jsonValue": "Light",
-          "cssValue": "var(--type-weight-light)"
+          "cssValue": "var(--type-Weight-Light)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:149"
           },
-          "cssValue": "var(--type-size-xl)"
+          "cssValue": "var(--type-Size-XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:74:53"
           },
-          "cssValue": "var(--type-line-height-xl)"
+          "cssValue": "var(--type-Line Height-XL)"
         },
         "letterSpacing": {
           "jsonValue": 0,
-          "cssValue": "var(--type-letter-spacing-none)"
+          "cssValue": "var(--type-Letter Spacing-None)"
         }
       },
       "regular": {
         "weight": {
           "jsonValue": "Regular",
-          "cssValue": "var(--type-weight-regular)"
+          "cssValue": "var(--type-Weight-Regular)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:149"
           },
-          "cssValue": "var(--type-size-xl)"
+          "cssValue": "var(--type-Size-XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:74:53"
           },
-          "cssValue": "var(--type-line-height-xl)"
+          "cssValue": "var(--type-Line Height-XL)"
         },
         "letterSpacing": {
           "jsonValue": 0,
-          "cssValue": "var(--type-letter-spacing-none)"
+          "cssValue": "var(--type-Letter Spacing-None)"
         }
       },
       "semi-bold": {
         "weight": {
           "jsonValue": "Semi Bold",
-          "cssValue": "var(--type-weight-semi-bold)"
+          "cssValue": "var(--type-Weight-Semi Bold)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:149"
           },
-          "cssValue": "var(--type-size-xl)"
+          "cssValue": "var(--type-Size-XL)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:74:53"
           },
-          "cssValue": "var(--type-line-height-xl)"
+          "cssValue": "var(--type-Line Height-XL)"
         },
         "letterSpacing": {
           "jsonValue": 0,
-          "cssValue": "var(--type-letter-spacing-none)"
+          "cssValue": "var(--type-Letter Spacing-None)"
         }
       }
     },
@@ -826,73 +826,73 @@
       "light": {
         "weight": {
           "jsonValue": "Light",
-          "cssValue": "var(--type-weight-light)"
+          "cssValue": "var(--type-Weight-Light)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:169"
           },
-          "cssValue": "var(--type-size-l)"
+          "cssValue": "var(--type-Size-L)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:146"
           },
-          "cssValue": "var(--type-line-height-l)"
+          "cssValue": "var(--type-Line Height-L)"
         },
         "letterSpacing": {
           "jsonValue": 0,
-          "cssValue": "var(--type-letter-spacing-none)"
+          "cssValue": "var(--type-Letter Spacing-None)"
         }
       },
       "regular": {
         "weight": {
           "jsonValue": "Regular",
-          "cssValue": "var(--type-weight-regular)"
+          "cssValue": "var(--type-Weight-Regular)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:169"
           },
-          "cssValue": "var(--type-size-l)"
+          "cssValue": "var(--type-Size-L)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:146"
           },
-          "cssValue": "var(--type-line-height-l)"
+          "cssValue": "var(--type-Line Height-L)"
         },
         "letterSpacing": {
           "jsonValue": 0,
-          "cssValue": "var(--type-letter-spacing-none)"
+          "cssValue": "var(--type-Letter Spacing-None)"
         }
       },
       "semi-bold": {
         "weight": {
           "jsonValue": "Semi Bold",
-          "cssValue": "var(--type-weight-semi-bold)"
+          "cssValue": "var(--type-Weight-Semi Bold)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:169"
           },
-          "cssValue": "var(--type-size-l)"
+          "cssValue": "var(--type-Size-L)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:146"
           },
-          "cssValue": "var(--type-line-height-l)"
+          "cssValue": "var(--type-Line Height-L)"
         },
         "letterSpacing": {
           "jsonValue": 0,
-          "cssValue": "var(--type-letter-spacing-none)"
+          "cssValue": "var(--type-Letter Spacing-None)"
         }
       }
     },
@@ -900,73 +900,73 @@
       "light": {
         "weight": {
           "jsonValue": "Light",
-          "cssValue": "var(--type-weight-light)"
+          "cssValue": "var(--type-Weight-Light)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:153"
           },
-          "cssValue": "var(--type-size-m)"
+          "cssValue": "var(--type-Size-M)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:147"
           },
-          "cssValue": "var(--type-line-height-m)"
+          "cssValue": "var(--type-Line Height-M)"
         },
         "letterSpacing": {
           "jsonValue": 0,
-          "cssValue": "var(--type-letter-spacing-none)"
+          "cssValue": "var(--type-Letter Spacing-None)"
         }
       },
       "regular": {
         "weight": {
           "jsonValue": "Regular",
-          "cssValue": "var(--type-weight-regular)"
+          "cssValue": "var(--type-Weight-Regular)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:153"
           },
-          "cssValue": "var(--type-size-m)"
+          "cssValue": "var(--type-Size-M)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:147"
           },
-          "cssValue": "var(--type-line-height-m)"
+          "cssValue": "var(--type-Line Height-M)"
         },
         "letterSpacing": {
           "jsonValue": 0,
-          "cssValue": "var(--type-letter-spacing-none)"
+          "cssValue": "var(--type-Letter Spacing-None)"
         }
       },
       "semi-bold": {
         "weight": {
           "jsonValue": "Semi Bold",
-          "cssValue": "var(--type-weight-semi-bold)"
+          "cssValue": "var(--type-Weight-Semi Bold)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:153"
           },
-          "cssValue": "var(--type-size-m)"
+          "cssValue": "var(--type-Size-M)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:147"
           },
-          "cssValue": "var(--type-line-height-m)"
+          "cssValue": "var(--type-Line Height-M)"
         },
         "letterSpacing": {
           "jsonValue": 0,
-          "cssValue": "var(--type-letter-spacing-none)"
+          "cssValue": "var(--type-Letter Spacing-None)"
         }
       }
     },
@@ -974,73 +974,73 @@
       "light": {
         "weight": {
           "jsonValue": "Light",
-          "cssValue": "var(--type-weight-light)"
+          "cssValue": "var(--type-Weight-Light)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:150"
           },
-          "cssValue": "var(--type-size-s)"
+          "cssValue": "var(--type-Size-S)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:149"
           },
-          "cssValue": "var(--type-line-height-s)"
+          "cssValue": "var(--type-Line Height-S)"
         },
         "letterSpacing": {
           "jsonValue": 0,
-          "cssValue": "var(--type-letter-spacing-none)"
+          "cssValue": "var(--type-Letter Spacing-None)"
         }
       },
       "regular": {
         "weight": {
           "jsonValue": "Regular",
-          "cssValue": "var(--type-weight-regular)"
+          "cssValue": "var(--type-Weight-Regular)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:150"
           },
-          "cssValue": "var(--type-size-s)"
+          "cssValue": "var(--type-Size-S)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:149"
           },
-          "cssValue": "var(--type-line-height-s)"
+          "cssValue": "var(--type-Line Height-S)"
         },
         "letterSpacing": {
           "jsonValue": 0,
-          "cssValue": "var(--type-letter-spacing-none)"
+          "cssValue": "var(--type-Letter Spacing-None)"
         }
       },
       "semi-bold": {
         "weight": {
           "jsonValue": "Semi Bold",
-          "cssValue": "var(--type-weight-semi-bold)"
+          "cssValue": "var(--type-Weight-Semi Bold)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:150"
           },
-          "cssValue": "var(--type-size-s)"
+          "cssValue": "var(--type-Size-S)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:149"
           },
-          "cssValue": "var(--type-line-height-s)"
+          "cssValue": "var(--type-Line Height-S)"
         },
         "letterSpacing": {
           "jsonValue": 0,
-          "cssValue": "var(--type-letter-spacing-none)"
+          "cssValue": "var(--type-Letter Spacing-None)"
         }
       }
     },
@@ -1048,73 +1048,73 @@
       "light": {
         "weight": {
           "jsonValue": "Light",
-          "cssValue": "var(--type-weight-light)"
+          "cssValue": "var(--type-Weight-Light)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:151"
           },
-          "cssValue": "var(--type-size-xs)"
+          "cssValue": "var(--type-Size-XS)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:169"
           },
-          "cssValue": "var(--type-line-height-xs)"
+          "cssValue": "var(--type-Line Height-XS)"
         },
         "letterSpacing": {
           "jsonValue": 0,
-          "cssValue": "var(--type-letter-spacing-none)"
+          "cssValue": "var(--type-Letter Spacing-None)"
         }
       },
       "regular": {
         "weight": {
           "jsonValue": "Regular",
-          "cssValue": "var(--type-weight-regular)"
+          "cssValue": "var(--type-Weight-Regular)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:151"
           },
-          "cssValue": "var(--type-size-xs)"
+          "cssValue": "var(--type-Size-XS)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:169"
           },
-          "cssValue": "var(--type-line-height-xs)"
+          "cssValue": "var(--type-Line Height-XS)"
         },
         "letterSpacing": {
           "jsonValue": 0,
-          "cssValue": "var(--type-letter-spacing-none)"
+          "cssValue": "var(--type-Letter Spacing-None)"
         }
       },
       "semi-bold": {
         "weight": {
           "jsonValue": "Semi Bold",
-          "cssValue": "var(--type-weight-semi-bold)"
+          "cssValue": "var(--type-Weight-Semi Bold)"
         },
         "size": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:151"
           },
-          "cssValue": "var(--type-size-xs)"
+          "cssValue": "var(--type-Size-XS)"
         },
         "lineHeight": {
           "jsonValue": {
             "type": "VARIABLE_ALIAS",
             "id": "VariableID:61:169"
           },
-          "cssValue": "var(--type-line-height-xs)"
+          "cssValue": "var(--type-Line Height-XS)"
         },
         "letterSpacing": {
           "jsonValue": 0,
-          "cssValue": "var(--type-letter-spacing-none)"
+          "cssValue": "var(--type-Letter Spacing-None)"
         }
       }
     }
