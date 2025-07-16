@@ -1,11 +1,19 @@
+/* Type/Letter-spacing */
+
 --type-letter-spacing-xs: -1;
 --type-letter-spacing-s: -0.5;
 --type-letter-spacing-none: 0;
 --type-letter-spacing-m: 0.5;
 --type-letter-spacing-l: 1;
+
+/* Type/Family */
+
 --type-family-inter: Inter;
 --type-family-ibmPlexSans: IBM Plex Sans;
 --type-family-archivo: Archivo;
+
+/* Type/Weight */
+
 --type-weight-light: Light;
 --type-weight-regular: Regular;
 --type-weight-semiBold: Semi Bold;
