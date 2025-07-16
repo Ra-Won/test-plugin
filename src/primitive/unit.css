@@ -1,28 +1,180 @@
-/* Unit/Unit */
+/* Unit/1 */
 
---unit-unit-1: 1px;
---unit-unit-2: 2px;
---unit-unit-4: 4px;
---unit-unit-8: 8px;
---unit-unit-10: 10px;
---unit-unit-12: 12px;
---unit-unit-14: 14px;
---unit-unit-16: 16px;
---unit-unit-18: 18px;
---unit-unit-20: 20px;
---unit-unit-24: 24px;
---unit-unit-26: 26px;
---unit-unit-28: 28px;
---unit-unit-32: 32px;
---unit-unit-36: 36px;
---unit-unit-40: 40px;
---unit-unit-48: 48px;
---unit-unit-56: 56px;
---unit-unit-64: 64px;
---unit-unit-72: 72px;
---unit-unit-80: 80px;
---unit-unit-88: 88px;
---unit-unit-96: 96px;
---unit-unit-104: 104px;
---unit-unit-112: 112px;
---unit-unit-120: 120px;
+--unit-1-0: 1;
+--unit-1-1: p;
+--unit-1-2: x;
+
+/* Unit/2 */
+
+--unit-2-0: 2;
+--unit-2-1: p;
+--unit-2-2: x;
+
+/* Unit/4 */
+
+--unit-4-0: 4;
+--unit-4-1: p;
+--unit-4-2: x;
+
+/* Unit/8 */
+
+--unit-8-0: 8;
+--unit-8-1: p;
+--unit-8-2: x;
+
+/* Unit/10 */
+
+--unit-10-0: 1;
+--unit-10-1: 0;
+--unit-10-2: p;
+--unit-10-3: x;
+
+/* Unit/12 */
+
+--unit-12-0: 1;
+--unit-12-1: 2;
+--unit-12-2: p;
+--unit-12-3: x;
+
+/* Unit/14 */
+
+--unit-14-0: 1;
+--unit-14-1: 4;
+--unit-14-2: p;
+--unit-14-3: x;
+
+/* Unit/16 */
+
+--unit-16-0: 1;
+--unit-16-1: 6;
+--unit-16-2: p;
+--unit-16-3: x;
+
+/* Unit/18 */
+
+--unit-18-0: 1;
+--unit-18-1: 8;
+--unit-18-2: p;
+--unit-18-3: x;
+
+/* Unit/20 */
+
+--unit-20-0: 2;
+--unit-20-1: 0;
+--unit-20-2: p;
+--unit-20-3: x;
+
+/* Unit/24 */
+
+--unit-24-0: 2;
+--unit-24-1: 4;
+--unit-24-2: p;
+--unit-24-3: x;
+
+/* Unit/26 */
+
+--unit-26-0: 2;
+--unit-26-1: 6;
+--unit-26-2: p;
+--unit-26-3: x;
+
+/* Unit/28 */
+
+--unit-28-0: 2;
+--unit-28-1: 8;
+--unit-28-2: p;
+--unit-28-3: x;
+
+/* Unit/32 */
+
+--unit-32-0: 3;
+--unit-32-1: 2;
+--unit-32-2: p;
+--unit-32-3: x;
+
+/* Unit/36 */
+
+--unit-36-0: 3;
+--unit-36-1: 6;
+--unit-36-2: p;
+--unit-36-3: x;
+
+/* Unit/40 */
+
+--unit-40-0: 4;
+--unit-40-1: 0;
+--unit-40-2: p;
+--unit-40-3: x;
+
+/* Unit/48 */
+
+--unit-48-0: 4;
+--unit-48-1: 8;
+--unit-48-2: p;
+--unit-48-3: x;
+
+/* Unit/56 */
+
+--unit-56-0: 5;
+--unit-56-1: 6;
+--unit-56-2: p;
+--unit-56-3: x;
+
+/* Unit/64 */
+
+--unit-64-0: 6;
+--unit-64-1: 4;
+--unit-64-2: p;
+--unit-64-3: x;
+
+/* Unit/72 */
+
+--unit-72-0: 7;
+--unit-72-1: 2;
+--unit-72-2: p;
+--unit-72-3: x;
+
+/* Unit/80 */
+
+--unit-80-0: 8;
+--unit-80-1: 0;
+--unit-80-2: p;
+--unit-80-3: x;
+
+/* Unit/88 */
+
+--unit-88-0: 8;
+--unit-88-1: 8;
+--unit-88-2: p;
+--unit-88-3: x;
+
+/* Unit/96 */
+
+--unit-96-0: 9;
+--unit-96-1: 6;
+--unit-96-2: p;
+--unit-96-3: x;
+
+/* Unit/104 */
+
+--unit-104-0: 1;
+--unit-104-1: 0;
+--unit-104-2: 4;
+--unit-104-3: p;
+--unit-104-4: x;
+
+/* Unit/112 */
+
+--unit-112-0: 1;
+--unit-112-1: 1;
+--unit-112-2: 2;
+--unit-112-3: p;
+--unit-112-4: x;
+
+/* Unit/120 */
+
+--unit-120-0: 1;
+--unit-120-1: 2;
+--unit-120-2: 0;
+--unit-120-3: p;
+--unit-120-4: x;
