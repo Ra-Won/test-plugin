@@ -1,578 +1,1121 @@
 {
   "family": {
-    "main": "Inter"
+    "main": {
+      "jsonValue": "Inter",
+      "cssValue": "var(--type-family-inter)"
+    }
   },
   "heading": {
     "5-xl": {
       "light": {
-        "weight": "Light",
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:166"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:166"
+          },
+          "cssValue": "var(--type-size-10-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:162"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:162"
+          },
+          "cssValue": "var(--type-line-height-10-xl)"
         },
-        "letterSpacing": -1
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
       },
       "regular": {
-        "weight": "Regular",
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:166"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:166"
+          },
+          "cssValue": "var(--type-size-10-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:162"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:162"
+          },
+          "cssValue": "var(--type-line-height-10-xl)"
         },
-        "letterSpacing": -1
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
       },
       "semi-bold": {
-        "weight": "Semi Bold",
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:166"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:166"
+          },
+          "cssValue": "var(--type-size-10-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:162"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:162"
+          },
+          "cssValue": "var(--type-line-height-10-xl)"
         },
-        "letterSpacing": -1
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
       }
     },
     "4-xl": {
       "light": {
-        "weight": "Light",
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:160"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:160"
+          },
+          "cssValue": "var(--type-size-9-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:166"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:166"
+          },
+          "cssValue": "var(--type-line-height-9-xl)"
         },
-        "letterSpacing": -1
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
       },
       "regular": {
-        "weight": "Regular",
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:160"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:160"
+          },
+          "cssValue": "var(--type-size-9-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:166"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:166"
+          },
+          "cssValue": "var(--type-line-height-9-xl)"
         },
-        "letterSpacing": -1
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
       },
       "semi-bold": {
-        "weight": "Semi Bold",
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:160"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:160"
+          },
+          "cssValue": "var(--type-size-9-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:166"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:166"
+          },
+          "cssValue": "var(--type-line-height-9-xl)"
         },
-        "letterSpacing": -1
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
       }
     },
     "3-xl": {
       "light": {
-        "weight": "Light",
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:168"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:168"
+          },
+          "cssValue": "var(--type-size-8-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:160"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:160"
+          },
+          "cssValue": "var(--type-line-height-8-xl)"
         },
-        "letterSpacing": -1
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
       },
       "regular": {
-        "weight": "Regular",
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:168"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:168"
+          },
+          "cssValue": "var(--type-size-8-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:160"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:160"
+          },
+          "cssValue": "var(--type-line-height-8-xl)"
         },
-        "letterSpacing": -1
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
       },
       "semi-bold": {
-        "weight": "Semi Bold",
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:168"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:168"
+          },
+          "cssValue": "var(--type-size-8-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:160"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:160"
+          },
+          "cssValue": "var(--type-line-height-8-xl)"
         },
-        "letterSpacing": -1
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
       }
     },
     "2-xl": {
       "light": {
-        "weight": "Light",
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:165"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:165"
+          },
+          "cssValue": "var(--type-size-7-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:168"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:168"
+          },
+          "cssValue": "var(--type-line-height-7-xl)"
         },
-        "letterSpacing": -1
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
       },
       "regular": {
-        "weight": "Regular",
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:165"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:165"
+          },
+          "cssValue": "var(--type-size-7-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:168"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:168"
+          },
+          "cssValue": "var(--type-line-height-7-xl)"
         },
-        "letterSpacing": -1
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
       },
       "semi-bold": {
-        "weight": "Semi Bold",
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:165"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:165"
+          },
+          "cssValue": "var(--type-size-7-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:168"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:168"
+          },
+          "cssValue": "var(--type-line-height-7-xl)"
         },
-        "letterSpacing": -1
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
       }
     },
     "xl": {
       "light": {
-        "weight": "Light",
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:167"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:167"
+          },
+          "cssValue": "var(--type-size-6-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:165"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:165"
+          },
+          "cssValue": "var(--type-line-height-6-xl)"
         },
-        "letterSpacing": -1
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
       },
       "regular": {
-        "weight": "Regular",
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:167"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:167"
+          },
+          "cssValue": "var(--type-size-6-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:165"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:165"
+          },
+          "cssValue": "var(--type-line-height-6-xl)"
         },
-        "letterSpacing": -1
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
       },
       "semi-bold": {
-        "weight": "Semi Bold",
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:167"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:167"
+          },
+          "cssValue": "var(--type-size-6-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:165"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:165"
+          },
+          "cssValue": "var(--type-line-height-6-xl)"
         },
-        "letterSpacing": -1
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
       }
     },
     "l": {
       "light": {
-        "weight": "Light",
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:164"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:164"
+          },
+          "cssValue": "var(--type-size-5-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:167"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:167"
+          },
+          "cssValue": "var(--type-line-height-5-xl)"
         },
-        "letterSpacing": -1
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
       },
       "regular": {
-        "weight": "Regular",
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:164"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:164"
+          },
+          "cssValue": "var(--type-size-5-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:167"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:167"
+          },
+          "cssValue": "var(--type-line-height-5-xl)"
         },
-        "letterSpacing": -1
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
       },
       "semi-bold": {
-        "weight": "Semi Bold",
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:164"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:164"
+          },
+          "cssValue": "var(--type-size-5-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:167"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:167"
+          },
+          "cssValue": "var(--type-line-height-5-xl)"
         },
-        "letterSpacing": -1
+        "letterSpacing": {
+          "jsonValue": -1,
+          "cssValue": "var(--type-letter-spacing-xs)"
+        }
       }
     },
     "m": {
       "light": {
-        "weight": "Light",
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:146"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:146"
+          },
+          "cssValue": "var(--type-size-3-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:164"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:164"
+          },
+          "cssValue": "var(--type-line-height-3-xl)"
         },
-        "letterSpacing": -0.5
+        "letterSpacing": {
+          "jsonValue": -0.5,
+          "cssValue": "var(--type-letter-spacing-s)"
+        }
       },
       "regular": {
-        "weight": "Regular",
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:146"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:146"
+          },
+          "cssValue": "var(--type-size-3-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:164"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:164"
+          },
+          "cssValue": "var(--type-line-height-3-xl)"
         },
-        "letterSpacing": -0.5
+        "letterSpacing": {
+          "jsonValue": -0.5,
+          "cssValue": "var(--type-letter-spacing-s)"
+        }
       },
       "semi-bold": {
-        "weight": "Semi Bold",
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:146"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:146"
+          },
+          "cssValue": "var(--type-size-3-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:164"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:164"
+          },
+          "cssValue": "var(--type-line-height-3-xl)"
         },
-        "letterSpacing": -0.5
+        "letterSpacing": {
+          "jsonValue": -0.5,
+          "cssValue": "var(--type-letter-spacing-s)"
+        }
       }
     },
     "s": {
       "light": {
-        "weight": "Light",
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:147"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:147"
+          },
+          "cssValue": "var(--type-size-2-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:156"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:156"
+          },
+          "cssValue": "var(--type-line-height-2-xl)"
         },
-        "letterSpacing": -0.5
+        "letterSpacing": {
+          "jsonValue": -0.5,
+          "cssValue": "var(--type-letter-spacing-s)"
+        }
       },
       "regular": {
-        "weight": "Regular",
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:147"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:147"
+          },
+          "cssValue": "var(--type-size-2-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:156"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:156"
+          },
+          "cssValue": "var(--type-line-height-2-xl)"
         },
-        "letterSpacing": -0.5
+        "letterSpacing": {
+          "jsonValue": -0.5,
+          "cssValue": "var(--type-letter-spacing-s)"
+        }
       },
       "semi-bold": {
-        "weight": "Semi Bold",
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:147"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:147"
+          },
+          "cssValue": "var(--type-size-2-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:156"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:156"
+          },
+          "cssValue": "var(--type-line-height-2-xl)"
         },
-        "letterSpacing": -0.5
+        "letterSpacing": {
+          "jsonValue": -0.5,
+          "cssValue": "var(--type-letter-spacing-s)"
+        }
       }
     },
     "xs": {
       "light": {
-        "weight": "Light",
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:169"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:169"
+          },
+          "cssValue": "var(--type-size-l)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:146"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:146"
+          },
+          "cssValue": "var(--type-line-height-l)"
         },
-        "letterSpacing": -0.5
+        "letterSpacing": {
+          "jsonValue": -0.5,
+          "cssValue": "var(--type-letter-spacing-s)"
+        }
       },
       "regular": {
-        "weight": "Regular",
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:169"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:169"
+          },
+          "cssValue": "var(--type-size-l)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:146"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:146"
+          },
+          "cssValue": "var(--type-line-height-l)"
         },
-        "letterSpacing": -0.5
+        "letterSpacing": {
+          "jsonValue": -0.5,
+          "cssValue": "var(--type-letter-spacing-s)"
+        }
       },
       "semi-bold": {
-        "weight": "Semi Bold",
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:169"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:169"
+          },
+          "cssValue": "var(--type-size-l)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:146"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:146"
+          },
+          "cssValue": "var(--type-line-height-l)"
         },
-        "letterSpacing": -0.5
+        "letterSpacing": {
+          "jsonValue": -0.5,
+          "cssValue": "var(--type-letter-spacing-s)"
+        }
       }
     },
     "2-xs": {
       "light": {
-        "weight": "Light",
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:153"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:153"
+          },
+          "cssValue": "var(--type-size-m)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:147"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:147"
+          },
+          "cssValue": "var(--type-line-height-m)"
         },
-        "letterSpacing": 0
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
       },
       "regular": {
-        "weight": "Regular",
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:153"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:153"
+          },
+          "cssValue": "var(--type-size-m)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:147"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:147"
+          },
+          "cssValue": "var(--type-line-height-m)"
         },
-        "letterSpacing": 0
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
       },
       "semi-bold": {
-        "weight": "Semi Bold",
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:153"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:153"
+          },
+          "cssValue": "var(--type-size-m)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:147"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:147"
+          },
+          "cssValue": "var(--type-line-height-m)"
         },
-        "letterSpacing": 0
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
       }
     }
   },
   "body": {
     "xl": {
       "light": {
-        "weight": "Light",
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:149"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:149"
+          },
+          "cssValue": "var(--type-size-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:74:53"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:74:53"
+          },
+          "cssValue": "var(--type-line-height-xl)"
         },
-        "letterSpacing": 0
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
       },
       "regular": {
-        "weight": "Regular",
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:149"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:149"
+          },
+          "cssValue": "var(--type-size-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:74:53"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:74:53"
+          },
+          "cssValue": "var(--type-line-height-xl)"
         },
-        "letterSpacing": 0
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
       },
       "semi-bold": {
-        "weight": "Semi Bold",
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:149"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:149"
+          },
+          "cssValue": "var(--type-size-xl)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:74:53"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:74:53"
+          },
+          "cssValue": "var(--type-line-height-xl)"
         },
-        "letterSpacing": 0
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
       }
     },
     "l": {
       "light": {
-        "weight": "Light",
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:169"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:169"
+          },
+          "cssValue": "var(--type-size-l)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:146"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:146"
+          },
+          "cssValue": "var(--type-line-height-l)"
         },
-        "letterSpacing": 0
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
       },
       "regular": {
-        "weight": "Regular",
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:169"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:169"
+          },
+          "cssValue": "var(--type-size-l)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:146"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:146"
+          },
+          "cssValue": "var(--type-line-height-l)"
         },
-        "letterSpacing": 0
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
       },
       "semi-bold": {
-        "weight": "Semi Bold",
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:169"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:169"
+          },
+          "cssValue": "var(--type-size-l)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:146"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:146"
+          },
+          "cssValue": "var(--type-line-height-l)"
         },
-        "letterSpacing": 0
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
       }
     },
     "m": {
       "light": {
-        "weight": "Light",
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:153"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:153"
+          },
+          "cssValue": "var(--type-size-m)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:147"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:147"
+          },
+          "cssValue": "var(--type-line-height-m)"
         },
-        "letterSpacing": 0
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
       },
       "regular": {
-        "weight": "Regular",
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:153"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:153"
+          },
+          "cssValue": "var(--type-size-m)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:147"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:147"
+          },
+          "cssValue": "var(--type-line-height-m)"
         },
-        "letterSpacing": 0
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
       },
       "semi-bold": {
-        "weight": "Semi Bold",
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:153"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:153"
+          },
+          "cssValue": "var(--type-size-m)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:147"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:147"
+          },
+          "cssValue": "var(--type-line-height-m)"
         },
-        "letterSpacing": 0
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
       }
     },
     "s": {
       "light": {
-        "weight": "Light",
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:150"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:150"
+          },
+          "cssValue": "var(--type-size-s)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:149"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:149"
+          },
+          "cssValue": "var(--type-line-height-s)"
         },
-        "letterSpacing": 0
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
       },
       "regular": {
-        "weight": "Regular",
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:150"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:150"
+          },
+          "cssValue": "var(--type-size-s)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:149"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:149"
+          },
+          "cssValue": "var(--type-line-height-s)"
         },
-        "letterSpacing": 0
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
       },
       "semi-bold": {
-        "weight": "Semi Bold",
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:150"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:150"
+          },
+          "cssValue": "var(--type-size-s)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:149"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:149"
+          },
+          "cssValue": "var(--type-line-height-s)"
         },
-        "letterSpacing": 0
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
       }
     },
     "xs": {
       "light": {
-        "weight": "Light",
+        "weight": {
+          "jsonValue": "Light",
+          "cssValue": "var(--type-weight-light)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:151"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:151"
+          },
+          "cssValue": "var(--type-size-xs)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:169"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:169"
+          },
+          "cssValue": "var(--type-line-height-xs)"
         },
-        "letterSpacing": 0
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
       },
       "regular": {
-        "weight": "Regular",
+        "weight": {
+          "jsonValue": "Regular",
+          "cssValue": "var(--type-weight-regular)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:151"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:151"
+          },
+          "cssValue": "var(--type-size-xs)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:169"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:169"
+          },
+          "cssValue": "var(--type-line-height-xs)"
         },
-        "letterSpacing": 0
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
       },
       "semi-bold": {
-        "weight": "Semi Bold",
+        "weight": {
+          "jsonValue": "Semi Bold",
+          "cssValue": "var(--type-weight-semi-bold)"
+        },
         "size": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:151"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:151"
+          },
+          "cssValue": "var(--type-size-xs)"
         },
         "lineHeight": {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:61:169"
+          "jsonValue": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:61:169"
+          },
+          "cssValue": "var(--type-line-height-xs)"
         },
-        "letterSpacing": 0
+        "letterSpacing": {
+          "jsonValue": 0,
+          "cssValue": "var(--type-letter-spacing-none)"
+        }
       }
     }
   }
