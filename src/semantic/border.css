@@ -1,2 +1,6 @@
 @import '../primitive/primitive.css';
 
+--border-sm: var(--unit-0-5);
+--border-md: var(--unit-1);
+--border-lg: var(--unit-1-5);
+--border-xl: var(--unit-2);
