@@ -1,6 +1,6 @@
-@import '../primitive/primitive.css';
-
---radius-s: var(--unit-2);
---radius-m: var(--unit-4);
---radius-l: var(--unit-8);
---radius-xl: var(--unit-16);
+:root {
+  --radius--x-l: var(--primitive-16);
+  --radius--m: var(--primitive-4);
+  --radius--l: var(--primitive-8);
+  --radius--s: var(--primitive-2);
+}
