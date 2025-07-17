@@ -1,6 +1,87 @@
-:root {
-  --border-xl: var(--primitive-2);
-  --border-md: var(--primitive-1);
-  --border-lg: var(--primitive-1o5);
-  --border-sm: var(--primitive-0o5);
-}
+/* BORDER - XL */
+
+--border-xl-0: v;
+  --border-xl-1: a;
+  --border-xl-2: r;
+  --border-xl-3: (;
+  --border-xl-4: -;
+  --border-xl-5: -;
+  --border-xl-6: p;
+  --border-xl-7: r;
+  --border-xl-8: i;
+  --border-xl-9: m;
+  --border-xl-10: i;
+  --border-xl-11: t;
+  --border-xl-12: i;
+  --border-xl-13: v;
+  --border-xl-14: e;
+  --border-xl-15: -;
+  --border-xl-16: 2;
+  --border-xl-17: );
+
+/* BORDER - MD */
+
+--border-md-0: v;
+  --border-md-1: a;
+  --border-md-2: r;
+  --border-md-3: (;
+  --border-md-4: -;
+  --border-md-5: -;
+  --border-md-6: p;
+  --border-md-7: r;
+  --border-md-8: i;
+  --border-md-9: m;
+  --border-md-10: i;
+  --border-md-11: t;
+  --border-md-12: i;
+  --border-md-13: v;
+  --border-md-14: e;
+  --border-md-15: -;
+  --border-md-16: 1;
+  --border-md-17: );
+
+/* BORDER - LG */
+
+--border-lg-0: v;
+  --border-lg-1: a;
+  --border-lg-2: r;
+  --border-lg-3: (;
+  --border-lg-4: -;
+  --border-lg-5: -;
+  --border-lg-6: p;
+  --border-lg-7: r;
+  --border-lg-8: i;
+  --border-lg-9: m;
+  --border-lg-10: i;
+  --border-lg-11: t;
+  --border-lg-12: i;
+  --border-lg-13: v;
+  --border-lg-14: e;
+  --border-lg-15: -;
+  --border-lg-16: 1;
+  --border-lg-17: o;
+  --border-lg-18: 5;
+  --border-lg-19: );
+
+/* BORDER - SM */
+
+--border-sm-0: v;
+  --border-sm-1: a;
+  --border-sm-2: r;
+  --border-sm-3: (;
+  --border-sm-4: -;
+  --border-sm-5: -;
+  --border-sm-6: p;
+  --border-sm-7: r;
+  --border-sm-8: i;
+  --border-sm-9: m;
+  --border-sm-10: i;
+  --border-sm-11: t;
+  --border-sm-12: i;
+  --border-sm-13: v;
+  --border-sm-14: e;
+  --border-sm-15: -;
+  --border-sm-16: 0;
+  --border-sm-17: o;
+  --border-sm-18: 5;
+  --border-sm-19: );
