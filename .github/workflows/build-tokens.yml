@@ -1,0 +1,44 @@
+# Name of your GitHub Action workflow
+name: Build and Commit Tokens
+
+# Trigger this workflow on every push to the 'main' branch
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'packages/tokens/src/**' # Only run if token source files change
+
+jobs:
+  build:
+    runs-on: ubuntu-latest # Use the latest version of Ubuntu as the runner
+
+    steps:
+      # Step 1: Check out your repository code
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Node.js so we can use npm
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Specify the Node.js version to use
+
+      # Step 3: Install dependencies for the tokens package
+      - name: Install Dependencies
+        run: npm install
+        working-directory: ./packages/tokens # Run the command in the tokens directory
+
+      # Step 4: Run the build script to generate the dist/tokens.css file
+      - name: Build Tokens
+        run: npm run build
+        working-directory: ./packages/tokens
+
+      # Step 5: Commit the generated files back to the repository
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(tokens): build and commit latest tokens"
+          commit_user_name: "GitHub Actions [bot]"
+          commit_user_email: "actions@github.com"
+          commit_author: "GitHub Actions [bot] <actions@github.com>"
