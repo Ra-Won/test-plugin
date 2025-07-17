@@ -1,5 +1,6 @@
-:root {
-  --color-text-primary: var(--primitive-black-800);
+/* COLOR - TEXT */
+
+--color-text-primary: var(--primitive-black-800);
   --color-text-secondary: var(--primitive-black-700);
   --color-text-tertiary: var(--primitive-black-600);
   --color-text-primary-inverse: var(--primitive-white-100);
@@ -24,7 +25,10 @@
   --color-text-purple-default: var(--primitive-tertiary-400);
   --color-text-purple-hovered: var(--primitive-tertiary-500);
   --color-text-purple-pressed: var(--primitive-tertiary-600);
-  --color-bg-primary: var(--primitive-white-100);
+
+/* COLOR - BG */
+
+--color-bg-primary: var(--primitive-white-100);
   --color-bg-primary-hover: var(--primitive-grey-100);
   --color-bg-primary-pressed: var(--primitive-grey-200);
   --color-bg-secondary: var(--primitive-tertiary-50);
@@ -53,7 +57,10 @@
   --color-bg-brand-subtle-pressed: var(--primitive-primary-500);
   --color-bg-brand-subtle-hover: var(--primitive-primary-100);
   --color-bg-brand-subtle: var(--primitive-primary-alpha-10);
-  --color-icon-primary: var(--primitive-black-900);
+
+/* COLOR - ICON */
+
+--color-icon-primary: var(--primitive-black-900);
   --color-icon-secondary: var(--primitive-black-700);
   --color-icon-disabled: var(--primitive-grey-200);
   --color-icon-info: var(--primitive-blue-500);
@@ -62,7 +69,10 @@
   --color-icon-positive: var(--primitive-green-600);
   --color-icon-inverse: var(--primitive-white-100);
   --color-icon-brand: var(--primitive-primary-500);
-  --color-border-pressed: var(--primitive-grey-400);
+
+/* COLOR - BORDER */
+
+--color-border-pressed: var(--primitive-grey-400);
   --color-border-secondary: var(--primitive-grey-300);
   --color-border-brand: var(--primitive-primary-500);
   --color-border-primary: var(--primitive-grey-200);
@@ -75,16 +85,25 @@
   --color-border-alternative: var(--primitive-tertiary-50);
   --color-border-disable: var(--primitive-grey-100);
   --color-border-purple: var(--primitive-tertiary-300);
-  --color-surface-l0: var(--primitive-white-100);
+
+/* COLOR - SURFACE */
+
+--color-surface-l0: var(--primitive-white-100);
   --color-surface-l1: var(--primitive-primary-alpha-10);
   --color-surface-l2: var(--primitive-white-60);
   --color-surface-l3: var(--primitive-white-40);
   --color-surface-l4: var(--primitive-white-20);
-  --color-overlay-20: var(--primitive-white-20);
+
+/* COLOR - OVERLAY */
+
+--color-overlay-20: var(--primitive-white-20);
   --color-overlay-60: var(--primitive-white-60);
   --color-overlay-inverse-20: var(--primitive-black-alpha-20);
   --color-overlay-inverse-60: var(--primitive-black-alpha-60);
-  --color-graph-b1: var(--primitive-primary-800);
+
+/* COLOR - GRAPH */
+
+--color-graph-b1: var(--primitive-primary-800);
   --color-graph-b2: var(--primitive-primary-700);
   --color-graph-b3: var(--primitive-primary-600);
   --color-graph-g3: var(--primitive-secondary-500);
@@ -99,4 +118,3 @@
   --color-graph-b4: var(--primitive-primary-500);
   --color-graph-g4: var(--primitive-secondary-100);
   --color-graph-b5: var(--primitive-primary-400);
-}
