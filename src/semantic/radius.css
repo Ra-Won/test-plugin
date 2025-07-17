@@ -1,6 +1,6 @@
 :root {
-  --radius--x-l: var(--primitive-16);
-  --radius--m: var(--primitive-4);
-  --radius--l: var(--primitive-8);
-  --radius--s: var(--primitive-2);
+  --radius-xl: var(--primitive-16);
+  --radius-m: var(--primitive-4);
+  --radius-l: var(--primitive-8);
+  --radius-s: var(--primitive-2);
 }
