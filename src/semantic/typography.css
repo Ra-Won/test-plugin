@@ -1,5 +1,6 @@
-:root {
-  --type-body-l-light-size: var(--primitive-size-l);
+/* TYPE - BODY */
+
+--type-body-l-light-size: var(--primitive-size-l);
   --type-body-l-light-line-height: var(--primitive-line-height-l);
   --type-body-l-light-letter-spacing: var(--primitive-letter-spacing-none);
   --type-body-l-light-weight: var(--primitive-weight-light);
@@ -7,10 +8,10 @@
   --type-body-l-regular-size: var(--primitive-size-l);
   --type-body-l-regular-line-height: var(--primitive-line-height-l);
   --type-body-l-regular-letter-spacing: var(--primitive-letter-spacing-none);
-  --type-body-l-semi-bold-weight: var(--primitive-weight-semi-bold);
-  --type-body-l-semi-bold-size: var(--primitive-size-l);
-  --type-body-l-semi-bold-line-height: var(--primitive-line-height-l);
-  --type-body-l-semi-bold-letter-spacing: var(--primitive-letter-spacing-none);
+  --type-body-l-semibold-weight: var(--primitive-weight-semi-bold);
+  --type-body-l-semibold-size: var(--primitive-size-l);
+  --type-body-l-semibold-line-height: var(--primitive-line-height-l);
+  --type-body-l-semibold-letter-spacing: var(--primitive-letter-spacing-none);
   --type-body-m-light-weight: var(--primitive-weight-light);
   --type-body-m-light-size: var(--primitive-size-m);
   --type-body-m-light-line-height: var(--primitive-line-height-m);
@@ -19,10 +20,10 @@
   --type-body-m-regular-size: var(--primitive-size-m);
   --type-body-m-regular-line-height: var(--primitive-line-height-m);
   --type-body-m-regular-letter-spacing: var(--primitive-letter-spacing-none);
-  --type-body-m-semi-bold-weight: var(--primitive-weight-semi-bold);
-  --type-body-m-semi-bold-size: var(--primitive-size-m);
-  --type-body-m-semi-bold-line-height: var(--primitive-line-height-m);
-  --type-body-m-semi-bold-letter-spacing: var(--primitive-letter-spacing-none);
+  --type-body-m-semibold-weight: var(--primitive-weight-semi-bold);
+  --type-body-m-semibold-size: var(--primitive-size-m);
+  --type-body-m-semibold-line-height: var(--primitive-line-height-m);
+  --type-body-m-semibold-letter-spacing: var(--primitive-letter-spacing-none);
   --type-body-s-light-weight: var(--primitive-weight-light);
   --type-body-s-light-size: var(--primitive-size-s);
   --type-body-s-light-line-height: var(--primitive-line-height-s);
@@ -31,10 +32,10 @@
   --type-body-s-regular-size: var(--primitive-size-s);
   --type-body-s-regular-line-height: var(--primitive-line-height-s);
   --type-body-s-regular-letter-spacing: var(--primitive-letter-spacing-none);
-  --type-body-s-semi-bold-weight: var(--primitive-weight-semi-bold);
-  --type-body-s-semi-bold-size: var(--primitive-size-s);
-  --type-body-s-semi-bold-line-height: var(--primitive-line-height-s);
-  --type-body-s-semi-bold-letter-spacing: var(--primitive-letter-spacing-none);
+  --type-body-s-semibold-weight: var(--primitive-weight-semi-bold);
+  --type-body-s-semibold-size: var(--primitive-size-s);
+  --type-body-s-semibold-line-height: var(--primitive-line-height-s);
+  --type-body-s-semibold-letter-spacing: var(--primitive-letter-spacing-none);
   --type-body-xs-light-weight: var(--primitive-weight-light);
   --type-body-xs-light-size: var(--primitive-size-xs);
   --type-body-xs-light-line-height: var(--primitive-line-height-xs);
@@ -43,10 +44,10 @@
   --type-body-xs-regular-size: var(--primitive-size-xs);
   --type-body-xs-regular-line-height: var(--primitive-line-height-xs);
   --type-body-xs-regular-letter-spacing: var(--primitive-letter-spacing-none);
-  --type-body-xs-semi-bold-weight: var(--primitive-weight-semi-bold);
-  --type-body-xs-semi-bold-size: var(--primitive-size-xs);
-  --type-body-xs-semi-bold-line-height: var(--primitive-line-height-xs);
-  --type-body-xs-semi-bold-letter-spacing: var(--primitive-letter-spacing-none);
+  --type-body-xs-semibold-weight: var(--primitive-weight-semi-bold);
+  --type-body-xs-semibold-size: var(--primitive-size-xs);
+  --type-body-xs-semibold-line-height: var(--primitive-line-height-xs);
+  --type-body-xs-semibold-letter-spacing: var(--primitive-letter-spacing-none);
   --type-body-xl-light-weight: var(--primitive-weight-light);
   --type-body-xl-light-size: var(--primitive-size-xl);
   --type-body-xl-light-line-height: var(--primitive-line-height-xl);
@@ -55,11 +56,14 @@
   --type-body-xl-regular-size: var(--primitive-size-xl);
   --type-body-xl-regular-line-height: var(--primitive-line-height-xl);
   --type-body-xl-regular-letter-spacing: var(--primitive-letter-spacing-none);
-  --type-body-xl-semi-bold-weight: var(--primitive-weight-semi-bold);
-  --type-body-xl-semi-bold-size: var(--primitive-size-xl);
-  --type-body-xl-semi-bold-line-height: var(--primitive-line-height-xl);
-  --type-body-xl-semi-bold-letter-spacing: var(--primitive-letter-spacing-none);
-  --type-heading-xl-light-weight: var(--primitive-weight-light);
+  --type-body-xl-semibold-weight: var(--primitive-weight-semi-bold);
+  --type-body-xl-semibold-size: var(--primitive-size-xl);
+  --type-body-xl-semibold-line-height: var(--primitive-line-height-xl);
+  --type-body-xl-semibold-letter-spacing: var(--primitive-letter-spacing-none);
+
+/* TYPE - HEADING */
+
+--type-heading-xl-light-weight: var(--primitive-weight-light);
   --type-heading-xl-light-size: var(--primitive-size-6xl);
   --type-heading-xl-light-line-height: var(--primitive-line-height-6xl);
   --type-heading-xl-light-letter-spacing: var(--primitive-letter-spacing-xs);
@@ -67,10 +71,10 @@
   --type-heading-xl-regular-size: var(--primitive-size-6xl);
   --type-heading-xl-regular-line-height: var(--primitive-line-height-6xl);
   --type-heading-xl-regular-letter-spacing: var(--primitive-letter-spacing-xs);
-  --type-heading-xl-semi-bold-weight: var(--primitive-weight-semi-bold);
-  --type-heading-xl-semi-bold-size: var(--primitive-size-6xl);
-  --type-heading-xl-semi-bold-line-height: var(--primitive-line-height-6xl);
-  --type-heading-xl-semi-bold-letter-spacing: var(--primitive-letter-spacing-xs);
+  --type-heading-xl-semibold-weight: var(--primitive-weight-semi-bold);
+  --type-heading-xl-semibold-size: var(--primitive-size-6xl);
+  --type-heading-xl-semibold-line-height: var(--primitive-line-height-6xl);
+  --type-heading-xl-semibold-letter-spacing: var(--primitive-letter-spacing-xs);
   --type-heading-l-light-weight: var(--primitive-weight-light);
   --type-heading-l-light-size: var(--primitive-size-5xl);
   --type-heading-l-light-line-height: var(--primitive-line-height-5xl);
@@ -79,10 +83,10 @@
   --type-heading-l-regular-size: var(--primitive-size-5xl);
   --type-heading-l-regular-line-height: var(--primitive-line-height-5xl);
   --type-heading-l-regular-letter-spacing: var(--primitive-letter-spacing-xs);
-  --type-heading-l-semi-bold-weight: var(--primitive-weight-semi-bold);
-  --type-heading-l-semi-bold-size: var(--primitive-size-5xl);
-  --type-heading-l-semi-bold-line-height: var(--primitive-line-height-5xl);
-  --type-heading-l-semi-bold-letter-spacing: var(--primitive-letter-spacing-xs);
+  --type-heading-l-semibold-weight: var(--primitive-weight-semi-bold);
+  --type-heading-l-semibold-size: var(--primitive-size-5xl);
+  --type-heading-l-semibold-line-height: var(--primitive-line-height-5xl);
+  --type-heading-l-semibold-letter-spacing: var(--primitive-letter-spacing-xs);
   --type-heading-m-light-weight: var(--primitive-weight-light);
   --type-heading-m-light-size: var(--primitive-size-3xl);
   --type-heading-m-light-line-height: var(--primitive-line-height-3xl);
@@ -91,10 +95,10 @@
   --type-heading-m-regular-size: var(--primitive-size-3xl);
   --type-heading-m-regular-line-height: var(--primitive-line-height-3xl);
   --type-heading-m-regular-letter-spacing: var(--primitive-letter-spacing-s);
-  --type-heading-m-semi-bold-weight: var(--primitive-weight-semi-bold);
-  --type-heading-m-semi-bold-size: var(--primitive-size-3xl);
-  --type-heading-m-semi-bold-line-height: var(--primitive-line-height-3xl);
-  --type-heading-m-semi-bold-letter-spacing: var(--primitive-letter-spacing-s);
+  --type-heading-m-semibold-weight: var(--primitive-weight-semi-bold);
+  --type-heading-m-semibold-size: var(--primitive-size-3xl);
+  --type-heading-m-semibold-line-height: var(--primitive-line-height-3xl);
+  --type-heading-m-semibold-letter-spacing: var(--primitive-letter-spacing-s);
   --type-heading-s-light-weight: var(--primitive-weight-light);
   --type-heading-s-light-size: var(--primitive-size-2xl);
   --type-heading-s-light-line-height: var(--primitive-line-height-2xl);
@@ -103,10 +107,10 @@
   --type-heading-s-regular-size: var(--primitive-size-2xl);
   --type-heading-s-regular-line-height: var(--primitive-line-height-2xl);
   --type-heading-s-regular-letter-spacing: var(--primitive-letter-spacing-s);
-  --type-heading-s-semi-bold-weight: var(--primitive-weight-semi-bold);
-  --type-heading-s-semi-bold-size: var(--primitive-size-2xl);
-  --type-heading-s-semi-bold-line-height: var(--primitive-line-height-2xl);
-  --type-heading-s-semi-bold-letter-spacing: var(--primitive-letter-spacing-s);
+  --type-heading-s-semibold-weight: var(--primitive-weight-semi-bold);
+  --type-heading-s-semibold-size: var(--primitive-size-2xl);
+  --type-heading-s-semibold-line-height: var(--primitive-line-height-2xl);
+  --type-heading-s-semibold-letter-spacing: var(--primitive-letter-spacing-s);
   --type-heading-xs-light-weight: var(--primitive-weight-light);
   --type-heading-xs-light-size: var(--primitive-size-l);
   --type-heading-xs-light-line-height: var(--primitive-line-height-l);
@@ -115,10 +119,10 @@
   --type-heading-xs-regular-size: var(--primitive-size-l);
   --type-heading-xs-regular-line-height: var(--primitive-line-height-l);
   --type-heading-xs-regular-letter-spacing: var(--primitive-letter-spacing-s);
-  --type-heading-xs-semi-bold-weight: var(--primitive-weight-semi-bold);
-  --type-heading-xs-semi-bold-size: var(--primitive-size-l);
-  --type-heading-xs-semi-bold-line-height: var(--primitive-line-height-l);
-  --type-heading-xs-semi-bold-letter-spacing: var(--primitive-letter-spacing-s);
+  --type-heading-xs-semibold-weight: var(--primitive-weight-semi-bold);
+  --type-heading-xs-semibold-size: var(--primitive-size-l);
+  --type-heading-xs-semibold-line-height: var(--primitive-line-height-l);
+  --type-heading-xs-semibold-letter-spacing: var(--primitive-letter-spacing-s);
   --type-heading-2xs-light-weight: var(--primitive-weight-light);
   --type-heading-2xs-light-size: var(--primitive-size-m);
   --type-heading-2xs-light-line-height: var(--primitive-line-height-m);
@@ -127,10 +131,10 @@
   --type-heading-2xs-regular-size: var(--primitive-size-m);
   --type-heading-2xs-regular-line-height: var(--primitive-line-height-m);
   --type-heading-2xs-regular-letter-spacing: var(--primitive-letter-spacing-none);
-  --type-heading-2xs-semi-bold-weight: var(--primitive-weight-semi-bold);
-  --type-heading-2xs-semi-bold-size: var(--primitive-size-m);
-  --type-heading-2xs-semi-bold-line-height: var(--primitive-line-height-m);
-  --type-heading-2xs-semi-bold-letter-spacing: var(--primitive-letter-spacing-none);
+  --type-heading-2xs-semibold-weight: var(--primitive-weight-semi-bold);
+  --type-heading-2xs-semibold-size: var(--primitive-size-m);
+  --type-heading-2xs-semibold-line-height: var(--primitive-line-height-m);
+  --type-heading-2xs-semibold-letter-spacing: var(--primitive-letter-spacing-none);
   --type-heading-2xl-light-weight: var(--primitive-weight-light);
   --type-heading-2xl-light-size: var(--primitive-size-7xl);
   --type-heading-2xl-light-line-height: var(--primitive-line-height-7xl);
@@ -139,10 +143,10 @@
   --type-heading-2xl-regular-size: var(--primitive-size-7xl);
   --type-heading-2xl-regular-line-height: var(--primitive-line-height-7xl);
   --type-heading-2xl-regular-letter-spacing: var(--primitive-letter-spacing-xs);
-  --type-heading-2xl-semi-bold-weight: var(--primitive-weight-semi-bold);
-  --type-heading-2xl-semi-bold-size: var(--primitive-size-7xl);
-  --type-heading-2xl-semi-bold-line-height: var(--primitive-line-height-7xl);
-  --type-heading-2xl-semi-bold-letter-spacing: var(--primitive-letter-spacing-xs);
+  --type-heading-2xl-semibold-weight: var(--primitive-weight-semi-bold);
+  --type-heading-2xl-semibold-size: var(--primitive-size-7xl);
+  --type-heading-2xl-semibold-line-height: var(--primitive-line-height-7xl);
+  --type-heading-2xl-semibold-letter-spacing: var(--primitive-letter-spacing-xs);
   --type-heading-3xl-light-weight: var(--primitive-weight-light);
   --type-heading-3xl-light-size: var(--primitive-size-8xl);
   --type-heading-3xl-light-line-height: var(--primitive-line-height-8xl);
@@ -151,10 +155,10 @@
   --type-heading-3xl-regular-size: var(--primitive-size-8xl);
   --type-heading-3xl-regular-line-height: var(--primitive-line-height-8xl);
   --type-heading-3xl-regular-letter-spacing: var(--primitive-letter-spacing-xs);
-  --type-heading-3xl-semi-bold-weight: var(--primitive-weight-semi-bold);
-  --type-heading-3xl-semi-bold-size: var(--primitive-size-8xl);
-  --type-heading-3xl-semi-bold-line-height: var(--primitive-line-height-8xl);
-  --type-heading-3xl-semi-bold-letter-spacing: var(--primitive-letter-spacing-xs);
+  --type-heading-3xl-semibold-weight: var(--primitive-weight-semi-bold);
+  --type-heading-3xl-semibold-size: var(--primitive-size-8xl);
+  --type-heading-3xl-semibold-line-height: var(--primitive-line-height-8xl);
+  --type-heading-3xl-semibold-letter-spacing: var(--primitive-letter-spacing-xs);
   --type-heading-4xl-light-weight: var(--primitive-weight-light);
   --type-heading-4xl-light-size: var(--primitive-size-9xl);
   --type-heading-4xl-light-line-height: var(--primitive-line-height-9xl);
@@ -163,10 +167,10 @@
   --type-heading-4xl-regular-size: var(--primitive-size-9xl);
   --type-heading-4xl-regular-line-height: var(--primitive-line-height-9xl);
   --type-heading-4xl-regular-letter-spacing: var(--primitive-letter-spacing-xs);
-  --type-heading-4xl-semi-bold-weight: var(--primitive-weight-semi-bold);
-  --type-heading-4xl-semi-bold-size: var(--primitive-size-9xl);
-  --type-heading-4xl-semi-bold-line-height: var(--primitive-line-height-9xl);
-  --type-heading-4xl-semi-bold-letter-spacing: var(--primitive-letter-spacing-xs);
+  --type-heading-4xl-semibold-weight: var(--primitive-weight-semi-bold);
+  --type-heading-4xl-semibold-size: var(--primitive-size-9xl);
+  --type-heading-4xl-semibold-line-height: var(--primitive-line-height-9xl);
+  --type-heading-4xl-semibold-letter-spacing: var(--primitive-letter-spacing-xs);
   --type-heading-5xl-light-weight: var(--primitive-weight-light);
   --type-heading-5xl-light-size: var(--primitive-size-10xl);
   --type-heading-5xl-light-line-height: var(--primitive-line-height-10xl);
@@ -175,10 +179,11 @@
   --type-heading-5xl-regular-size: var(--primitive-size-10xl);
   --type-heading-5xl-regular-line-height: var(--primitive-line-height-10xl);
   --type-heading-5xl-regular-letter-spacing: var(--primitive-letter-spacing-xs);
-  --type-heading-5xl-semi-bold-weight: var(--primitive-weight-semi-bold);
-  --type-heading-5xl-semi-bold-size: var(--primitive-size-10xl);
-  --type-heading-5xl-semi-bold-line-height: var(--primitive-line-height-10xl);
-  --type-heading-5xl-semi-bold-letter-spacing: var(--primitive-letter-spacing-xs);
-  --type-family-main: var(--primitive-family-inter);
-  --type-breakpoint-width: 0;
-}
+  --type-heading-5xl-semibold-weight: var(--primitive-weight-semi-bold);
+  --type-heading-5xl-semibold-size: var(--primitive-size-10xl);
+  --type-heading-5xl-semibold-line-height: var(--primitive-line-height-10xl);
+  --type-heading-5xl-semibold-letter-spacing: var(--primitive-letter-spacing-xs);
+
+/* TYPE - FAMILY */
+
+--type-family-main: var(--primitive-family-inter);
