@@ -23,6 +23,19 @@
   --type-letter-spacing-m: 0.5;
   --type-letter-spacing-l: 1;
 
+/* TYPE - FAMILY */
+
+--type-family-primary: Inter;
+  --type-family-secondary: IBM Plex Sans;
+
+/* TYPE - WEIGHT */
+
+--type-weight-light: Light;
+  --type-weight-regular: Regular;
+  --type-weight-semi-bold: Semi Bold;
+  --type-weight-medium: Medium;
+  --type-weight-bold: Bold;
+
 /* TYPE - LINE-HEIGHT */
 
 --type-line-height-6xl: var(--unit-48);
