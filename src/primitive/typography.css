@@ -1,5 +1,6 @@
-:root {
-  --type-size-xs: var(--unit-10);
+/* TYPE - SIZE */
+
+--type-size-xs: var(--unit-10);
   --type-size-s: var(--unit-12);
   --type-size-m: var(--unit-14);
   --type-size-l: var(--unit-16);
@@ -13,12 +14,18 @@
   --type-size-8xl: var(--unit-56);
   --type-size-9xl: var(--unit-64);
   --type-size-10xl: var(--unit-72);
-  --type-letter-spacing-xs: -1;
+
+/* TYPE - LETTER-SPACING */
+
+--type-letter-spacing-xs: -1;
   --type-letter-spacing-s: -0.5;
   --type-letter-spacing-none: 0;
   --type-letter-spacing-m: 0.5;
   --type-letter-spacing-l: 1;
-  --type-line-height-6xl: var(--unit-48);
+
+/* TYPE - LINE-HEIGHT */
+
+--type-line-height-6xl: var(--unit-48);
   --type-line-height-5xl: var(--unit-40);
   --type-line-height-4xl: var(--unit-36);
   --type-line-height-9xl: var(--unit-72);
@@ -32,4 +39,3 @@
   --type-line-height-l: var(--unit-24);
   --type-line-height-7xl: var(--unit-56);
   --type-line-height-xs: var(--unit-16);
-}
