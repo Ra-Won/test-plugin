@@ -314,5 +314,5 @@
 }
 
 .family {
-  main: var(--primitive-family-inter);
+  main: var(--primitive-family-primary);
 }
