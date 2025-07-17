@@ -1,0 +1,6 @@
+{
+  "xl": "var(--unit-2)",
+  "md": "var(--unit-1)",
+  "lg": "var(--unit-1o5)",
+  "sm": "var(--unit-0o5)"
+}
