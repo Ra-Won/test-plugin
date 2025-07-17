@@ -22,6 +22,17 @@
     "m": 0.5,
     "l": 1
   },
+  "family": {
+    "primary": "Inter",
+    "secondary": "IBM Plex Sans"
+  },
+  "weight": {
+    "light": "Light",
+    "regular": "Regular",
+    "semi-bold": "Semi Bold",
+    "medium": "Medium",
+    "bold": "Bold"
+  },
   "line-height": {
     "6xl": "var(--unit-48)",
     "5xl": "var(--unit-40)",
