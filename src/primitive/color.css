@@ -1,5 +1,6 @@
-:root {
-  --color-primary-100: #cee8ff;
+/* COLOR - PRIMARY */
+
+--color-primary-100: #cee8ff;
   --color-primary-200: #9dd0ff;
   --color-primary-300: #6cb9fe;
   --color-primary-400: #3ba2fe;
@@ -13,7 +14,10 @@
   --color-primary-alpha-30: rgba(1, 113, 214, 0.3);
   --color-primary-alpha-40: rgba(1, 113, 214, 0.4);
   --color-primary-alpha-50: rgba(1, 113, 214, 0.5);
-  --color-secondary-100: #deeee4;
+
+/* COLOR - SECONDARY */
+
+--color-secondary-100: #deeee4;
   --color-secondary-200: #beddca;
   --color-secondary-300: #9dccaf;
   --color-secondary-400: #7dbb95;
@@ -27,7 +31,10 @@
   --color-secondary-alpha-30: rgba(92, 170, 122, 0.3);
   --color-secondary-alpha-40: rgba(92, 170, 122, 0.4);
   --color-secondary-alpha-50: rgba(92, 170, 122, 0.5);
-  --color-black-100: #cccccc;
+
+/* COLOR - BLACK */
+
+--color-black-100: #cccccc;
   --color-black-200: #b2b2b2;
   --color-black-300: #999999;
   --color-black-400: #808080;
@@ -41,7 +48,10 @@
   --color-black-alpha-40: rgba(0, 0, 0, 0.4);
   --color-black-alpha-60: rgba(0, 0, 0, 0.6);
   --color-black-alpha-80: rgba(0, 0, 0, 0.8);
-  --color-tertiary-50: #faf8fd;
+
+/* COLOR - TERTIARY */
+
+--color-tertiary-50: #faf8fd;
   --color-tertiary-100: #e8daf4;
   --color-tertiary-200: #d1b5e9;
   --color-tertiary-300: #bb90de;
@@ -57,7 +67,10 @@
   --color-tertiary-alpha-30: rgba(164, 107, 211, 0.3);
   --color-tertiary-alpha-40: rgba(164, 107, 211, 0.4);
   --color-tertiary-alpha-50: rgba(164, 107, 211, 0.5);
-  --color-red-100: #f7dada;
+
+/* COLOR - RED */
+
+--color-red-100: #f7dada;
   --color-red-200: #efb5b5;
   --color-red-300: #e68f8f;
   --color-red-400: #de6a6a;
@@ -71,7 +84,10 @@
   --color-red-alpha-30: rgba(214, 69, 69, 0.3);
   --color-red-alpha-40: rgba(214, 69, 69, 0.4);
   --color-red-alpha-50: rgba(214, 69, 69, 0.5);
-  --color-orange-100: #fbe0ca;
+
+/* COLOR - ORANGE */
+
+--color-orange-100: #fbe0ca;
   --color-orange-200: #f8c196;
   --color-orange-300: #f4a261;
   --color-orange-400: #f18c3c;
@@ -85,7 +101,10 @@
   --color-orange-alpha-30: rgba(244, 162, 97, 0.3);
   --color-orange-alpha-40: rgba(244, 162, 97, 0.4);
   --color-orange-alpha-50: rgba(244, 162, 97, 0.5);
-  --color-green-100: #dcf2e3;
+
+/* COLOR - GREEN */
+
+--color-green-100: #dcf2e3;
   --color-green-200: #b9e6c7;
   --color-green-300: #96d9ab;
   --color-green-400: #73cd8f;
@@ -99,7 +118,10 @@
   --color-green-alpha-30: rgba(59, 165, 93, 0.3);
   --color-green-alpha-40: rgba(59, 165, 93, 0.4);
   --color-green-alpha-50: rgba(59, 165, 93, 0.5);
-  --color-grey-100: #e4e4e4;
+
+/* COLOR - GREY */
+
+--color-grey-100: #e4e4e4;
   --color-grey-200: #cacaca;
   --color-grey-300: #afafaf;
   --color-grey-400: #959595;
@@ -113,7 +135,10 @@
   --color-grey-alpha-30: rgba(122, 122, 122, 0.3);
   --color-grey-alpha-40: rgba(122, 122, 122, 0.4);
   --color-grey-alpha-50: rgba(122, 122, 122, 0.5);
-  --color-white-10: rgba(255, 255, 255, 0.1);
+
+/* COLOR - WHITE */
+
+--color-white-10: rgba(255, 255, 255, 0.1);
   --color-white-20: rgba(255, 255, 255, 0.2);
   --color-white-30: rgba(255, 255, 255, 0.3);
   --color-white-40: rgba(255, 255, 255, 0.4);
@@ -123,7 +148,10 @@
   --color-white-80: rgba(255, 255, 255, 0.8);
   --color-white-90: rgba(255, 255, 255, 0.9);
   --color-white-100: #ffffff;
-  --color-blue-100: #cee8ff;
+
+/* COLOR - BLUE */
+
+--color-blue-100: #cee8ff;
   --color-blue-200: #9dd0ff;
   --color-blue-300: #6cb9fe;
   --color-blue-400: #3ba2fe;
@@ -137,4 +165,3 @@
   --color-blue-alpha-30: rgba(1, 113, 214, 0.3);
   --color-blue-alpha-40: rgba(1, 113, 214, 0.4);
   --color-blue-alpha-50: rgba(1, 113, 214, 0.5);
-}
