@@ -1,8 +1,0 @@
-:root {
-  @import './color.css';
-  @import './typography.css';
-  @import './spacing.css';
-  @import './radius.css';
-  @import './border.css';
-  @import './effects.css';
-}
