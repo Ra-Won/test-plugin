@@ -1,44 +1,44 @@
 {
   "6xl": {
-    "value": "{48}"
+    "value": "{unit.48}"
   },
   "5xl": {
-    "value": "{40}"
+    "value": "{unit.40}"
   },
   "4xl": {
-    "value": "{36}"
+    "value": "{unit.36}"
   },
   "9xl": {
-    "value": "{72}"
+    "value": "{unit.72}"
   },
   "3xl": {
-    "value": "{32}"
+    "value": "{unit.32}"
   },
   "2xl": {
-    "value": "{28}"
+    "value": "{unit.28}"
   },
   "8xl": {
-    "value": "{64}"
+    "value": "{unit.64}"
   },
   "xl": {
-    "value": "{26}"
+    "value": "{unit.26}"
   },
   "m": {
-    "value": "{20}"
+    "value": "{unit.20}"
   },
   "10xl": {
-    "value": "{80}"
+    "value": "{unit.80}"
   },
   "s": {
-    "value": "{18}"
+    "value": "{unit.18}"
   },
   "l": {
-    "value": "{24}"
+    "value": "{unit.24}"
   },
   "7xl": {
-    "value": "{56}"
+    "value": "{unit.56}"
   },
   "xs": {
-    "value": "{16}"
+    "value": "{unit.16}"
   }
 }
