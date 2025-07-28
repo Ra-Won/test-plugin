@@ -1,0 +1,44 @@
+{
+  "xs": {
+    "value": "{unit.10}"
+  },
+  "s": {
+    "value": "{unit.12}"
+  },
+  "m": {
+    "value": "{unit.14}"
+  },
+  "l": {
+    "value": "{unit.16}"
+  },
+  "xl": {
+    "value": "{unit.18}"
+  },
+  "2xl": {
+    "value": "{unit.20}"
+  },
+  "3xl": {
+    "value": "{unit.24}"
+  },
+  "4xl": {
+    "value": "{unit.28}"
+  },
+  "5xl": {
+    "value": "{unit.32}"
+  },
+  "6xl": {
+    "value": "{unit.40}"
+  },
+  "7xl": {
+    "value": "{unit.48}"
+  },
+  "8xl": {
+    "value": "{unit.56}"
+  },
+  "9xl": {
+    "value": "{unit.64}"
+  },
+  "10xl": {
+    "value": "{unit.72}"
+  }
+}
