@@ -1,0 +1,17 @@
+{
+  "light": {
+    "value": "Light"
+  },
+  "regular": {
+    "value": "Regular"
+  },
+  "semi-bold": {
+    "value": "Semi Bold"
+  },
+  "medium": {
+    "value": "Medium"
+  },
+  "bold": {
+    "value": "Bold"
+  }
+}
