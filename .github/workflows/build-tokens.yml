@@ -3,7 +3,6 @@ name: Build and Commit Tokens
 on:
   workflow_dispatch:
 
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,15 +17,23 @@ jobs:
           node-version: '20'
 
       - name: Install Dependencies
-        run: npm install sass # Or install it as a dev dependency in your package.json
+        run: npm install sass
 
       - name: Generate SCSS Partials and JSON
         run: node scripts/build-tokens.js
 
-      - name: Compile Final tokens.css
-        run: npx sass packages/tokens/tokens.scss packages/tokens/dist/tokens.css --no-source-map
-
-      - name: Commit and Push Changes
+      - name: Commit SCSS Partials
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(tokens): build and commit latest tokens"
+          commit_message: "feat(tokens): generate scss partials"
+          file_pattern: "packages/tokens/**/*.scss"
+
+      - name: Compile Final tokens.css
+        # ✅ CORRECTED FILE PATH
+        run: npx sass packages/tokens/tokens.scss packages/tokens/dist/tokens.css --no-source-map
+
+      - name: Commit Final Dist Files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(tokens): build final css and json"
+          file_pattern: "packages/tokens/dist/*"
