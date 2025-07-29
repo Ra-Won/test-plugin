@@ -101,7 +101,7 @@ async function buildTokens() {
 
     mainScssContent += '// Forward primitive tokens (units first)\n';
     orderedFiles.forEach(file => {
-      mainScssContent += `@forward "primitive/scss/${file}";\n`;
+      mainScssContent += `@use "primitive/scss/${file}";\n`;
     });
   }
 
