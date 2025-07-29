@@ -1,0 +1,49 @@
+{
+  "graph-color": {
+    "b1": {
+      "value": "{primary.800}"
+    },
+    "b2": {
+      "value": "{primary.700}"
+    },
+    "b3": {
+      "value": "{primary.600}"
+    },
+    "g3": {
+      "value": "{secondary.500}"
+    },
+    "g2": {
+      "value": "{secondary.600}"
+    },
+    "g1": {
+      "value": "{secondary.700}"
+    },
+    "p3": {
+      "value": "{tertiary.300}"
+    },
+    "p2": {
+      "value": "{tertiary.500}"
+    },
+    "p1": {
+      "value": "{tertiary.700}"
+    },
+    "b0": {
+      "value": "{primary.900}"
+    },
+    "g0": {
+      "value": "{secondary.800}"
+    },
+    "p0": {
+      "value": "{tertiary.900}"
+    },
+    "b4": {
+      "value": "{primary.500}"
+    },
+    "g4": {
+      "value": "{secondary.100}"
+    },
+    "b5": {
+      "value": "{primary.400}"
+    }
+  }
+}
