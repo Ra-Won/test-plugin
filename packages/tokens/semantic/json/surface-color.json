@@ -1,0 +1,19 @@
+{
+  "surface-color": {
+    "l0": {
+      "value": "{white.100}"
+    },
+    "l1": {
+      "value": "{primary.alpha.10}"
+    },
+    "l2": {
+      "value": "{white.60}"
+    },
+    "l3": {
+      "value": "{white.40}"
+    },
+    "l4": {
+      "value": "{white.20}"
+    }
+  }
+}
