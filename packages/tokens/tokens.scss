@@ -1,20 +1,20 @@
 // This file is auto-generated. Do not edit.
 
 // Forward primitive tokens (units first)
-@forward "primitive/scss/_unit.scss";
-@forward "primitive/scss/_black.scss";
-@forward "primitive/scss/_blue.scss";
-@forward "primitive/scss/_font-family.scss";
-@forward "primitive/scss/_font-weight.scss";
-@forward "primitive/scss/_green.scss";
-@forward "primitive/scss/_grey.scss";
-@forward "primitive/scss/_letter-spacing.scss";
-@forward "primitive/scss/_orange.scss";
-@forward "primitive/scss/_primary.scss";
-@forward "primitive/scss/_red.scss";
-@forward "primitive/scss/_secondary.scss";
-@forward "primitive/scss/_tertiary.scss";
-@forward "primitive/scss/_white.scss";
+@use "primitive/scss/_unit.scss";
+@use "primitive/scss/_black.scss";
+@use "primitive/scss/_blue.scss";
+@use "primitive/scss/_font-family.scss";
+@use "primitive/scss/_font-weight.scss";
+@use "primitive/scss/_green.scss";
+@use "primitive/scss/_grey.scss";
+@use "primitive/scss/_letter-spacing.scss";
+@use "primitive/scss/_orange.scss";
+@use "primitive/scss/_primary.scss";
+@use "primitive/scss/_red.scss";
+@use "primitive/scss/_secondary.scss";
+@use "primitive/scss/_tertiary.scss";
+@use "primitive/scss/_white.scss";
 
 :root {
   --bg-color-primary: $white-100;
