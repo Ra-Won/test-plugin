@@ -3,7 +3,7 @@
     "l": {
       "light": {
         "size": {
-          "value": "{font-size.l}"
+          "value": "{unit.16}"
         },
         "line-height": {
           "value": "{line-height.l}"
@@ -20,7 +20,7 @@
           "value": "{font-weight.regular}"
         },
         "size": {
-          "value": "{font-size.l}"
+          "value": "{unit.16}"
         },
         "line-height": {
           "value": "{line-height.l}"
@@ -34,7 +34,7 @@
           "value": "{font-weight.semi-bold}"
         },
         "size": {
-          "value": "{font-size.l}"
+          "value": "{unit.16}"
         },
         "line-height": {
           "value": "{line-height.l}"
@@ -50,7 +50,7 @@
           "value": "{font-weight.light}"
         },
         "size": {
-          "value": "{font-size.m}"
+          "value": "{unit.14}"
         },
         "line-height": {
           "value": "{line-height.m}"
@@ -64,7 +64,7 @@
           "value": "{font-weight.regular}"
         },
         "size": {
-          "value": "{font-size.m}"
+          "value": "{unit.14}"
         },
         "line-height": {
           "value": "{line-height.m}"
@@ -78,7 +78,7 @@
           "value": "{font-weight.semi-bold}"
         },
         "size": {
-          "value": "{font-size.m}"
+          "value": "{unit.14}"
         },
         "line-height": {
           "value": "{line-height.m}"
@@ -94,7 +94,7 @@
           "value": "{font-weight.light}"
         },
         "size": {
-          "value": "{font-size.s}"
+          "value": "{unit.12}"
         },
         "line-height": {
           "value": "{line-height.s}"
@@ -108,7 +108,7 @@
           "value": "{font-weight.regular}"
         },
         "size": {
-          "value": "{font-size.s}"
+          "value": "{unit.12}"
         },
         "line-height": {
           "value": "{line-height.s}"
@@ -122,7 +122,7 @@
           "value": "{font-weight.semi-bold}"
         },
         "size": {
-          "value": "{font-size.s}"
+          "value": "{unit.12}"
         },
         "line-height": {
           "value": "{line-height.s}"
@@ -138,7 +138,7 @@
           "value": "{font-weight.light}"
         },
         "size": {
-          "value": "{font-size.xs}"
+          "value": "{unit.10}"
         },
         "line-height": {
           "value": "{line-height.xs}"
@@ -152,7 +152,7 @@
           "value": "{font-weight.regular}"
         },
         "size": {
-          "value": "{font-size.xs}"
+          "value": "{unit.10}"
         },
         "line-height": {
           "value": "{line-height.xs}"
@@ -166,7 +166,7 @@
           "value": "{font-weight.semi-bold}"
         },
         "size": {
-          "value": "{font-size.xs}"
+          "value": "{unit.10}"
         },
         "line-height": {
           "value": "{line-height.xs}"
@@ -182,7 +182,7 @@
           "value": "{font-weight.light}"
         },
         "size": {
-          "value": "{font-size.xl}"
+          "value": "{unit.18}"
         },
         "line-height": {
           "value": "{line-height.xl}"
@@ -196,7 +196,7 @@
           "value": "{font-weight.regular}"
         },
         "size": {
-          "value": "{font-size.xl}"
+          "value": "{unit.18}"
         },
         "line-height": {
           "value": "{line-height.xl}"
@@ -210,7 +210,7 @@
           "value": "{font-weight.semi-bold}"
         },
         "size": {
-          "value": "{font-size.xl}"
+          "value": "{unit.18}"
         },
         "line-height": {
           "value": "{line-height.xl}"
