@@ -24,7 +24,7 @@ function jsonToScss(obj, prefix = '') {
   return scssString;
 }
 
-// Helper to generate public CSS variables from a semantic JSON object
+// ✅ UPDATED HELPER: Generates public CSS variables that reference private Sass variables
 function generatePublicCssVars(obj, prefix = '') {
   let cssString = '';
   for (const key in obj) {
@@ -32,7 +32,15 @@ function generatePublicCssVars(obj, prefix = '') {
     const token = obj[key];
 
     if (token && typeof token.value !== 'undefined') {
-      cssString += `  --${newPrefix}: $${newPrefix};\n`; // e.g., --color-text-body: $semantic-color-text-body;
+      let cssValue = token.value;
+      // Check if the value is an alias to a primitive, e.g., {primitive.color.blue.500}
+      if (typeof cssValue === 'string' && cssValue.startsWith('{') && cssValue.endsWith('}')) {
+        // Convert the alias to a Sass variable reference, e.g., $primitive-color-blue-500
+        cssValue = `$${cssValue.slice(1, -1).replace(/\./g, '-')}`;
+      }
+      // If it's not an alias, it's a hardcoded value, which is fine too.
+      
+      cssString += `  --${newPrefix}: ${cssValue};\n`;
     } else if (typeof token === 'object' && token !== null) {
       cssString += generatePublicCssVars(token, newPrefix);
     }
@@ -75,20 +83,16 @@ async function buildTokens() {
     }
   }
 
-  // ✅ --- Auto-generate the main tokens.scss file with flexible ordering ---
+  // ✅ --- Auto-generate the main tokens.scss file with the new logic ---
   let mainScssContent = `// This file is auto-generated. Do not edit.\n\n`;
   
-  // Handle primitive imports (units first)
+  // Forward primitive tokens (units first)
   const primitiveScssDir = path.join(srcDir, 'primitive', 'scss');
   if (fs.existsSync(primitiveScssDir)) {
-    // 1. Read all primitive partials from the directory
     const allPrimitiveFiles = fs.readdirSync(primitiveScssDir).filter(f => f.endsWith('.scss'));
-    
-    // 2. Separate the 'units' file from the rest
     const unitsFile = allPrimitiveFiles.find(file => file.includes('unit'));
     const otherFiles = allPrimitiveFiles.filter(file => !file.includes('unit'));
     
-    // 3. Create the final ordered list, ensuring 'units' is first if it exists
     const orderedFiles = [];
     if (unitsFile) {
       orderedFiles.push(unitsFile);
@@ -101,16 +105,7 @@ async function buildTokens() {
     });
   }
 
-  // Handle semantic imports (order is less critical as they depend on primitives)
-  mainScssContent += '\n// Forward semantic tokens\n';
-  const semanticScssDir = path.join(srcDir, 'semantic', 'scss');
-  if (fs.existsSync(semanticScssDir)) {
-    fs.readdirSync(semanticScssDir).forEach(file => {
-      if (file.endsWith('.scss')) {
-        mainScssContent += `@forward "semantic/scss/${file}";\n`;
-      }
-    });
-  }
+  // ✅ REMOVED: No longer forwarding semantic partials.
   
   // Generate the :root block with public-facing CSS variables
   mainScssContent += `\n:root {\n`;
@@ -118,7 +113,8 @@ async function buildTokens() {
   mainScssContent += `}\n`;
 
   fs.writeFileSync(path.join(srcDir, 'tokens.scss'), mainScssContent);
-  console.log('Generated src/tokens.scss');
+  console.log('Generated tokens.scss');
+
   // --- 3. Write the final combined tokens.json ---
   fs.writeFileSync(path.join(distDir, 'tokens.json'), JSON.stringify(allTokens, null, 2));
   console.log('Generated dist/tokens.json');
