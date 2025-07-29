@@ -75,28 +75,50 @@ async function buildTokens() {
     }
   }
 
-  // --- 2. ✅ Auto-generate the main tokens.scss file ---
+  // ✅ --- Auto-generate the main tokens.scss file with flexible ordering ---
   let mainScssContent = `// This file is auto-generated. Do not edit.\n\n`;
-  const scssPartials = ['primitive/scss', 'semantic/scss'];
-
-  scssPartials.forEach(dir => {
-    const fullDir = path.join(srcDir, dir);
-    if (fs.existsSync(fullDir)) {
-      fs.readdirSync(fullDir).forEach(file => {
-        if (file.endsWith('.scss')) {
-          mainScssContent += `@forward "${dir}/${file}";\n`;
-        }
-      });
-    }
-  });
   
+  // Handle primitive imports (units first)
+  const primitiveScssDir = path.join(srcDir, 'primitive', 'scss');
+  if (fs.existsSync(primitiveScssDir)) {
+    // 1. Read all primitive partials from the directory
+    const allPrimitiveFiles = fs.readdirSync(primitiveScssDir).filter(f => f.endsWith('.scss'));
+    
+    // 2. Separate the 'units' file from the rest
+    const unitsFile = allPrimitiveFiles.find(file => file.includes('units'));
+    const otherFiles = allPrimitiveFiles.filter(file => !file.includes('units'));
+    
+    // 3. Create the final ordered list, ensuring 'units' is first if it exists
+    const orderedFiles = [];
+    if (unitsFile) {
+      orderedFiles.push(unitsFile);
+    }
+    orderedFiles.push(...otherFiles);
+
+    mainScssContent += '// Forward primitive tokens (units first)\n';
+    orderedFiles.forEach(file => {
+      mainScssContent += `@forward "primitive/scss/${file}";\n`;
+    });
+  }
+
+  // Handle semantic imports (order is less critical as they depend on primitives)
+  mainScssContent += '\n// Forward semantic tokens\n';
+  const semanticScssDir = path.join(srcDir, 'semantic', 'scss');
+  if (fs.existsSync(semanticScssDir)) {
+    fs.readdirSync(semanticScssDir).forEach(file => {
+      if (file.endsWith('.scss')) {
+        mainScssContent += `@forward "semantic/scss/${file}";\n`;
+      }
+    });
+  }
+  
+  // Generate the :root block with public-facing CSS variables
   mainScssContent += `\n:root {\n`;
   mainScssContent += generatePublicCssVars(semanticTokens);
   mainScssContent += `}\n`;
 
   fs.writeFileSync(path.join(srcDir, 'tokens.scss'), mainScssContent);
   console.log('Generated src/tokens.scss');
-
   // --- 3. Write the final combined tokens.json ---
   fs.writeFileSync(path.join(distDir, 'tokens.json'), JSON.stringify(allTokens, null, 2));
   console.log('Generated dist/tokens.json');
