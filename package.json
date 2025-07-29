@@ -6,7 +6,6 @@
     "apps/*"
   ],
   "scripts": {
-    "build": "npm run build --workspaces",
-    "build:tokens": "node scripts/build-tokens.js && npx sass packages/tokens/src/tokens.scss packages/tokens/dist/tokens.css --no-source-map"
+    "build": "npm run build --workspaces"
   }
 }
