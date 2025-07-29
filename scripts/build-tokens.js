@@ -84,7 +84,7 @@ async function buildTokens() {
     if (fs.existsSync(fullDir)) {
       fs.readdirSync(fullDir).forEach(file => {
         if (file.endsWith('.scss')) {
-          mainScssContent += `@import "${dir}/${file}";\n`;
+          mainScssContent += `@forward "${dir}/${file}";\n`;
         }
       });
     }
