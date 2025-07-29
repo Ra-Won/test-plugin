@@ -1,0 +1,16 @@
+{
+  "overlay-color": {
+    "20": {
+      "value": "{white.20}"
+    },
+    "60": {
+      "value": "{white.60}"
+    },
+    "inverse-20": {
+      "value": "{black.alpha.20}"
+    },
+    "inverse-60": {
+      "value": "{black.alpha.60}"
+    }
+  }
+}
