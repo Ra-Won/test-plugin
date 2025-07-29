@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const srcDir = path.join(__dirname, '..', 'packages', 'tokens', 'src');
+const srcDir = path.join(__dirname, '..', 'packages', 'tokens');
 const distDir = path.join(__dirname, '..', 'packages', 'tokens', 'dist');
 
 // Helper to convert a JSON token object to a flat string of SCSS variables
