@@ -85,8 +85,8 @@ async function buildTokens() {
     const allPrimitiveFiles = fs.readdirSync(primitiveScssDir).filter(f => f.endsWith('.scss'));
     
     // 2. Separate the 'units' file from the rest
-    const unitsFile = allPrimitiveFiles.find(file => file.includes('units'));
-    const otherFiles = allPrimitiveFiles.filter(file => !file.includes('units'));
+    const unitsFile = allPrimitiveFiles.find(file => file.includes('unit'));
+    const otherFiles = allPrimitiveFiles.filter(file => !file.includes('unit'));
     
     // 3. Create the final ordered list, ensuring 'units' is first if it exists
     const orderedFiles = [];
