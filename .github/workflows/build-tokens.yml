@@ -1,0 +1,35 @@
+name: Build and Commit Tokens
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'packages/tokens/src/**.json' # Only run when source JSON files change
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm install sass # Or install it as a dev dependency in your package.json
+
+      - name: Generate SCSS Partials and JSON
+        run: node scripts/build-tokens.js
+
+      - name: Compile Final tokens.css
+        run: npx sass packages/tokens/src/tokens.scss packages/tokens/dist/tokens.css --no-source-map
+
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(tokens): build and commit latest tokens"
