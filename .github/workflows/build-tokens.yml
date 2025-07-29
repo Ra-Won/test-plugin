@@ -6,7 +6,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
 
@@ -25,18 +24,14 @@ jobs:
       - name: Generate SCSS Partials and JSON
         run: node scripts/build-tokens.js
 
-      - name: Commit SCSS Partials
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "feat(tokens): generate scss partials"
-          file_pattern: "packages/tokens/**/*.scss"
-
       - name: Compile Final tokens.css
-        # ✅ CORRECTED FILE PATH
         run: npx sass packages/tokens/tokens.scss packages/tokens/dist/tokens.css --no-source-map
 
-      - name: Commit Final Dist Files
+      # ✅ CORRECTED: Use a single commit step at the end
+      - name: Commit All Generated Files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(tokens): build final css and json"
-          file_pattern: "packages/tokens/dist/*"
+          commit_message: "chore(tokens): build and commit latest tokens"
+          # This pattern tells the action to commit all changes within
+          # both the src and dist directories of the tokens package.
+          file_pattern: "packages/tokens/ packages/tokens/dist/"
