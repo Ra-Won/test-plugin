@@ -1,11 +1,8 @@
 name: Build and Commit Tokens
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'packages/tokens/src/**.json' # Only run when source JSON files change
+  workflow_dispatch:
+
 
 jobs:
   build:
