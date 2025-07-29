@@ -24,7 +24,7 @@ jobs:
         run: node scripts/build-tokens.js
 
       - name: Compile Final tokens.css
-        run: npx sass packages/tokens/src/tokens.scss packages/tokens/dist/tokens.css --no-source-map
+        run: npx sass packages/tokens/tokens.scss packages/tokens/dist/tokens.css --no-source-map
 
       - name: Commit and Push Changes
         uses: stefanzweifel/git-auto-commit-action@v5
