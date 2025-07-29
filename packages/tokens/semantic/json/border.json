@@ -1,0 +1,16 @@
+{
+  "border": {
+    "xl": {
+      "value": "{unit.2}"
+    },
+    "md": {
+      "value": "{unit.1}"
+    },
+    "lg": {
+      "value": "{unit.1o5}"
+    },
+    "sm": {
+      "value": "{unit.0o5}"
+    }
+  }
+}
