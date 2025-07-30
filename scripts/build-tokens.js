@@ -29,6 +29,44 @@ function jsonToScss(obj, prefix = '') {
   return scssString;
 }
 
+// ✅ NEW: Helper to generate typography classes from a typography JSON object
+function generateTypographyScss(typographyObject) {
+  const typographyPropertyMap = {
+    size: 'font-size',
+    weight: 'font-weight',
+    lineHeight: 'line-height',
+    letterSpacing: 'letter-spacing',
+    family: 'font-family',
+  };
+
+  let classStyles = '';
+
+  const buildClasses = (obj, path = []) => {
+    const isLeaf = Object.values(obj).every(val => typeof val === 'object' && val.value);
+
+    if (isLeaf) {
+      classStyles += `.${path.join('-')} {\n`;
+      for (const key in obj) {
+        const cssProp = typographyPropertyMap[key] || key;
+        let scssValue = obj[key].value;
+        if (typeof scssValue === 'string' && scssValue.startsWith('{') && scssValue.endsWith('}')) {
+          const ref = scssValue.slice(1, -1).replace(/\./g, '-');
+          scssValue = `#{$${ref}}`;
+        }
+        classStyles += `  ${cssProp}: ${scssValue};\n`;
+      }
+      classStyles += `}\n\n`;
+    } else {
+      for (const key in obj) {
+        buildClasses(obj[key], [...path, key]);
+      }
+    }
+  };
+
+  buildClasses(typographyObject);
+  return classStyles;
+}
+
 // Main build function
 async function buildTokens() {
   const semanticJsonForDist = {};
@@ -36,7 +74,7 @@ async function buildTokens() {
 
   if (!fs.existsSync(distDir)) fs.mkdirSync(distDir);
 
-  // --- 1. Generate SCSS partials from all source JSON files ---
+  // --- 1. Generate SCSS partials from JSON source files ---
   for (const type of tokenTypes) {
     const jsonDir = path.join(srcDir, type, 'json');
     const scssDir = path.join(srcDir, type, 'scss');
@@ -45,16 +83,30 @@ async function buildTokens() {
     if (fs.existsSync(jsonDir)) {
       fs.readdirSync(jsonDir).forEach(file => {
         if (file.endsWith('.json')) {
-          const jsonContent = JSON.parse(fs.readFileSync(path.join(jsonDir, file), 'utf-8'));
+          const filePath = path.join(jsonDir, file);
+          const jsonContent = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
           
+          Object.assign(allTokens, jsonContent);
           if (type === 'semantic') {
-            Object.assign(semanticJsonForDist, jsonContent);
+            Object.assign(semanticTokens, jsonContent);
           }
 
-          const scssContent = jsonToScss(jsonContent);
-          const scssFileName = `_${path.basename(file, '.json')}.scss`;
-          fs.writeFileSync(path.join(scssDir, scssFileName), scssContent);
-          console.log(`Generated ${scssFileName}`);
+          // ✅ UPDATED: Special handling for typography files
+          if (file.includes('typography')) {
+            // The typography JSON might contain multiple top-level keys (e.g., body, heading)
+            for (const key in jsonContent.typography) {
+              const scssContent = generateTypographyScss(jsonContent.typography[key]);
+              const scssFileName = `_${key}.scss`; // e.g., _body.scss, _heading.scss
+              fs.writeFileSync(path.join(scssDir, scssFileName), scssContent);
+              console.log(`Generated typography class file: ${scssFileName}`);
+            }
+          } else {
+            // Standard variable generation for all other files
+            const scssContent = jsonToScss(jsonContent, type === 'primitive' ? '' : type);
+            const scssFileName = `_${path.basename(file, '.json')}.scss`;
+            fs.writeFileSync(path.join(scssDir, scssFileName), scssContent);
+            console.log(`Generated SCSS partial: ${scssFileName}`);
+          }
         }
       });
     }
