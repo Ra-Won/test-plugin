@@ -94,7 +94,7 @@ async function buildTokens() {
           
           // ✅ CORRECTED: Special handling for body.json and heading.json
           if (type === 'semantic' && (file === 'body.json' || file === 'heading.json')) {
-            const scssContent = generateTypographyClasses(jsonContent);
+            const scssContent = generateTypographyScss(jsonContent);
             const scssFileName = `_${path.basename(file, '.json')}.scss`;
             fs.writeFileSync(path.join(scssDir, scssFileName), scssContent);
             console.log(`Generated typography class file: ${scssFileName}`);
