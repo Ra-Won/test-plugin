@@ -69,7 +69,8 @@ function generateTypographyScss(typographyObject) {
 
 // Main build function
 async function buildTokens() {
-  const semanticJsonForDist = {};
+  const allTokens = {};
+  const semanticTokens = {};
   const tokenTypes = ['primitive', 'semantic'];
 
   if (!fs.existsSync(distDir)) fs.mkdirSync(distDir);
@@ -90,19 +91,17 @@ async function buildTokens() {
           if (type === 'semantic') {
             Object.assign(semanticTokens, jsonContent);
           }
-
-          // ✅ UPDATED: Special handling for typography files
-          if (file.includes('typography')) {
-            // The typography JSON might contain multiple top-level keys (e.g., body, heading)
-            for (const key in jsonContent.typography) {
-              const scssContent = generateTypographyScss(jsonContent.typography[key]);
-              const scssFileName = `_${key}.scss`; // e.g., _body.scss, _heading.scss
-              fs.writeFileSync(path.join(scssDir, scssFileName), scssContent);
-              console.log(`Generated typography class file: ${scssFileName}`);
-            }
+          
+          // ✅ CORRECTED: Special handling for body.json and heading.json
+          if (type === 'semantic' && (file === 'body.json' || file === 'heading.json')) {
+            const scssContent = generateTypographyClasses(jsonContent);
+            const scssFileName = `_${path.basename(file, '.json')}.scss`;
+            fs.writeFileSync(path.join(scssDir, scssFileName), scssContent);
+            console.log(`Generated typography class file: ${scssFileName}`);
           } else {
             // Standard variable generation for all other files
-            const scssContent = jsonToScss(jsonContent, type === 'primitive' ? '' : type);
+            const prefix = (type === 'primitive') ? '' : type;
+            const scssContent = jsonToScss(jsonContent, prefix);
             const scssFileName = `_${path.basename(file, '.json')}.scss`;
             fs.writeFileSync(path.join(scssDir, scssFileName), scssContent);
             console.log(`Generated SCSS partial: ${scssFileName}`);
