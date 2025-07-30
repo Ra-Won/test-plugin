@@ -1,0 +1,49 @@
+{
+  "name": "Badge",
+  "props": {
+    "Icon#326:0": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Type": {
+      "type": "VARIANT",
+      "defaultValue": "Solid",
+      "variantOptions": [
+        "Regular",
+        "Solid",
+        "Outlined"
+      ]
+    },
+    "State": {
+      "type": "VARIANT",
+      "defaultValue": "Neutral",
+      "variantOptions": [
+        "Active",
+        "Neutral",
+        "Negative",
+        "Positive"
+      ]
+    }
+  },
+  "baseStyle": {
+    "display": "flex",
+    "flexDirection": "row",
+    "gap": "8px",
+    "padding": "8px 12px 8px 12px",
+    "backgroundColor": "var(--color-bg color-info subtle)",
+    "borderRadius": "4px"
+  },
+  "variants": {
+    "Type": {}
+  },
+  "children": [
+    {
+      "type": "INSTANCE",
+      "name": "Size=16"
+    },
+    {
+      "type": "TEXT",
+      "content": "Action Required"
+    }
+  ]
+}
