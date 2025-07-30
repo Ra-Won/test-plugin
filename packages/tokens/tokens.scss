@@ -1,20 +1,20 @@
 // This file is auto-generated. Do not edit.
 
 // Import all primitive tokens as private variables
-@use "primitive/scss/_black.scss" as *;
-@use "primitive/scss/_blue.scss" as *;
-@use "primitive/scss/_font-family.scss" as *;
-@use "primitive/scss/_font-weight.scss" as *;
-@use "primitive/scss/_green.scss" as *;
-@use "primitive/scss/_grey.scss" as *;
-@use "primitive/scss/_letter-spacing.scss" as *;
-@use "primitive/scss/_orange.scss" as *;
-@use "primitive/scss/_primary.scss" as *;
-@use "primitive/scss/_red.scss" as *;
-@use "primitive/scss/_secondary.scss" as *;
-@use "primitive/scss/_tertiary.scss" as *;
-@use "primitive/scss/_unit.scss" as *;
-@use "primitive/scss/_white.scss" as *;
+@use "./primitive/scss/_black.scss" as *;
+@use "./primitive/scss/_blue.scss" as *;
+@use "./primitive/scss/_font-family.scss" as *;
+@use "./primitive/scss/_font-weight.scss" as *;
+@use "./primitive/scss/_green.scss" as *;
+@use "./primitive/scss/_grey.scss" as *;
+@use "./primitive/scss/_letter-spacing.scss" as *;
+@use "./primitive/scss/_orange.scss" as *;
+@use "./primitive/scss/_primary.scss" as *;
+@use "./primitive/scss/_red.scss" as *;
+@use "./primitive/scss/_secondary.scss" as *;
+@use "./primitive/scss/_tertiary.scss" as *;
+@use "./primitive/scss/_unit.scss" as *;
+@use "./primitive/scss/_white.scss" as *;
 
 :root {
   --bg-color-primary: $white-100;
