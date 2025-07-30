@@ -1,0 +1,133 @@
+{
+  "name": "button",
+  "props": {
+    "Leading Icon#196:0": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Trailing Icon#196:10": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "CTA#196:20": {
+      "type": "TEXT",
+      "defaultValue": "Click Here"
+    },
+    "Type": {
+      "type": "VARIANT",
+      "defaultValue": "Primary",
+      "variantOptions": [
+        "Primary",
+        "Secondary",
+        "Tertiary",
+        "Alternative",
+        "Neutral",
+        "Negative",
+        "Sidebar"
+      ]
+    },
+    "State": {
+      "type": "VARIANT",
+      "defaultValue": "Base",
+      "variantOptions": [
+        "Base",
+        "Hovered",
+        "Pressed",
+        "Disabled"
+      ]
+    },
+    "Size": {
+      "type": "VARIANT",
+      "defaultValue": "L",
+      "variantOptions": [
+        "S",
+        "M",
+        "L"
+      ]
+    }
+  },
+  "baseStyle": {
+    "display": "flex",
+    "flexDirection": "row",
+    "gap": "12px",
+    "padding": "12px 16px 12px 16px",
+    "backgroundColor": "var(--semantic-bg color-brand)",
+    "borderRadius": "2px"
+  },
+  "variants": {
+    "Type": {
+      "Alternative": {
+        "padding": "8px 16px 8px 16px",
+        "backgroundColor": "var(--semantic-bg color-disabled)"
+      },
+      "Primary": {
+        "padding": "4px 16px 4px 16px",
+        "backgroundColor": "var(--semantic-bg color-disabled)"
+      },
+      "Secondary": {
+        "padding": "4px 16px 4px 16px",
+        "backgroundColor": "var(--semantic-bg color-primary)"
+      },
+      "Tertiary": {
+        "padding": "4px 16px 4px 16px"
+      },
+      "Neutral": {
+        "padding": "4px 16px 4px 16px",
+        "backgroundColor": "var(--semantic-bg color-disabled)"
+      },
+      "Negative": {
+        "padding": "4px 16px 4px 16px",
+        "backgroundColor": "var(--semantic-bg color-disabled)"
+      },
+      "Sidebar": {
+        "padding": "4px 16px 4px 16px",
+        "backgroundColor": "var(--semantic-bg color-disabled)"
+      }
+    },
+    "State": {
+      "Base": {
+        "padding": "4px 16px 4px 16px",
+        "backgroundColor": "var(--semantic-bg color-brand subtle)"
+      },
+      "Hovered": {
+        "padding": "4px 16px 4px 16px",
+        "backgroundColor": "var(--semantic-surface color-l1)"
+      },
+      "Pressed": {
+        "padding": "4px 16px 4px 16px",
+        "backgroundColor": "var(--semantic-bg color-brand pressed)"
+      },
+      "Disabled": {
+        "padding": "4px 16px 4px 16px",
+        "backgroundColor": "var(--semantic-bg color-disabled)"
+      }
+    },
+    "Size": {
+      "S": {
+        "padding": "4px 16px 4px 16px",
+        "backgroundColor": "var(--semantic-bg color-disabled)"
+      },
+      "L": {
+        "backgroundColor": "var(--semantic-bg color-disabled)"
+      },
+      "M": {
+        "padding": "8px 16px 8px 16px",
+        "backgroundColor": "var(--semantic-bg color-disabled)"
+      }
+    }
+  },
+  "children": [
+    {
+      "type": "INSTANCE",
+      "name": "Size=24"
+    },
+    {
+      "type": "TEXT",
+      "content": "Click Here"
+    },
+    {
+      "type": "INSTANCE",
+      "name": "Size=24"
+    }
+  ]
+}
