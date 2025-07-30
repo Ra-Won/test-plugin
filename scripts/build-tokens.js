@@ -84,7 +84,7 @@ async function buildTokens() {
   mainScssContent += '// Import all primitive tokens as private variables\n';
   fs.readdirSync(primitiveScssDir).forEach(file => {
     if (file.endsWith('.scss')) {
-      mainScssContent += `@use "primitive/scss/${file}" as *;\n`;
+      mainScssContent += `@use "./primitive/scss/${file}" as *;\n`;
     }
   });
 
