@@ -4,17 +4,22 @@ const path = require('path');
 const srcDir = path.join(__dirname, '..', 'packages', 'tokens');
 const distDir = path.join(__dirname, '..', 'packages', 'tokens', 'dist');
 
-// Helper to convert a JSON token object to a flat string of SCSS variables
+// Helper to format any token name part (replaces spaces and dots with hyphens)
+const formatName = (name) => name.toLowerCase().replace(/[\. ]/g, '-');
+
+// Helper to convert a JSON token object to a string of SCSS variables
 function jsonToScss(obj, prefix = '') {
   let scssString = '';
   for (const key in obj) {
-    const newPrefix = prefix ? `${prefix}-${key}` : key;
+    const newPrefix = prefix ? `${prefix}-${formatName(key)}` : formatName(key);
     const token = obj[key];
 
     if (token && typeof token.value !== 'undefined') {
       let scssValue = token.value;
       if (typeof scssValue === 'string' && scssValue.startsWith('{') && scssValue.endsWith('}')) {
-        scssValue = `$${scssValue.slice(1, -1).replace(/\./g, '-')}`;
+        // Handle alias references, e.g., {color.brand.500} -> #{$color-brand-500}
+        const ref = scssValue.slice(1, -1).replace(/\./g, '-');
+        scssValue = `#{'$' + ref}`;
       }
       scssString += `$${newPrefix}: ${scssValue};\n`;
     } else if (typeof token === 'object' && token !== null) {
@@ -24,80 +29,71 @@ function jsonToScss(obj, prefix = '') {
   return scssString;
 }
 
-// Helper to generate public CSS variables from semantic JSON, resolving aliases to primitive Sass vars
-function generatePublicCssVars(obj, prefix = '') {
-  let cssString = '';
-  for (const key in obj) {
-    const newPrefix = prefix ? `${prefix}-${key}` : key;
-    const token = obj[key];
-
-    if (token && typeof token.value !== 'undefined') {
-      let cssValue = token.value;
-      if (typeof cssValue === 'string' && cssValue.startsWith('{') && cssValue.endsWith('}')) {
-        // Convert alias {primitive.color.blue.500} to Sass variable $primitive-color-blue-500
-        cssValue = `$${cssValue.slice(1, -1).replace(/\./g, '-')}`;
-      }
-      cssString += `  --${newPrefix}: ${cssValue};\n`;
-    } else if (typeof token === 'object' && token !== null) {
-      cssString += generatePublicCssVars(token, newPrefix);
-    }
-  }
-  return cssString;
-}
-
 // Main build function
 async function buildTokens() {
-  const allTokens = {};
-  const semanticTokens = {};
+  const semanticJsonForDist = {};
+  const tokenTypes = ['primitive', 'semantic'];
 
-  // --- 1. Generate ONLY PRIMITIVE SCSS partials from source JSON ---
-  const primitiveJsonDir = path.join(srcDir, 'primitive', 'json');
+  if (!fs.existsSync(distDir)) fs.mkdirSync(distDir);
+
+  // --- 1. Generate SCSS partials from all source JSON files ---
+  for (const type of tokenTypes) {
+    const jsonDir = path.join(srcDir, type, 'json');
+    const scssDir = path.join(srcDir, type, 'scss');
+    if (!fs.existsSync(scssDir)) fs.mkdirSync(scssDir, { recursive: true });
+
+    if (fs.existsSync(jsonDir)) {
+      fs.readdirSync(jsonDir).forEach(file => {
+        if (file.endsWith('.json')) {
+          const jsonContent = JSON.parse(fs.readFileSync(path.join(jsonDir, file), 'utf-8'));
+          
+          if (type === 'semantic') {
+            Object.assign(semanticJsonForDist, jsonContent);
+          }
+
+          const scssContent = jsonToScss(jsonContent, type);
+          const scssFileName = `_${path.basename(file, '.json')}.scss`;
+          fs.writeFileSync(path.join(scssDir, scssFileName), scssContent);
+          console.log(`Generated ${scssFileName}`);
+        }
+      });
+    }
+  }
+
+  // --- 2. Auto-generate the main tokens.scss file ---
+  let mainScssContent = `// This file is auto-generated. Do not edit.\n\n`;
+  mainScssContent += '// Import all primitive tokens as private variables\n';
+  
   const primitiveScssDir = path.join(srcDir, 'primitive', 'scss');
-  if (!fs.existsSync(primitiveScssDir)) fs.mkdirSync(primitiveScssDir, { recursive: true });
-
-  if (fs.existsSync(primitiveJsonDir)) {
-    fs.readdirSync(primitiveJsonDir).forEach(file => {
-      if (file.endsWith('.json')) {
-        const jsonContent = JSON.parse(fs.readFileSync(path.join(primitiveJsonDir, file), 'utf-8'));
-        Object.assign(allTokens, jsonContent);
-        const scssContent = jsonToScss(jsonContent);
-        const scssFileName = `_${path.basename(file, '.json')}.scss`;
-        fs.writeFileSync(path.join(primitiveScssDir, scssFileName), scssContent);
+  if (fs.existsSync(primitiveScssDir)) {
+    fs.readdirSync(primitiveScssDir).forEach(file => {
+      if (file.endsWith('.scss')) {
+        mainScssContent += `@use "./primitive/scss/${file}" as *;\n`;
       }
     });
   }
 
-  // --- 2. Read semantic JSON for the next step ---
-  const semanticJsonDir = path.join(srcDir, 'semantic', 'json');
-  if (fs.existsSync(semanticJsonDir)) {
-      fs.readdirSync(semanticJsonDir).forEach(file => {
-          if(file.endsWith('.json')) {
-              const jsonContent = JSON.parse(fs.readFileSync(path.join(semanticJsonDir, file), 'utf-8'));
-              Object.assign(allTokens, jsonContent);
-              Object.assign(semanticTokens, jsonContent);
-          }
-      });
-  }
-
-  // --- 3. Auto-generate the main tokens.scss file ---
-  let mainScssContent = `// This file is auto-generated. Do not edit.\n\n`;
-  mainScssContent += '// Import all primitive tokens as private variables\n';
-  fs.readdirSync(primitiveScssDir).forEach(file => {
-    if (file.endsWith('.scss')) {
-      mainScssContent += `@use "./primitive/scss/${file}" as *;\n`;
-    }
-  });
-
   mainScssContent += `\n:root {\n`;
-  mainScssContent += generatePublicCssVars(semanticTokens); // Directly use semantic JSON here
+  const semanticScssDir = path.join(srcDir, 'semantic', 'scss');
+  if (fs.existsSync(semanticScssDir)) {
+    fs.readdirSync(semanticScssDir).forEach(file => {
+      if (file.endsWith('.scss')) {
+        const fileBaseName = path.basename(file, '.scss').substring(1); // Get name without '_'
+        mainScssContent += `  /* --- ${fileBaseName} --- */\n`;
+        const scssContent = fs.readFileSync(path.join(semanticScssDir, file), 'utf-8');
+        // Transform $var: val; into --var: val;
+        const cssContent = scssContent.replace(/\$([a-zA-Z0-9-]+)/g, '--$1');
+        mainScssContent += `${cssContent}\n`;
+      }
+    });
+  }
   mainScssContent += `}\n`;
 
   fs.writeFileSync(path.join(srcDir, 'tokens.scss'), mainScssContent);
   console.log('Generated src/tokens.scss');
 
-  // --- 4. Write final combined tokens.json ---
-  if (!fs.existsSync(distDir)) fs.mkdirSync(distDir);
-  fs.writeFileSync(path.join(distDir, 'tokens.json'), JSON.stringify(allTokens, null, 2));
+  // --- 3. Write the final semantic-only tokens.json ---
+  fs.writeFileSync(path.join(distDir, 'tokens.json'), JSON.stringify(semanticJsonForDist, null, 2));
   console.log('Generated dist/tokens.json');
 }
 
