@@ -1,0 +1,49 @@
+{
+  "name": "Badge v2",
+  "props": {
+    "Type": {
+      "type": "VARIANT",
+      "defaultValue": "Solid",
+      "variantOptions": [
+        "Solid",
+        "Outlined",
+        "BG"
+      ]
+    },
+    "Variant": {
+      "type": "VARIANT",
+      "defaultValue": "Info",
+      "variantOptions": [
+        "Info",
+        "Positive",
+        "Warning",
+        "Error",
+        "Neutral"
+      ]
+    },
+    "Sizes": {
+      "type": "VARIANT",
+      "defaultValue": "Large",
+      "variantOptions": [
+        "Large",
+        "Small"
+      ]
+    }
+  },
+  "baseStyle": {
+    "display": "flex",
+    "flexDirection": "row",
+    "gap": "0px",
+    "padding": "0px 0px 0px 0px",
+    "borderRadius": "4px"
+  },
+  "variants": {
+    "Type": {}
+  },
+  "children": [
+    {
+      "type": "INSTANCE",
+      "name": "Sizes=Large"
+    }
+  ]
+}
