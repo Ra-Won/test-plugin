@@ -144,7 +144,7 @@ async function buildTokens() {
   console.log('Generated src/tokens.scss');
 
   // --- 3. Write the final semantic-only tokens.json ---
-  fs.writeFileSync(path.join(distDir, 'tokens.json'), JSON.stringify(semanticJsonForDist, null, 2));
+  fs.writeFileSync(path.join(distDir, 'tokens.json'), JSON.stringify(semanticTokens, null, 2));
   console.log('Generated dist/tokens.json');
 }
 
