@@ -1,4 +1,4 @@
-$semantic-radius-xl: #{'$' + ref};
-$semantic-radius-m: #{'$' + ref};
-$semantic-radius-l: #{'$' + ref};
-$semantic-radius-s: #{'$' + ref};
+$semantic-radius-xl: #{$unit-16};
+$semantic-radius-m: #{$unit-4};
+$semantic-radius-l: #{$unit-8};
+$semantic-radius-s: #{$unit-2};

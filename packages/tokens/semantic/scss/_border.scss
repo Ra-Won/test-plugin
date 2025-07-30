@@ -1,4 +1,4 @@
-$semantic-border-xl: #{'$' + ref};
-$semantic-border-md: #{'$' + ref};
-$semantic-border-lg: #{'$' + ref};
-$semantic-border-sm: #{'$' + ref};
+$semantic-border-xl: #{$unit-2};
+$semantic-border-md: #{$unit-1};
+$semantic-border-lg: #{$unit-1o5};
+$semantic-border-sm: #{$unit-0o5};
