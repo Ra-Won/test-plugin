@@ -101,7 +101,7 @@ async function buildTokens() {
           } else {
             // Standard variable generation for all other files
             const prefix = (type === 'primitive') ? '' : type;
-            const scssContent = jsonToScss(jsonContent, prefix);
+            const scssContent = jsonToScss(jsonContent);
             const scssFileName = `_${path.basename(file, '.json')}.scss`;
             fs.writeFileSync(path.join(scssDir, scssFileName), scssContent);
             console.log(`Generated SCSS partial: ${scssFileName}`);
