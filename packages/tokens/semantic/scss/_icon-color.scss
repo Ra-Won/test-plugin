@@ -1,9 +1,9 @@
-$icon-color-primary: $black-900;
-$icon-color-secondary: $black-700;
-$icon-color-disabled: $grey-200;
-$icon-color-info: $blue-500;
-$icon-color-warning: $orange-500;
-$icon-color-negative: $red-500;
-$icon-color-positive: $green-600;
-$icon-color-inverse: $white-100;
-$icon-color-brand: $primary-500;
+$semantic-icon-color-primary: #{'$' + ref};
+$semantic-icon-color-secondary: #{'$' + ref};
+$semantic-icon-color-disabled: #{'$' + ref};
+$semantic-icon-color-info: #{'$' + ref};
+$semantic-icon-color-warning: #{'$' + ref};
+$semantic-icon-color-negative: #{'$' + ref};
+$semantic-icon-color-positive: #{'$' + ref};
+$semantic-icon-color-inverse: #{'$' + ref};
+$semantic-icon-color-brand: #{'$' + ref};
