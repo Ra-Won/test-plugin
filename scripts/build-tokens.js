@@ -19,7 +19,7 @@ function jsonToScss(obj, prefix = '') {
       if (typeof scssValue === 'string' && scssValue.startsWith('{') && scssValue.endsWith('}')) {
         // Handle alias references, e.g., {color.brand.500} -> #{$color-brand-500}
         const ref = scssValue.slice(1, -1).replace(/\./g, '-');
-        scssValue = `#{'$' + ref}`;
+        scssValue = `#{$${ref}}`;
       }
       scssString += `$${newPrefix}: ${scssValue};\n`;
     } else if (typeof token === 'object' && token !== null) {
