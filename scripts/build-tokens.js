@@ -51,7 +51,7 @@ async function buildTokens() {
             Object.assign(semanticJsonForDist, jsonContent);
           }
 
-          const scssContent = jsonToScss(jsonContent, type);
+          const scssContent = jsonToScss(jsonContent);
           const scssFileName = `_${path.basename(file, '.json')}.scss`;
           fs.writeFileSync(path.join(scssDir, scssFileName), scssContent);
           console.log(`Generated ${scssFileName}`);
