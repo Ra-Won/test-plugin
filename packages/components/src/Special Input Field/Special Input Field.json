@@ -1,0 +1,50 @@
+{
+  "name": "Special Input Field",
+  "props": {
+    "Help Text#939:0": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "Type": {
+      "type": "VARIANT",
+      "defaultValue": "Icon",
+      "variantOptions": [
+        "Icon",
+        "Unit",
+        "None"
+      ]
+    },
+    "States": {
+      "type": "VARIANT",
+      "defaultValue": "Default",
+      "variantOptions": [
+        "Negative",
+        "Default",
+        "Hover",
+        "Pressed",
+        "Disabled",
+        "Positive",
+        "End"
+      ]
+    }
+  },
+  "baseStyle": {
+    "display": "flex",
+    "flexDirection": "column",
+    "gap": "8px",
+    "padding": "0px 0px 0px 0px"
+  },
+  "variants": {
+    "Type": {}
+  },
+  "children": [
+    {
+      "type": "TEXT",
+      "content": "Input Label"
+    },
+    {
+      "type": "TEXT",
+      "content": "Help Text"
+    }
+  ]
+}
