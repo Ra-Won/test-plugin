@@ -81,8 +81,8 @@ async function buildTokens() {
         const fileBaseName = path.basename(file, '.scss').substring(1); // Get name without '_'
         mainScssContent += `  /* --- ${fileBaseName} --- */\n`;
         const scssContent = fs.readFileSync(path.join(semanticScssDir, file), 'utf-8');
-        // Transform $var: val; into --var: val;
-        const cssContent = scssContent.replace(/\$([a-zA-Z0-9-]+)/g, '--$1');
+        // Transform $var: val; into --var: val; but only at the start of a line
+        const cssContent = scssContent.replace(/^\$([a-zA-Z0-9-]+)/gm, '--$1');
         mainScssContent += `${cssContent}\n`;
       }
     });
