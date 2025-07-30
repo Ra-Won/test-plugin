@@ -1,60 +1,105 @@
-$body-l-light-size: #{$unit-16};
-$body-l-light-line-height: #{$unit-24};
-$body-l-light-letter-spacing: #{$letter-spacing-none};
-$body-l-light-weight: #{$font-weight-light};
-$body-l-regular-weight: #{$font-weight-regular};
-$body-l-regular-size: #{$unit-16};
-$body-l-regular-line-height: #{$unit-24};
-$body-l-regular-letter-spacing: #{$letter-spacing-none};
-$body-l-semibold-weight: #{$font-weight-semi-bold};
-$body-l-semibold-size: #{$unit-16};
-$body-l-semibold-line-height: #{$unit-24};
-$body-l-semibold-letter-spacing: #{$letter-spacing-none};
-$body-m-light-weight: #{$font-weight-light};
-$body-m-light-size: #{$unit-14};
-$body-m-light-line-height: #{$unit-20};
-$body-m-light-letter-spacing: #{$letter-spacing-none};
-$body-m-regular-weight: #{$font-weight-regular};
-$body-m-regular-size: #{$unit-14};
-$body-m-regular-line-height: #{$unit-20};
-$body-m-regular-letter-spacing: #{$letter-spacing-none};
-$body-m-semibold-weight: #{$font-weight-semi-bold};
-$body-m-semibold-size: #{$unit-14};
-$body-m-semibold-line-height: #{$unit-20};
-$body-m-semibold-letter-spacing: #{$letter-spacing-none};
-$body-s-light-weight: #{$font-weight-light};
-$body-s-light-size: #{$unit-12};
-$body-s-light-line-height: #{$unit-18};
-$body-s-light-letter-spacing: #{$letter-spacing-none};
-$body-s-regular-weight: #{$font-weight-regular};
-$body-s-regular-size: #{$unit-12};
-$body-s-regular-line-height: #{$unit-18};
-$body-s-regular-letter-spacing: #{$letter-spacing-none};
-$body-s-semibold-weight: #{$font-weight-semi-bold};
-$body-s-semibold-size: #{$unit-12};
-$body-s-semibold-line-height: #{$unit-18};
-$body-s-semibold-letter-spacing: #{$letter-spacing-none};
-$body-xs-light-weight: #{$font-weight-light};
-$body-xs-light-size: #{$unit-10};
-$body-xs-light-line-height: #{$unit-16};
-$body-xs-light-letter-spacing: #{$letter-spacing-none};
-$body-xs-regular-weight: #{$font-weight-regular};
-$body-xs-regular-size: #{$unit-10};
-$body-xs-regular-line-height: #{$unit-16};
-$body-xs-regular-letter-spacing: #{$letter-spacing-none};
-$body-xs-semibold-weight: #{$font-weight-semi-bold};
-$body-xs-semibold-size: #{$unit-10};
-$body-xs-semibold-line-height: #{$unit-16};
-$body-xs-semibold-letter-spacing: #{$letter-spacing-none};
-$body-xl-light-weight: #{$font-weight-light};
-$body-xl-light-size: #{$unit-18};
-$body-xl-light-line-height: #{$unit-26};
-$body-xl-light-letter-spacing: #{$letter-spacing-none};
-$body-xl-regular-weight: #{$font-weight-regular};
-$body-xl-regular-size: #{$unit-18};
-$body-xl-regular-line-height: #{$unit-26};
-$body-xl-regular-letter-spacing: #{$letter-spacing-none};
-$body-xl-semibold-weight: #{$font-weight-semi-bold};
-$body-xl-semibold-size: #{$unit-18};
-$body-xl-semibold-line-height: #{$unit-26};
-$body-xl-semibold-letter-spacing: #{$letter-spacing-none};
+.body-l-light {
+  font-size: #{$unit-16};
+  line-height: #{$unit-24};
+  letter-spacing: #{$letter-spacing-none};
+  font-weight: #{$font-weight-light};
+}
+
+.body-l-regular {
+  font-weight: #{$font-weight-regular};
+  font-size: #{$unit-16};
+  line-height: #{$unit-24};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-l-semibold {
+  font-weight: #{$font-weight-semi-bold};
+  font-size: #{$unit-16};
+  line-height: #{$unit-24};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-m-light {
+  font-weight: #{$font-weight-light};
+  font-size: #{$unit-14};
+  line-height: #{$unit-20};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-m-regular {
+  font-weight: #{$font-weight-regular};
+  font-size: #{$unit-14};
+  line-height: #{$unit-20};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-m-semibold {
+  font-weight: #{$font-weight-semi-bold};
+  font-size: #{$unit-14};
+  line-height: #{$unit-20};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-s-light {
+  font-weight: #{$font-weight-light};
+  font-size: #{$unit-12};
+  line-height: #{$unit-18};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-s-regular {
+  font-weight: #{$font-weight-regular};
+  font-size: #{$unit-12};
+  line-height: #{$unit-18};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-s-semibold {
+  font-weight: #{$font-weight-semi-bold};
+  font-size: #{$unit-12};
+  line-height: #{$unit-18};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-xs-light {
+  font-weight: #{$font-weight-light};
+  font-size: #{$unit-10};
+  line-height: #{$unit-16};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-xs-regular {
+  font-weight: #{$font-weight-regular};
+  font-size: #{$unit-10};
+  line-height: #{$unit-16};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-xs-semibold {
+  font-weight: #{$font-weight-semi-bold};
+  font-size: #{$unit-10};
+  line-height: #{$unit-16};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-xl-light {
+  font-weight: #{$font-weight-light};
+  font-size: #{$unit-18};
+  line-height: #{$unit-26};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-xl-regular {
+  font-weight: #{$font-weight-regular};
+  font-size: #{$unit-18};
+  line-height: #{$unit-26};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-xl-semibold {
+  font-weight: #{$font-weight-semi-bold};
+  font-size: #{$unit-18};
+  line-height: #{$unit-26};
+  letter-spacing: #{$letter-spacing-none};
+}
+

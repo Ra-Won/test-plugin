@@ -49,66 +49,111 @@
 --bg-color-brand-subtle: #{$primary-alpha-10};
 
   /* --- body --- */
---body-l-light-size: #{$unit-16};
---body-l-light-line-height: #{$unit-24};
---body-l-light-letter-spacing: #{$letter-spacing-none};
---body-l-light-weight: #{$font-weight-light};
---body-l-regular-weight: #{$font-weight-regular};
---body-l-regular-size: #{$unit-16};
---body-l-regular-line-height: #{$unit-24};
---body-l-regular-letter-spacing: #{$letter-spacing-none};
---body-l-semibold-weight: #{$font-weight-semi-bold};
---body-l-semibold-size: #{$unit-16};
---body-l-semibold-line-height: #{$unit-24};
---body-l-semibold-letter-spacing: #{$letter-spacing-none};
---body-m-light-weight: #{$font-weight-light};
---body-m-light-size: #{$unit-14};
---body-m-light-line-height: #{$unit-20};
---body-m-light-letter-spacing: #{$letter-spacing-none};
---body-m-regular-weight: #{$font-weight-regular};
---body-m-regular-size: #{$unit-14};
---body-m-regular-line-height: #{$unit-20};
---body-m-regular-letter-spacing: #{$letter-spacing-none};
---body-m-semibold-weight: #{$font-weight-semi-bold};
---body-m-semibold-size: #{$unit-14};
---body-m-semibold-line-height: #{$unit-20};
---body-m-semibold-letter-spacing: #{$letter-spacing-none};
---body-s-light-weight: #{$font-weight-light};
---body-s-light-size: #{$unit-12};
---body-s-light-line-height: #{$unit-18};
---body-s-light-letter-spacing: #{$letter-spacing-none};
---body-s-regular-weight: #{$font-weight-regular};
---body-s-regular-size: #{$unit-12};
---body-s-regular-line-height: #{$unit-18};
---body-s-regular-letter-spacing: #{$letter-spacing-none};
---body-s-semibold-weight: #{$font-weight-semi-bold};
---body-s-semibold-size: #{$unit-12};
---body-s-semibold-line-height: #{$unit-18};
---body-s-semibold-letter-spacing: #{$letter-spacing-none};
---body-xs-light-weight: #{$font-weight-light};
---body-xs-light-size: #{$unit-10};
---body-xs-light-line-height: #{$unit-16};
---body-xs-light-letter-spacing: #{$letter-spacing-none};
---body-xs-regular-weight: #{$font-weight-regular};
---body-xs-regular-size: #{$unit-10};
---body-xs-regular-line-height: #{$unit-16};
---body-xs-regular-letter-spacing: #{$letter-spacing-none};
---body-xs-semibold-weight: #{$font-weight-semi-bold};
---body-xs-semibold-size: #{$unit-10};
---body-xs-semibold-line-height: #{$unit-16};
---body-xs-semibold-letter-spacing: #{$letter-spacing-none};
---body-xl-light-weight: #{$font-weight-light};
---body-xl-light-size: #{$unit-18};
---body-xl-light-line-height: #{$unit-26};
---body-xl-light-letter-spacing: #{$letter-spacing-none};
---body-xl-regular-weight: #{$font-weight-regular};
---body-xl-regular-size: #{$unit-18};
---body-xl-regular-line-height: #{$unit-26};
---body-xl-regular-letter-spacing: #{$letter-spacing-none};
---body-xl-semibold-weight: #{$font-weight-semi-bold};
---body-xl-semibold-size: #{$unit-18};
---body-xl-semibold-line-height: #{$unit-26};
---body-xl-semibold-letter-spacing: #{$letter-spacing-none};
+.body-l-light {
+  font-size: #{$unit-16};
+  line-height: #{$unit-24};
+  letter-spacing: #{$letter-spacing-none};
+  font-weight: #{$font-weight-light};
+}
+
+.body-l-regular {
+  font-weight: #{$font-weight-regular};
+  font-size: #{$unit-16};
+  line-height: #{$unit-24};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-l-semibold {
+  font-weight: #{$font-weight-semi-bold};
+  font-size: #{$unit-16};
+  line-height: #{$unit-24};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-m-light {
+  font-weight: #{$font-weight-light};
+  font-size: #{$unit-14};
+  line-height: #{$unit-20};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-m-regular {
+  font-weight: #{$font-weight-regular};
+  font-size: #{$unit-14};
+  line-height: #{$unit-20};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-m-semibold {
+  font-weight: #{$font-weight-semi-bold};
+  font-size: #{$unit-14};
+  line-height: #{$unit-20};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-s-light {
+  font-weight: #{$font-weight-light};
+  font-size: #{$unit-12};
+  line-height: #{$unit-18};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-s-regular {
+  font-weight: #{$font-weight-regular};
+  font-size: #{$unit-12};
+  line-height: #{$unit-18};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-s-semibold {
+  font-weight: #{$font-weight-semi-bold};
+  font-size: #{$unit-12};
+  line-height: #{$unit-18};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-xs-light {
+  font-weight: #{$font-weight-light};
+  font-size: #{$unit-10};
+  line-height: #{$unit-16};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-xs-regular {
+  font-weight: #{$font-weight-regular};
+  font-size: #{$unit-10};
+  line-height: #{$unit-16};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-xs-semibold {
+  font-weight: #{$font-weight-semi-bold};
+  font-size: #{$unit-10};
+  line-height: #{$unit-16};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-xl-light {
+  font-weight: #{$font-weight-light};
+  font-size: #{$unit-18};
+  line-height: #{$unit-26};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-xl-regular {
+  font-weight: #{$font-weight-regular};
+  font-size: #{$unit-18};
+  line-height: #{$unit-26};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.body-xl-semibold {
+  font-weight: #{$font-weight-semi-bold};
+  font-size: #{$unit-18};
+  line-height: #{$unit-26};
+  letter-spacing: #{$letter-spacing-none};
+}
+
 
   /* --- border-color --- */
 --border-color-pressed: #{$grey-400};
@@ -152,126 +197,216 @@
 --graph-color-b5: #{$primary-400};
 
   /* --- heading --- */
---heading-xl-light-weight: #{$font-weight-light};
---heading-xl-light-size: #{$unit-40};
---heading-xl-light-line-height: #{$unit-48};
---heading-xl-light-letter-spacing: #{$letter-spacing-xs};
---heading-xl-regular-weight: #{$font-weight-regular};
---heading-xl-regular-size: #{$unit-40};
---heading-xl-regular-line-height: #{$unit-48};
---heading-xl-regular-letter-spacing: #{$letter-spacing-xs};
---heading-xl-semibold-weight: #{$font-weight-semi-bold};
---heading-xl-semibold-size: #{$unit-40};
---heading-xl-semibold-line-height: #{$unit-48};
---heading-xl-semibold-letter-spacing: #{$letter-spacing-xs};
---heading-l-light-weight: #{$font-weight-light};
---heading-l-light-size: #{$unit-32};
---heading-l-light-line-height: #{$unit-40};
---heading-l-light-letter-spacing: #{$letter-spacing-xs};
---heading-l-regular-weight: #{$font-weight-regular};
---heading-l-regular-size: #{$unit-32};
---heading-l-regular-line-height: #{$unit-40};
---heading-l-regular-letter-spacing: #{$letter-spacing-xs};
---heading-l-semibold-weight: #{$font-weight-semi-bold};
---heading-l-semibold-size: #{$unit-32};
---heading-l-semibold-line-height: #{$unit-40};
---heading-l-semibold-letter-spacing: #{$letter-spacing-xs};
---heading-m-light-weight: #{$font-weight-light};
---heading-m-light-size: #{$unit-24};
---heading-m-light-line-height: #{$unit-32};
---heading-m-light-letter-spacing: #{$letter-spacing-s};
---heading-m-regular-weight: #{$font-weight-regular};
---heading-m-regular-size: #{$unit-24};
---heading-m-regular-line-height: #{$unit-32};
---heading-m-regular-letter-spacing: #{$letter-spacing-s};
---heading-m-semibold-weight: #{$font-weight-semi-bold};
---heading-m-semibold-size: #{$unit-24};
---heading-m-semibold-line-height: #{$unit-32};
---heading-m-semibold-letter-spacing: #{$letter-spacing-s};
---heading-s-light-weight: #{$font-weight-light};
---heading-s-light-size: #{$unit-20};
---heading-s-light-line-height: #{$unit-28};
---heading-s-light-letter-spacing: #{$letter-spacing-s};
---heading-s-regular-weight: #{$font-weight-regular};
---heading-s-regular-size: #{$unit-20};
---heading-s-regular-line-height: #{$unit-28};
---heading-s-regular-letter-spacing: #{$letter-spacing-s};
---heading-s-semibold-weight: #{$font-weight-semi-bold};
---heading-s-semibold-size: #{$unit-20};
---heading-s-semibold-line-height: #{$unit-28};
---heading-s-semibold-letter-spacing: #{$letter-spacing-s};
---heading-xs-light-weight: #{$font-weight-light};
---heading-xs-light-size: #{$unit-16};
---heading-xs-light-line-height: #{$unit-24};
---heading-xs-light-letter-spacing: #{$letter-spacing-s};
---heading-xs-regular-weight: #{$font-weight-regular};
---heading-xs-regular-size: #{$unit-16};
---heading-xs-regular-line-height: #{$unit-24};
---heading-xs-regular-letter-spacing: #{$letter-spacing-s};
---heading-xs-semibold-weight: #{$font-weight-semi-bold};
---heading-xs-semibold-size: #{$unit-16};
---heading-xs-semibold-line-height: #{$unit-24};
---heading-xs-semibold-letter-spacing: #{$letter-spacing-s};
---heading-2xs-light-weight: #{$font-weight-light};
---heading-2xs-light-size: #{$unit-14};
---heading-2xs-light-line-height: #{$unit-20};
---heading-2xs-light-letter-spacing: #{$letter-spacing-none};
---heading-2xs-regular-weight: #{$font-weight-regular};
---heading-2xs-regular-size: #{$unit-14};
---heading-2xs-regular-line-height: #{$unit-20};
---heading-2xs-regular-letter-spacing: #{$letter-spacing-none};
---heading-2xs-semibold-weight: #{$font-weight-semi-bold};
---heading-2xs-semibold-size: #{$unit-14};
---heading-2xs-semibold-line-height: #{$unit-20};
---heading-2xs-semibold-letter-spacing: #{$letter-spacing-none};
---heading-2xl-light-weight: #{$font-weight-light};
---heading-2xl-light-size: #{$unit-48};
---heading-2xl-light-line-height: #{$unit-56};
---heading-2xl-light-letter-spacing: #{$letter-spacing-xs};
---heading-2xl-regular-weight: #{$font-weight-regular};
---heading-2xl-regular-size: #{$unit-48};
---heading-2xl-regular-line-height: #{$unit-56};
---heading-2xl-regular-letter-spacing: #{$letter-spacing-xs};
---heading-2xl-semibold-weight: #{$font-weight-semi-bold};
---heading-2xl-semibold-size: #{$unit-48};
---heading-2xl-semibold-line-height: #{$unit-56};
---heading-2xl-semibold-letter-spacing: #{$letter-spacing-xs};
---heading-3xl-light-weight: #{$font-weight-light};
---heading-3xl-light-size: #{$unit-56};
---heading-3xl-light-line-height: #{$unit-64};
---heading-3xl-light-letter-spacing: #{$letter-spacing-xs};
---heading-3xl-regular-weight: #{$font-weight-regular};
---heading-3xl-regular-size: #{$unit-56};
---heading-3xl-regular-line-height: #{$unit-64};
---heading-3xl-regular-letter-spacing: #{$letter-spacing-xs};
---heading-3xl-semibold-weight: #{$font-weight-semi-bold};
---heading-3xl-semibold-size: #{$unit-56};
---heading-3xl-semibold-line-height: #{$unit-64};
---heading-3xl-semibold-letter-spacing: #{$letter-spacing-xs};
---heading-4xl-light-weight: #{$font-weight-light};
---heading-4xl-light-size: #{$unit-64};
---heading-4xl-light-line-height: #{$unit-72};
---heading-4xl-light-letter-spacing: #{$letter-spacing-xs};
---heading-4xl-regular-weight: #{$font-weight-regular};
---heading-4xl-regular-size: #{$unit-64};
---heading-4xl-regular-line-height: #{$unit-72};
---heading-4xl-regular-letter-spacing: #{$letter-spacing-xs};
---heading-4xl-semibold-weight: #{$font-weight-semi-bold};
---heading-4xl-semibold-size: #{$unit-64};
---heading-4xl-semibold-line-height: #{$unit-72};
---heading-4xl-semibold-letter-spacing: #{$letter-spacing-xs};
---heading-5xl-light-weight: #{$font-weight-light};
---heading-5xl-light-size: #{$unit-72};
---heading-5xl-light-line-height: #{$unit-80};
---heading-5xl-light-letter-spacing: #{$letter-spacing-xs};
---heading-5xl-regular-weight: #{$font-weight-regular};
---heading-5xl-regular-size: #{$unit-72};
---heading-5xl-regular-line-height: #{$unit-80};
---heading-5xl-regular-letter-spacing: #{$letter-spacing-xs};
---heading-5xl-semibold-weight: #{$font-weight-semi-bold};
---heading-5xl-semibold-size: #{$unit-72};
---heading-5xl-semibold-line-height: #{$unit-80};
---heading-5xl-semibold-letter-spacing: #{$letter-spacing-xs};
+.heading-xl-light {
+  font-weight: #{$font-weight-light};
+  font-size: #{$unit-40};
+  line-height: #{$unit-48};
+  letter-spacing: #{$letter-spacing-xs};
+}
+
+.heading-xl-regular {
+  font-weight: #{$font-weight-regular};
+  font-size: #{$unit-40};
+  line-height: #{$unit-48};
+  letter-spacing: #{$letter-spacing-xs};
+}
+
+.heading-xl-semibold {
+  font-weight: #{$font-weight-semi-bold};
+  font-size: #{$unit-40};
+  line-height: #{$unit-48};
+  letter-spacing: #{$letter-spacing-xs};
+}
+
+.heading-l-light {
+  font-weight: #{$font-weight-light};
+  font-size: #{$unit-32};
+  line-height: #{$unit-40};
+  letter-spacing: #{$letter-spacing-xs};
+}
+
+.heading-l-regular {
+  font-weight: #{$font-weight-regular};
+  font-size: #{$unit-32};
+  line-height: #{$unit-40};
+  letter-spacing: #{$letter-spacing-xs};
+}
+
+.heading-l-semibold {
+  font-weight: #{$font-weight-semi-bold};
+  font-size: #{$unit-32};
+  line-height: #{$unit-40};
+  letter-spacing: #{$letter-spacing-xs};
+}
+
+.heading-m-light {
+  font-weight: #{$font-weight-light};
+  font-size: #{$unit-24};
+  line-height: #{$unit-32};
+  letter-spacing: #{$letter-spacing-s};
+}
+
+.heading-m-regular {
+  font-weight: #{$font-weight-regular};
+  font-size: #{$unit-24};
+  line-height: #{$unit-32};
+  letter-spacing: #{$letter-spacing-s};
+}
+
+.heading-m-semibold {
+  font-weight: #{$font-weight-semi-bold};
+  font-size: #{$unit-24};
+  line-height: #{$unit-32};
+  letter-spacing: #{$letter-spacing-s};
+}
+
+.heading-s-light {
+  font-weight: #{$font-weight-light};
+  font-size: #{$unit-20};
+  line-height: #{$unit-28};
+  letter-spacing: #{$letter-spacing-s};
+}
+
+.heading-s-regular {
+  font-weight: #{$font-weight-regular};
+  font-size: #{$unit-20};
+  line-height: #{$unit-28};
+  letter-spacing: #{$letter-spacing-s};
+}
+
+.heading-s-semibold {
+  font-weight: #{$font-weight-semi-bold};
+  font-size: #{$unit-20};
+  line-height: #{$unit-28};
+  letter-spacing: #{$letter-spacing-s};
+}
+
+.heading-xs-light {
+  font-weight: #{$font-weight-light};
+  font-size: #{$unit-16};
+  line-height: #{$unit-24};
+  letter-spacing: #{$letter-spacing-s};
+}
+
+.heading-xs-regular {
+  font-weight: #{$font-weight-regular};
+  font-size: #{$unit-16};
+  line-height: #{$unit-24};
+  letter-spacing: #{$letter-spacing-s};
+}
+
+.heading-xs-semibold {
+  font-weight: #{$font-weight-semi-bold};
+  font-size: #{$unit-16};
+  line-height: #{$unit-24};
+  letter-spacing: #{$letter-spacing-s};
+}
+
+.heading-2xs-light {
+  font-weight: #{$font-weight-light};
+  font-size: #{$unit-14};
+  line-height: #{$unit-20};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.heading-2xs-regular {
+  font-weight: #{$font-weight-regular};
+  font-size: #{$unit-14};
+  line-height: #{$unit-20};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.heading-2xs-semibold {
+  font-weight: #{$font-weight-semi-bold};
+  font-size: #{$unit-14};
+  line-height: #{$unit-20};
+  letter-spacing: #{$letter-spacing-none};
+}
+
+.heading-2xl-light {
+  font-weight: #{$font-weight-light};
+  font-size: #{$unit-48};
+  line-height: #{$unit-56};
+  letter-spacing: #{$letter-spacing-xs};
+}
+
+.heading-2xl-regular {
+  font-weight: #{$font-weight-regular};
+  font-size: #{$unit-48};
+  line-height: #{$unit-56};
+  letter-spacing: #{$letter-spacing-xs};
+}
+
+.heading-2xl-semibold {
+  font-weight: #{$font-weight-semi-bold};
+  font-size: #{$unit-48};
+  line-height: #{$unit-56};
+  letter-spacing: #{$letter-spacing-xs};
+}
+
+.heading-3xl-light {
+  font-weight: #{$font-weight-light};
+  font-size: #{$unit-56};
+  line-height: #{$unit-64};
+  letter-spacing: #{$letter-spacing-xs};
+}
+
+.heading-3xl-regular {
+  font-weight: #{$font-weight-regular};
+  font-size: #{$unit-56};
+  line-height: #{$unit-64};
+  letter-spacing: #{$letter-spacing-xs};
+}
+
+.heading-3xl-semibold {
+  font-weight: #{$font-weight-semi-bold};
+  font-size: #{$unit-56};
+  line-height: #{$unit-64};
+  letter-spacing: #{$letter-spacing-xs};
+}
+
+.heading-4xl-light {
+  font-weight: #{$font-weight-light};
+  font-size: #{$unit-64};
+  line-height: #{$unit-72};
+  letter-spacing: #{$letter-spacing-xs};
+}
+
+.heading-4xl-regular {
+  font-weight: #{$font-weight-regular};
+  font-size: #{$unit-64};
+  line-height: #{$unit-72};
+  letter-spacing: #{$letter-spacing-xs};
+}
+
+.heading-4xl-semibold {
+  font-weight: #{$font-weight-semi-bold};
+  font-size: #{$unit-64};
+  line-height: #{$unit-72};
+  letter-spacing: #{$letter-spacing-xs};
+}
+
+.heading-5xl-light {
+  font-weight: #{$font-weight-light};
+  font-size: #{$unit-72};
+  line-height: #{$unit-80};
+  letter-spacing: #{$letter-spacing-xs};
+}
+
+.heading-5xl-regular {
+  font-weight: #{$font-weight-regular};
+  font-size: #{$unit-72};
+  line-height: #{$unit-80};
+  letter-spacing: #{$letter-spacing-xs};
+}
+
+.heading-5xl-semibold {
+  font-weight: #{$font-weight-semi-bold};
+  font-size: #{$unit-72};
+  line-height: #{$unit-80};
+  letter-spacing: #{$letter-spacing-xs};
+}
+
 
   /* --- icon-color --- */
 --icon-color-primary: #{$black-900};
