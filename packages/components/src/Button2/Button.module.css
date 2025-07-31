@@ -1,4 +1,4 @@
-.button {
+.button2 {
   /* Base styles for all variants */
   display: inline-flex;
   align-items: center;
@@ -16,32 +16,32 @@
 }
 
 /* Variant for when an icon is present */
-.button[data-has-icon='true'] {
+.button2[data-has-icon='true'] {
   gap: 8px;
 }
   
 /* Size Variants */
-.button[data-size='sm'] {
+.button2[data-size='sm'] {
   padding: 8px 16px;
   font-size: 14px;
 }
 
-.button[data-size='md'] {
+.button2[data-size='md'] {
   padding: 10px 20px;
   font-size: 16px;
 }
 
-.button[data-size='lg'] {
+.button2[data-size='lg'] {
   padding: 12px 24px;
   font-size: 18px;
 }
 
 /* State variants */
-.button[data-state='hovered'] {
+.button2[data-state='hovered'] {
   background-color: #3367d6; /* Darker Blue */
 }
 
-.button[data-state='disabled'] {
+.button2[data-state='disabled'] {
   background-color: #bdbdbd; /* Grey */
   color: #fafafa;
   cursor: not-allowed;
