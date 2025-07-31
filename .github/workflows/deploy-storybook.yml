@@ -1,0 +1,45 @@
+name: Deploy Storybook
+
+on:
+  # Run automatically when code is pushed to the main branch
+  push:
+    branches: [main]
+    # Only run if files in the components package or docs app have changed
+    paths:
+      - 'packages/components/**'
+      - 'apps/docs/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    # Grant permissions for the workflow to deploy to GitHub Pages
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        # Run install from the root of the monorepo
+        run: npm install
+
+      - name: Build Storybook
+        # Use the --workspace flag to target the docs app
+        run: npm run build-storybook --workspace=docs
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./apps/docs/storybook-static
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
