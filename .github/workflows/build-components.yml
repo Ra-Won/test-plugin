@@ -28,4 +28,5 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "feat(components): generate component source files"
-          file_pattern: "packages/components/src/**/*.tsx packages/components/src/**/*.module.css"
+          # ✅ UPDATED: Added *.stories.tsx to the file pattern
+          file_pattern: "packages/components/src/**/*.tsx packages/components/src/**/*.module.css packages/components/src/**/*.stories.tsx"
