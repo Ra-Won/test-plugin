@@ -30,35 +30,35 @@
   "baseStyle": {
     "display": "flex",
     "flexDirection": "row",
-    "gap": "var(--spacing-spacing-1x)",
+    "gap": "var(--spacing-1x)",
     "padding": "8px 12px 8px 12px",
-    "backgroundColor": "var(--color-bg-color-info-subtle)",
+    "backgroundColor": "var(--bg-color-info-subtle)",
     "borderRadius": "4px"
   },
   "variants": {
     "type": {
       "Outlined": {
-        "backgroundColor": "var(--color-bg-color-primary)"
+        "backgroundColor": "var(--bg-color-primary)"
       },
       "Regular": {
-        "backgroundColor": "var(--color-bg-color-primary)"
+        "backgroundColor": "var(--bg-color-primary)"
       },
       "Solid": {
-        "backgroundColor": "var(--color-bg-color-positive-subtle)"
+        "backgroundColor": "var(--bg-color-positive-subtle)"
       }
     },
     "state": {
       "Neutral": {
-        "backgroundColor": "var(--color-bg-color-primary)"
+        "backgroundColor": "var(--bg-color-primary)"
       },
       "Active": {
-        "backgroundColor": "var(--color-bg-color-primary)"
+        "backgroundColor": "var(--bg-color-primary)"
       },
       "Negative": {
-        "backgroundColor": "var(--color-bg-color-primary)"
+        "backgroundColor": "var(--bg-color-primary)"
       },
       "Positive": {
-        "backgroundColor": "var(--color-bg-color-primary)"
+        "backgroundColor": "var(--bg-color-primary)"
       }
     }
   }
