@@ -1,0 +1,31 @@
+name: Build and Commit Components
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Generate Component Files from JSON
+        run: node scripts/build-components.js
+
+      - name: Commit Generated Component Files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "feat(components): generate component source files"
+          file_pattern: "packages/components/src/**/*.tsx packages/components/src/**/*.module.css"
