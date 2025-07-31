@@ -89,6 +89,48 @@ function generateComponentCss(data) {
   return css;
 }
 
+// ✅ NEW: Helper to generate the .stories.tsx file content
+function generateComponentStories(data) {
+  const argTypes = Object.keys(data.props).map(key => {
+    const propData = data.props[key];
+    let control = 'text'; // Default control
+
+    if (propData.type === 'VARIANT' && propData.options) {
+      control = `{ type: 'select', options: ${JSON.stringify(propData.options)} }`;
+    } else if (propData.type === 'BOOLEAN') {
+      control = "'boolean'";
+    }
+
+    return `    ${key}: { control: ${control} },`;
+  }).join('\n');
+
+  const defaultArgs = Object.keys(data.props).map(key => {
+    return `    ${key}: ${JSON.stringify(data.props[key].defaultValue)},`;
+  }).join('\n');
+
+  return `import React from 'react';
+import type { Meta, StoryObj } from '@storybook/react';
+import { ${data.name} } from './${data.name}';
+
+const meta: Meta<typeof ${data.name}> = {
+  title: 'Components/${data.name}',
+  component: ${data.name},
+  argTypes: {
+${argTypes}
+  },
+};
+
+export default meta;
+type Story = StoryObj<typeof ${data.name}>;
+
+export const Default: Story = {
+  args: {
+${defaultArgs}
+    children: 'Button Text', // Default storybook label
+  },
+};
+`;
+}
 
 // Main function
 function buildComponents() {
@@ -109,6 +151,11 @@ function buildComponents() {
       const cssContent = generateComponentCss(componentData);
       fs.writeFileSync(path.join(componentsDir, folder, `${folder}.module.css`), cssContent);
       console.log(`  -> Generated ${folder}.module.css`);
+
+      // ✅ ADDED: Generate and write .stories.tsx file
+      const storyContent = generateComponentStories(componentData);
+      fs.writeFileSync(path.join(componentsDir, folder, `${folder}.stories.tsx`), storyContent);
+      console.log(`  -> Generated ${folder}.stories.tsx`);
     }
   }
 }
