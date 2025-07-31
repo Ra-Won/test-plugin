@@ -29,35 +29,36 @@
   "slots": {},
   "baseStyle": {
     "display": "flex",
-    "gap": "{size.spacing.8}",
-    "padding": "8px",
-    "backgroundColor": "{color.bg color.info subtle}",
-    "borderRadius": "{size.radius.4}"
+    "flexDirection": "row",
+    "gap": "var(--spacing-spacing-1x)",
+    "padding": "8px 12px 8px 12px",
+    "backgroundColor": "var(--color-bg-color-info-subtle)",
+    "borderRadius": "4px"
   },
   "variants": {
     "type": {
       "Outlined": {
-        "backgroundColor": "{color.bg color.primary}"
+        "backgroundColor": "var(--color-bg-color-primary)"
       },
       "Regular": {
-        "backgroundColor": "{color.bg color.primary}"
+        "backgroundColor": "var(--color-bg-color-primary)"
       },
       "Solid": {
-        "backgroundColor": "{color.bg color.positive subtle}"
+        "backgroundColor": "var(--color-bg-color-positive-subtle)"
       }
     },
     "state": {
       "Neutral": {
-        "backgroundColor": "{color.bg color.primary}"
+        "backgroundColor": "var(--color-bg-color-primary)"
       },
       "Active": {
-        "backgroundColor": "{color.bg color.primary}"
+        "backgroundColor": "var(--color-bg-color-primary)"
       },
       "Negative": {
-        "backgroundColor": "{color.bg color.primary}"
+        "backgroundColor": "var(--color-bg-color-primary)"
       },
       "Positive": {
-        "backgroundColor": "{color.bg color.primary}"
+        "backgroundColor": "var(--color-bg-color-primary)"
       }
     }
   }
