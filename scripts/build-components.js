@@ -3,34 +3,63 @@ const path = require('path');
 
 const componentsDir = path.join(__dirname, '..', 'packages', 'components', 'src');
 
-// Helper to generate the .tsx file content
+// ✅ UPDATED: This function is now more robust and handles different prop types.
 function generateComponentTsx(data) {
+  // Helper to build the props interface string
+  const propsInterface = Object.keys(data.props).map(key => {
+    const propData = data.props[key];
+    let propType;
+
+    switch (propData.type) {
+      case 'VARIANT':
+        propType = `'${propData.options.join("' | '")}'`;
+        break;
+      case 'BOOLEAN':
+        propType = 'boolean';
+        break;
+      case 'TEXT':
+        propType = 'string';
+        break;
+      default:
+        propType = 'any';
+    }
+    return `  /** The ${key} prop */\n  ${key}?: ${propType};`;
+  }).join('\n');
+
+  // Helper to build the props destructuring with default values
+  const propsDestructuring = Object.keys(data.props).map(key => {
+    const propData = data.props[key];
+    // Use JSON.stringify to correctly format default values (e.g., false vs "false")
+    return `  ${key} = ${JSON.stringify(propData.defaultValue)},`;
+  }).join('\n');
+  
+  const slotsDestructuring = Object.keys(data.slots).map(slot => `  ${slot},`).join('\n');
+  const dataAttributes = Object.keys(data.props).map(prop => `      data-${prop}={${prop}}`).join('\n');
+  const slotsRendering = Object.keys(data.slots).map(slot => `      {${data.slots[slot].condition ? `${data.slots[slot].condition} && ` : ''}${slot}}`).join('\n      ');
+
   return `import React, { ButtonHTMLAttributes, ReactNode } from 'react';
 import styles from './${data.name}.module.css';
 
 export interface ${data.name}Props extends ButtonHTMLAttributes<HTMLButtonElement> {
-  ${Object.keys(data.props).map(prop => `
-  /** The ${prop} prop */
-  ${prop}?: '${data.props[prop].options.join("' | '")}';`).join('')}
-
-  ${Object.keys(data.slots).map(slot => `
+${propsInterface}
+${Object.keys(data.slots).map(slot => `
   /** The ${slot} slot */
   ${slot}?: ReactNode;`).join('')}
 }
 
 export const ${data.name}: React.FC<${data.name}Props> = ({
-${Object.keys(data.props).map(prop => `  ${prop} = '${data.props[prop].defaultValue}',`).join('\n')}
-${Object.keys(data.slots).map(slot => `  ${slot},`).join('\n')}
+${propsDestructuring}
+${slotsDestructuring}
   ...props
 }) => {
   return (
     <${data.element}
-      className={styles.button}
-      ${Object.keys(data.props).map(prop => `data-${prop}={${prop}}`).join('\n      ')}
+      className={styles.${data.name.toLowerCase()}}
+${dataAttributes}
       {...props}
     >
       {/* Render slots conditionally */}
-      ${Object.keys(data.slots).map(slot => `{${data.slots[slot].condition ? `${data.slots[slot].condition} && ` : ''}${slot}}`).join('\n      ')}
+${slotsRendering}
     </${data.element}>
   );
 };
@@ -41,14 +70,12 @@ ${Object.keys(data.slots).map(slot => `  ${slot},`).join('\n')}
 function generateComponentCss(data) {
   let css = `/* This file is auto-generated. Do not edit. */\n\n`;
   
-  // Base Style
   css += `.${data.name.toLowerCase()} {\n`;
   for (const prop in data.baseStyle) {
     css += `  ${prop}: ${data.baseStyle[prop]};\n`;
   }
   css += '}\n\n';
 
-  // Variants
   for (const variantProp in data.variants) {
     for (const variantValue in data.variants[variantProp]) {
       css += `.${data.name.toLowerCase()}[data-${variantProp}='${variantValue}'] {\n`;
@@ -75,12 +102,10 @@ function buildComponents() {
       console.log(`Processing ${folder}...`);
       const componentData = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
 
-      // Generate and write .tsx file
       const tsxContent = generateComponentTsx(componentData);
       fs.writeFileSync(path.join(componentsDir, folder, `${folder}.tsx`), tsxContent);
       console.log(`  -> Generated ${folder}.tsx`);
 
-      // Generate and write .module.css file
       const cssContent = generateComponentCss(componentData);
       fs.writeFileSync(path.join(componentsDir, folder, `${folder}.module.css`), cssContent);
       console.log(`  -> Generated ${folder}.module.css`);
