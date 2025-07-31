@@ -1,5 +1,5 @@
 import React, { ButtonHTMLAttributes, ReactNode } from 'react';
-import styles from './Button.module.css';
+import styles from './Button2.module.css';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   /** The visual state of the button */
@@ -26,8 +26,8 @@ export const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   return (
-    <button
-      className={styles.button}
+    <button2
+      className={styles.button2}
       data-state={state}
       data-has-icon={hasIcon}
       data-size={size} // ✅ Apply the size as a data attribute
@@ -36,6 +36,6 @@ export const Button: React.FC<ButtonProps> = ({
     >
       <span>{children}</span>
       {hasIcon && icon}
-    </button>
+    </button2>
   );
 };
