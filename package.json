@@ -6,6 +6,7 @@
     "apps/*"
   ],
   "scripts": {
+    "build:components": "node scripts/build-components.js",
     "build": "npm run build --workspaces"
   }
 }
