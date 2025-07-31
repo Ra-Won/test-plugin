@@ -1,9 +1,9 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
-import { Button } from './Button';
+import { Button2 } from './Button2';
 
 // This is the main configuration for your component's stories
-const meta: Meta<typeof Button> = {
+const meta: Meta<typeof Button2> = {
   title: 'Components/Button',
   component: Button,
   // This argTypes section creates the interactive controls in Storybook
@@ -26,7 +26,7 @@ const meta: Meta<typeof Button> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Button>;
+type Story = StoryObj<typeof Button2>;
 
 // A simple icon component for the stories
 const ArrowIcon = () => <span>›</span>;
