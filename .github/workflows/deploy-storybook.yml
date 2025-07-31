@@ -1,13 +1,7 @@
 name: Deploy Storybook
 
 on:
-  # Run automatically when code is pushed to the main branch
-  push:
-    branches: [main]
-    # Only run if files in the components package or docs app have changed
-    paths:
-      - 'packages/components/**'
-      - 'apps/docs/**'
+  workflow_dispatch:
 
 jobs:
   deploy:
