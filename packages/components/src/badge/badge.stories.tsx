@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
+import '../../../tokens/dist/tokens.css';
 import { badge } from './badge';
 
 const meta: Meta<typeof badge> = {
