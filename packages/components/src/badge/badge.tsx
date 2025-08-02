@@ -2,7 +2,7 @@ import React, { ButtonHTMLAttributes, ReactNode } from 'react';
 import '../../../tokens/dist/tokens.css';
 import styles from './badge.module.css';
 
-export interface badgeProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface BadgeProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   /** The icon3260 prop */
   icon3260?: boolean;
   /** The type prop */
@@ -12,7 +12,7 @@ export interface badgeProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 }
 
-export const badge: React.FC<badgeProps> = ({
+export const Badge: React.FC<badgeProps> = ({
   icon3260 = true,
   type = "Solid",
   state = "Neutral",
