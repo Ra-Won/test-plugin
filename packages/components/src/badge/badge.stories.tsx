@@ -1,11 +1,11 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import '../../../tokens/dist/tokens.css';
-import { badge } from './badge';
+import { Badge } from './badge';
 
-const meta: Meta<typeof badge> = {
+const meta: Meta<typeof Badge> = {
   title: 'Components/badge',
-  component: badge,
+  component: Badge,
   argTypes: {
     icon3260: { control: 'boolean' },
     type: { control: { type: 'select', options: ["Regular","Solid","Outlined"] } },
