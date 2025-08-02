@@ -1,6 +1,6 @@
-/** @type { import('@storybook/react-vite').Preview } */
 import '../../../packages/tokens/dist/tokens.css';
 
+/** @type { import('@storybook/react-vite').Preview } */
 const preview = {
   parameters: {
     controls: {
