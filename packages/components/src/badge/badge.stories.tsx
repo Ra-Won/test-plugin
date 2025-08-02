@@ -4,7 +4,7 @@ import '../../../tokens/dist/tokens.css';
 import { Badge } from './badge';
 
 const meta: Meta<typeof Badge> = {
-  title: 'Components/badge',
+  title: 'Components/Badge',
   component: Badge,
   argTypes: {
     icon3260: { control: 'boolean' },
