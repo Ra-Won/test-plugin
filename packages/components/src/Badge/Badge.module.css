@@ -5,35 +5,35 @@
   flexDirection: row;
   gap: 8px;
   padding: 8px 12px 8px 12px;
-  backgroundColor: var(--color-bg-color-info-subtle);
+  backgroundColor: var(--bg-color-info-subtle);
   borderRadius: 4px;
 }
 
 .badge[data-type='Outlined'] {
-  backgroundColor: var(--color-bg-color-primary);
+  backgroundColor: var(--bg-color-primary);
 }
 
 .badge[data-type='Regular'] {
-  backgroundColor: var(--color-bg-color-primary);
+  backgroundColor: var(--bg-color-primary);
 }
 
 .badge[data-type='Solid'] {
-  backgroundColor: var(--color-bg-color-positive-subtle);
+  backgroundColor: var(--bg-color-positive-subtle);
 }
 
 .badge[data-state='Neutral'] {
-  backgroundColor: var(--color-bg-color-primary);
+  backgroundColor: var(--bg-color-primary);
 }
 
 .badge[data-state='Active'] {
-  backgroundColor: var(--color-bg-color-primary);
+  backgroundColor: var(--bg-color-primary);
 }
 
 .badge[data-state='Negative'] {
-  backgroundColor: var(--color-bg-color-primary);
+  backgroundColor: var(--bg-color-primary);
 }
 
 .badge[data-state='Positive'] {
-  backgroundColor: var(--color-bg-color-primary);
+  backgroundColor: var(--bg-color-primary);
 }
 
