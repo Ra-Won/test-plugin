@@ -20,5 +20,7 @@ export const Default: Story = {
     icon3260: true,
     type: "Solid",
     state: "Neutral",
+    iconcontainer: <span>Size=16</span>,
+    actionrequired: 'Action Required',
   },
 };
