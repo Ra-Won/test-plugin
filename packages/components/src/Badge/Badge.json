@@ -43,33 +43,46 @@
     "flexDirection": "row",
     "gap": "8px",
     "padding": "8px 12px 8px 12px",
-    "backgroundColor": "var(--bg-color-info-subtle)",
-    "borderRadius": "4px"
+    "backgroundColor": "var(--color-bg-color-info-subtle)",
+    "borderRadius": "4px",
+    "color": "var(--color-text-color-brand)"
   },
   "variants": {
     "type": {
       "Outlined": {
-        "backgroundColor": "var(--bg-color-primary)"
+        "backgroundColor": "var(--color-bg-color-primary)",
+        "border": "1px solid var(--color-border-color-positive)",
+        "color": "var(--color-text-color-positive)"
       },
       "Regular": {
-        "backgroundColor": "var(--bg-color-primary)"
+        "backgroundColor": "var(--color-bg-color-primary)",
+        "border": "0px solid var(--color-border-color-positive)",
+        "color": "var(--color-text-color-positive)"
       },
       "Solid": {
-        "backgroundColor": "var(--bg-color-positive-subtle)"
+        "backgroundColor": "var(--color-bg-color-positive-subtle)",
+        "color": "var(--color-text-color-positive)"
       }
     },
     "state": {
       "Neutral": {
-        "backgroundColor": "var(--bg-color-primary)"
+        "backgroundColor": "var(--color-bg-color-primary)",
+        "border": "0px solid var(--color-border-color-info)"
       },
       "Active": {
-        "backgroundColor": "var(--bg-color-primary)"
+        "backgroundColor": "var(--color-bg-color-primary)",
+        "border": "0px solid var(--color-border-color-warning)",
+        "color": "var(--color-text-color-warning)"
       },
       "Negative": {
-        "backgroundColor": "var(--bg-color-primary)"
+        "backgroundColor": "var(--color-bg-color-primary)",
+        "border": "0px solid var(--color-border-color-negative)",
+        "color": "var(--color-text-color-negative)"
       },
       "Positive": {
-        "backgroundColor": "var(--bg-color-primary)"
+        "backgroundColor": "var(--color-bg-color-primary)",
+        "border": "0px solid var(--color-border-color-positive)",
+        "color": "var(--color-text-color-positive)"
       }
     }
   }
