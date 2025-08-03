@@ -1,10 +1,10 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
-import { badge } from './badge';
+import { Badge } from './Badge';
 
-const meta: Meta<typeof badge> = {
-  title: 'Components/badge',
-  component: badge,
+const meta: Meta<typeof Badge> = {
+  title: 'Components/Badge',
+  component: Badge,
   argTypes: {
     icon3260: { control: 'boolean' },
     type: { control: { type: 'select', options: ["Regular","Solid","Outlined"] } },
@@ -13,7 +13,7 @@ const meta: Meta<typeof badge> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof badge>;
+type Story = StoryObj<typeof Badge>;
 
 export const Default: Story = {
   args: {

@@ -1,7 +1,7 @@
 import React, { ButtonHTMLAttributes, ReactNode } from 'react';
-import styles from './badge.module.css';
+import styles from './Badge.module.css';
 
-export interface badgeProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface BadgeProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   /** The icon3260 prop */
   icon3260?: boolean;
   /** The type prop */
@@ -9,13 +9,18 @@ export interface badgeProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   /** The state prop */
   state?: 'Active' | 'Neutral' | 'Negative' | 'Positive';
 
+  /** The iconcontainer slot */
+  iconcontainer?: ReactNode;
+  /** The actionrequired slot */
+  actionrequired?: ReactNode;
 }
 
-export const badge: React.FC<badgeProps> = ({
+export const Badge: React.FC<BadgeProps> = ({
   icon3260 = true,
   type = "Solid",
   state = "Neutral",
-
+  iconcontainer,
+  actionrequired,
   ...props
 }) => {
   return (
@@ -27,7 +32,8 @@ export const badge: React.FC<badgeProps> = ({
       {...props}
     >
       {/* Render slots conditionally */}
-
+      {iconcontainer}
+            {actionrequired}
     </button>
   );
 };
