@@ -1,4 +1,5 @@
-import React, { ButtonHTMLAttributes, ReactNode } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Badge.module.css';
 
 export interface BadgeProps extends ButtonHTMLAttributes<HTMLButtonElement> {
