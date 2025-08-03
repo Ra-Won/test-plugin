@@ -1,0 +1,76 @@
+{
+  "name": "Badge",
+  "element": "button",
+  "props": {
+    "icon3260": {
+      "type": "BOOLEAN",
+      "defaultValue": true
+    },
+    "type": {
+      "type": "VARIANT",
+      "defaultValue": "Solid",
+      "options": [
+        "Regular",
+        "Solid",
+        "Outlined"
+      ]
+    },
+    "state": {
+      "type": "VARIANT",
+      "defaultValue": "Neutral",
+      "options": [
+        "Active",
+        "Neutral",
+        "Negative",
+        "Positive"
+      ]
+    }
+  },
+  "slots": {
+    "iconContainer": {
+      "type": "INSTANCE",
+      "name": "Size=16",
+      "condition": null
+    },
+    "actionRequired": {
+      "type": "TEXT",
+      "defaultValue": "Action Required",
+      "condition": null
+    }
+  },
+  "baseStyle": {
+    "display": "flex",
+    "flexDirection": "row",
+    "gap": "8px",
+    "padding": "8px 12px 8px 12px",
+    "backgroundColor": "var(--color-bg-color-info-subtle)",
+    "borderRadius": "4px"
+  },
+  "variants": {
+    "type": {
+      "Outlined": {
+        "backgroundColor": "var(--color-bg-color-primary)"
+      },
+      "Regular": {
+        "backgroundColor": "var(--color-bg-color-primary)"
+      },
+      "Solid": {
+        "backgroundColor": "var(--color-bg-color-positive-subtle)"
+      }
+    },
+    "state": {
+      "Neutral": {
+        "backgroundColor": "var(--color-bg-color-primary)"
+      },
+      "Active": {
+        "backgroundColor": "var(--color-bg-color-primary)"
+      },
+      "Negative": {
+        "backgroundColor": "var(--color-bg-color-primary)"
+      },
+      "Positive": {
+        "backgroundColor": "var(--color-bg-color-primary)"
+      }
+    }
+  }
+}
