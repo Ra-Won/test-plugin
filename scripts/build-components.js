@@ -3,39 +3,41 @@ const path = require('path');
 
 const componentsDir = path.join(__dirname, '..', 'packages', 'components', 'src');
 
-// ✅ UPDATED: This function is now more robust and handles different prop types.
+// ✅ ADDED: Helper to convert any string to camelCase
+function camelCase(str) {
+  const pascal = (' ' + str).toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, (match, chr) => chr.toUpperCase());
+  return pascal.charAt(0).toLowerCase() + pascal.slice(1);
+}
+
 function generateComponentTsx(data) {
-  // Helper to build the props interface string
+  const componentClassName = data.name.toLowerCase();
+
   const propsInterface = Object.keys(data.props).map(key => {
     const propData = data.props[key];
+    const cleanKey = camelCase(key); // Sanitize prop name
     let propType;
-
     switch (propData.type) {
-      case 'VARIANT':
-        propType = `'${propData.options.join("' | '")}'`;
-        break;
-      case 'BOOLEAN':
-        propType = 'boolean';
-        break;
-      case 'TEXT':
-        propType = 'string';
-        break;
-      default:
-        propType = 'any';
+      case 'VARIANT': propType = `'${propData.options.join("' | '")}'`; break;
+      case 'BOOLEAN': propType = 'boolean'; break;
+      case 'TEXT': propType = 'string'; break;
+      default: propType = 'any';
     }
-    return `  /** The ${key} prop */\n  ${key}?: ${propType};`;
+    return `  /** The ${cleanKey} prop */\n  ${cleanKey}?: ${propType};`;
   }).join('\n');
 
-  // Helper to build the props destructuring with default values
   const propsDestructuring = Object.keys(data.props).map(key => {
     const propData = data.props[key];
-    // Use JSON.stringify to correctly format default values (e.g., false vs "false")
-    return `  ${key} = ${JSON.stringify(propData.defaultValue)},`;
+    const cleanKey = camelCase(key); // Sanitize prop name
+    return `  ${cleanKey} = ${JSON.stringify(propData.defaultValue)},`;
   }).join('\n');
   
-  const slotsDestructuring = Object.keys(data.slots).map(slot => `  ${slot},`).join('\n');
-  const dataAttributes = Object.keys(data.props).map(prop => `      data-${prop}={${prop}}`).join('\n');
-  const slotsRendering = Object.keys(data.slots).map(slot => `      {${data.slots[slot].condition ? `${data.slots[slot].condition} && ` : ''}${slot}}`).join('\n      ');
+  const slotsDestructuring = Object.keys(data.slots).map(slot => `  ${camelCase(slot)},`).join('\n');
+  const dataAttributes = Object.keys(data.props).map(prop => `      data-${camelCase(prop)}={${camelCase(prop)}}`).join('\n');
+  const slotsRendering = Object.keys(data.slots).map(slot => {
+      const cleanSlotName = camelCase(slot);
+      const condition = data.slots[slot].condition ? `${camelCase(data.slots[slot].condition)} && ` : '';
+      return `      {${condition}${cleanSlotName}}`;
+  }).join('\n      ');
 
   return `import React, { ButtonHTMLAttributes, ReactNode } from 'react';
 import styles from './${data.name}.module.css';
@@ -43,8 +45,8 @@ import styles from './${data.name}.module.css';
 export interface ${data.name}Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 ${propsInterface}
 ${Object.keys(data.slots).map(slot => `
-  /** The ${slot} slot */
-  ${slot}?: ReactNode;`).join('')}
+  /** The ${camelCase(slot)} slot */
+  ${camelCase(slot)}?: ReactNode;`).join('')}
 }
 
 export const ${data.name}: React.FC<${data.name}Props> = ({
@@ -54,7 +56,7 @@ ${slotsDestructuring}
 }) => {
   return (
     <${data.element}
-      className={styles.${data.name.toLowerCase()}}
+      className={styles.${componentClassName}}
 ${dataAttributes}
       {...props}
     >
@@ -69,16 +71,18 @@ ${slotsRendering}
 // Helper to generate the .module.css file content
 function generateComponentCss(data) {
   let css = `/* This file is auto-generated. Do not edit. */\n\n`;
+  const componentClassName = data.name.toLowerCase();
   
-  css += `.${data.name.toLowerCase()} {\n`;
+  css += `.${componentClassName} {\n`;
   for (const prop in data.baseStyle) {
     css += `  ${prop}: ${data.baseStyle[prop]};\n`;
   }
   css += '}\n\n';
 
   for (const variantProp in data.variants) {
+    const cleanVariantProp = camelCase(variantProp);
     for (const variantValue in data.variants[variantProp]) {
-      css += `.${data.name.toLowerCase()}[data-${variantProp}='${variantValue}'] {\n`;
+      css += `.${componentClassName}[data-${cleanVariantProp}='${variantValue}'] {\n`;
       const styles = data.variants[variantProp][variantValue];
       for (const styleProp in styles) {
         css += `  ${styleProp}: ${styles[styleProp]};\n`;
@@ -89,23 +93,22 @@ function generateComponentCss(data) {
   return css;
 }
 
-// ✅ NEW: Helper to generate the .stories.tsx file content
 function generateComponentStories(data) {
   const argTypes = Object.keys(data.props).map(key => {
     const propData = data.props[key];
-    let control = 'text'; // Default control
-
+    const cleanKey = camelCase(key); // Sanitize prop name
+    let control = 'text';
     if (propData.type === 'VARIANT' && propData.options) {
       control = `{ type: 'select', options: ${JSON.stringify(propData.options)} }`;
     } else if (propData.type === 'BOOLEAN') {
       control = "'boolean'";
     }
-
-    return `    ${key}: { control: ${control} },`;
+    return `    ${cleanKey}: { control: ${control} },`;
   }).join('\n');
 
   const defaultArgs = Object.keys(data.props).map(key => {
-    return `    ${key}: ${JSON.stringify(data.props[key].defaultValue)},`;
+    const cleanKey = camelCase(key); // Sanitize prop name
+    return `    ${cleanKey}: ${JSON.stringify(data.props[key].defaultValue)},`;
   }).join('\n');
 
   return `import React from 'react';
@@ -126,7 +129,6 @@ type Story = StoryObj<typeof ${data.name}>;
 export const Default: Story = {
   args: {
 ${defaultArgs}
-    children: 'Button Text', // Default storybook label
   },
 };
 `;
@@ -145,17 +147,16 @@ function buildComponents() {
       const componentData = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
 
       const tsxContent = generateComponentTsx(componentData);
-      fs.writeFileSync(path.join(componentsDir, folder, `${folder}.tsx`), tsxContent);
-      console.log(`  -> Generated ${folder}.tsx`);
+      fs.writeFileSync(path.join(componentsDir, folder, `${componentData.name}.tsx`), tsxContent);
+      console.log(`  -> Generated ${componentData.name}.tsx`);
 
       const cssContent = generateComponentCss(componentData);
-      fs.writeFileSync(path.join(componentsDir, folder, `${folder}.module.css`), cssContent);
-      console.log(`  -> Generated ${folder}.module.css`);
+      fs.writeFileSync(path.join(componentsDir, folder, `${componentData.name}.module.css`), cssContent);
+      console.log(`  -> Generated ${componentData.name}.module.css`);
 
-      // ✅ ADDED: Generate and write .stories.tsx file
       const storyContent = generateComponentStories(componentData);
-      fs.writeFileSync(path.join(componentsDir, folder, `${folder}.stories.tsx`), storyContent);
-      console.log(`  -> Generated ${folder}.stories.tsx`);
+      fs.writeFileSync(path.join(componentsDir, folder, `${componentData.name}.stories.tsx`), storyContent);
+      console.log(`  -> Generated ${componentData.name}.stories.tsx`);
     }
   }
 }
