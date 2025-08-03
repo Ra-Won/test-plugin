@@ -93,10 +93,11 @@ function generateComponentCss(data) {
   return css;
 }
 
+// ✅ UPDATED: This function now adds default args for content slots.
 function generateComponentStories(data) {
   const argTypes = Object.keys(data.props).map(key => {
     const propData = data.props[key];
-    const cleanKey = camelCase(key); // Sanitize prop name
+    const cleanKey = camelCase(key);
     let control = 'text';
     if (propData.type === 'VARIANT' && propData.options) {
       control = `{ type: 'select', options: ${JSON.stringify(propData.options)} }`;
@@ -106,9 +107,20 @@ function generateComponentStories(data) {
     return `    ${cleanKey}: { control: ${control} },`;
   }).join('\n');
 
-  const defaultArgs = Object.keys(data.props).map(key => {
-    const cleanKey = camelCase(key); // Sanitize prop name
+  const defaultArgsForProps = Object.keys(data.props).map(key => {
+    const cleanKey = camelCase(key);
     return `    ${cleanKey}: ${JSON.stringify(data.props[key].defaultValue)},`;
+  }).join('\n');
+
+  // Generate default args for slots to ensure content is visible
+  const defaultArgsForSlots = Object.keys(data.slots).map(key => {
+    const cleanKey = camelCase(key);
+    const slotData = data.slots[key];
+    let defaultValue = `'${slotData.defaultValue || cleanKey}'`; // Use default text or the slot name
+    if (slotData.type === 'INSTANCE') {
+      defaultValue = `<span>${slotData.name || 'Icon'}</span>`; // Render a placeholder for instances
+    }
+    return `    ${cleanKey}: ${defaultValue},`;
   }).join('\n');
 
   return `import React from 'react';
@@ -128,7 +140,8 @@ type Story = StoryObj<typeof ${data.name}>;
 
 export const Default: Story = {
   args: {
-${defaultArgs}
+${defaultArgsForProps}
+${defaultArgsForSlots}
   },
 };
 `;
