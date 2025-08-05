@@ -1,5 +1,5 @@
 {
-  "text-color": {
+  "text": {
     "primary": {
       "value": "{black.800}"
     },
@@ -76,7 +76,7 @@
       "value": "{tertiary.600}"
     }
   },
-  "bg-color": {
+  "bg": {
     "primary": {
       "value": "{white.100}"
     },
@@ -165,7 +165,7 @@
       "value": "{primary.alpha.10}"
     }
   },
-  "icon-color": {
+  "icon": {
     "primary": {
       "value": "{black.900}"
     },
@@ -194,7 +194,7 @@
       "value": "{primary.500}"
     }
   },
-  "border-color": {
+  "border": {
     "pressed": {
       "value": "{grey.400}"
     },
@@ -219,6 +219,15 @@
     "positive": {
       "value": "{green.600}"
     },
+    "xl": {
+      "value": "{unit.2}"
+    },
+    "md": {
+      "value": "{unit.1}"
+    },
+    "lg": {
+      "value": "{unit.1o5}"
+    },
     "brand-hovered": {
       "value": "{primary.600}"
     },
@@ -228,6 +237,9 @@
     "alternative": {
       "value": "{tertiary.50}"
     },
+    "sm": {
+      "value": "{unit.0o5}"
+    },
     "disable": {
       "value": "{grey.100}"
     },
@@ -235,7 +247,7 @@
       "value": "{tertiary.300}"
     }
   },
-  "surface-color": {
+  "surface": {
     "l0": {
       "value": "{white.100}"
     },
@@ -252,7 +264,7 @@
       "value": "{white.20}"
     }
   },
-  "overlay-color": {
+  "overlay": {
     "20": {
       "value": "{white.20}"
     },
@@ -266,7 +278,7 @@
       "value": "{black.alpha.60}"
     }
   },
-  "graph-color": {
+  "graph": {
     "b1": {
       "value": "{primary.800}"
     },
@@ -1018,20 +1030,6 @@
     },
     "1o5x": {
       "value": "{unit.12}"
-    }
-  },
-  "border": {
-    "xl": {
-      "value": "{unit.2}"
-    },
-    "md": {
-      "value": "{unit.1}"
-    },
-    "lg": {
-      "value": "{unit.1o5}"
-    },
-    "sm": {
-      "value": "{unit.0o5}"
     }
   },
   "radius": {
