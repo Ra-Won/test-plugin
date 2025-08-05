@@ -138,268 +138,268 @@
   font-size: 16;
   line-height: 24;
   letter-spacing: 0;
-  font-weight: Light;
+  font-weight: 300;
 }
 :root .body-l-regular {
-  font-weight: Regular;
+  font-weight: 400;
   font-size: 16;
   line-height: 24;
   letter-spacing: 0;
 }
 :root .body-l-semibold {
-  font-weight: Semi Bold;
+  font-weight: 600;
   font-size: 16;
   line-height: 24;
   letter-spacing: 0;
 }
 :root .body-m-light {
-  font-weight: Light;
+  font-weight: 300;
   font-size: 14;
   line-height: 20;
   letter-spacing: 0;
 }
 :root .body-m-regular {
-  font-weight: Regular;
+  font-weight: 400;
   font-size: 14;
   line-height: 20;
   letter-spacing: 0;
 }
 :root .body-m-semibold {
-  font-weight: Semi Bold;
+  font-weight: 600;
   font-size: 14;
   line-height: 20;
   letter-spacing: 0;
 }
 :root .body-s-light {
-  font-weight: Light;
+  font-weight: 300;
   font-size: 12;
   line-height: 18;
   letter-spacing: 0;
 }
 :root .body-s-regular {
-  font-weight: Regular;
+  font-weight: 400;
   font-size: 12;
   line-height: 18;
   letter-spacing: 0;
 }
 :root .body-s-semibold {
-  font-weight: Semi Bold;
+  font-weight: 600;
   font-size: 12;
   line-height: 18;
   letter-spacing: 0;
 }
 :root .body-xs-light {
-  font-weight: Light;
+  font-weight: 300;
   font-size: 10;
   line-height: 16;
   letter-spacing: 0;
 }
 :root .body-xs-regular {
-  font-weight: Regular;
+  font-weight: 400;
   font-size: 10;
   line-height: 16;
   letter-spacing: 0;
 }
 :root .body-xs-semibold {
-  font-weight: Semi Bold;
+  font-weight: 600;
   font-size: 10;
   line-height: 16;
   letter-spacing: 0;
 }
 :root .body-xl-light {
-  font-weight: Light;
+  font-weight: 300;
   font-size: 18;
   line-height: 26;
   letter-spacing: 0;
 }
 :root .body-xl-regular {
-  font-weight: Regular;
+  font-weight: 400;
   font-size: 18;
   line-height: 26;
   letter-spacing: 0;
 }
 :root .body-xl-semibold {
-  font-weight: Semi Bold;
+  font-weight: 600;
   font-size: 18;
   line-height: 26;
   letter-spacing: 0;
 }
 :root .heading-xl-light {
-  font-weight: Light;
+  font-weight: 300;
   font-size: 40;
   line-height: 48;
   letter-spacing: -1;
 }
 :root .heading-xl-regular {
-  font-weight: Regular;
+  font-weight: 400;
   font-size: 40;
   line-height: 48;
   letter-spacing: -1;
 }
 :root .heading-xl-semibold {
-  font-weight: Semi Bold;
+  font-weight: 600;
   font-size: 40;
   line-height: 48;
   letter-spacing: -1;
 }
 :root .heading-l-light {
-  font-weight: Light;
+  font-weight: 300;
   font-size: 32;
   line-height: 40;
   letter-spacing: -1;
 }
 :root .heading-l-regular {
-  font-weight: Regular;
+  font-weight: 400;
   font-size: 32;
   line-height: 40;
   letter-spacing: -1;
 }
 :root .heading-l-semibold {
-  font-weight: Semi Bold;
+  font-weight: 600;
   font-size: 32;
   line-height: 40;
   letter-spacing: -1;
 }
 :root .heading-m-light {
-  font-weight: Light;
+  font-weight: 300;
   font-size: 24;
   line-height: 32;
   letter-spacing: -0.5;
 }
 :root .heading-m-regular {
-  font-weight: Regular;
+  font-weight: 400;
   font-size: 24;
   line-height: 32;
   letter-spacing: -0.5;
 }
 :root .heading-m-semibold {
-  font-weight: Semi Bold;
+  font-weight: 600;
   font-size: 24;
   line-height: 32;
   letter-spacing: -0.5;
 }
 :root .heading-s-light {
-  font-weight: Light;
+  font-weight: 300;
   font-size: 20;
   line-height: 28;
   letter-spacing: -0.5;
 }
 :root .heading-s-regular {
-  font-weight: Regular;
+  font-weight: 400;
   font-size: 20;
   line-height: 28;
   letter-spacing: -0.5;
 }
 :root .heading-s-semibold {
-  font-weight: Semi Bold;
+  font-weight: 600;
   font-size: 20;
   line-height: 28;
   letter-spacing: -0.5;
 }
 :root .heading-xs-light {
-  font-weight: Light;
+  font-weight: 300;
   font-size: 16;
   line-height: 24;
   letter-spacing: -0.5;
 }
 :root .heading-xs-regular {
-  font-weight: Regular;
+  font-weight: 400;
   font-size: 16;
   line-height: 24;
   letter-spacing: -0.5;
 }
 :root .heading-xs-semibold {
-  font-weight: Semi Bold;
+  font-weight: 600;
   font-size: 16;
   line-height: 24;
   letter-spacing: -0.5;
 }
 :root .heading-2xs-light {
-  font-weight: Light;
+  font-weight: 300;
   font-size: 14;
   line-height: 20;
   letter-spacing: 0;
 }
 :root .heading-2xs-regular {
-  font-weight: Regular;
+  font-weight: 400;
   font-size: 14;
   line-height: 20;
   letter-spacing: 0;
 }
 :root .heading-2xs-semibold {
-  font-weight: Semi Bold;
+  font-weight: 600;
   font-size: 14;
   line-height: 20;
   letter-spacing: 0;
 }
 :root .heading-2xl-light {
-  font-weight: Light;
+  font-weight: 300;
   font-size: 48;
   line-height: 56;
   letter-spacing: -1;
 }
 :root .heading-2xl-regular {
-  font-weight: Regular;
+  font-weight: 400;
   font-size: 48;
   line-height: 56;
   letter-spacing: -1;
 }
 :root .heading-2xl-semibold {
-  font-weight: Semi Bold;
+  font-weight: 600;
   font-size: 48;
   line-height: 56;
   letter-spacing: -1;
 }
 :root .heading-3xl-light {
-  font-weight: Light;
+  font-weight: 300;
   font-size: 56;
   line-height: 64;
   letter-spacing: -1;
 }
 :root .heading-3xl-regular {
-  font-weight: Regular;
+  font-weight: 400;
   font-size: 56;
   line-height: 64;
   letter-spacing: -1;
 }
 :root .heading-3xl-semibold {
-  font-weight: Semi Bold;
+  font-weight: 600;
   font-size: 56;
   line-height: 64;
   letter-spacing: -1;
 }
 :root .heading-4xl-light {
-  font-weight: Light;
+  font-weight: 300;
   font-size: 64;
   line-height: 72;
   letter-spacing: -1;
 }
 :root .heading-4xl-regular {
-  font-weight: Regular;
+  font-weight: 400;
   font-size: 64;
   line-height: 72;
   letter-spacing: -1;
 }
 :root .heading-4xl-semibold {
-  font-weight: Semi Bold;
+  font-weight: 600;
   font-size: 64;
   line-height: 72;
   letter-spacing: -1;
 }
 :root .heading-5xl-light {
-  font-weight: Light;
+  font-weight: 300;
   font-size: 72;
   line-height: 80;
   letter-spacing: -1;
 }
 :root .heading-5xl-regular {
-  font-weight: Regular;
+  font-weight: 400;
   font-size: 72;
   line-height: 80;
   letter-spacing: -1;
 }
 :root .heading-5xl-semibold {
-  font-weight: Semi Bold;
+  font-weight: 600;
   font-size: 72;
   line-height: 80;
   letter-spacing: -1;
