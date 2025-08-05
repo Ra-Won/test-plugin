@@ -1,0 +1,31 @@
+{
+  "icon": {
+    "primary": {
+      "value": "{black.900}"
+    },
+    "secondary": {
+      "value": "{black.700}"
+    },
+    "disabled": {
+      "value": "{grey.200}"
+    },
+    "info": {
+      "value": "{blue.500}"
+    },
+    "warning": {
+      "value": "{orange.500}"
+    },
+    "negative": {
+      "value": "{red.500}"
+    },
+    "positive": {
+      "value": "{green.600}"
+    },
+    "inverse": {
+      "value": "{white.100}"
+    },
+    "brand": {
+      "value": "{primary.500}"
+    }
+  }
+}
