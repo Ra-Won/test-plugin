@@ -1,19 +1,19 @@
 {
   "font-weight": {
     "light": {
-      "value": "Light"
+      "value": "300"
     },
     "regular": {
-      "value": "Regular"
+      "value": "400"
     },
     "semi-bold": {
-      "value": "Semi Bold"
+      "value": "600"
     },
     "medium": {
-      "value": "Medium"
+      "value": "500"
     },
     "bold": {
-      "value": "Bold"
+      "value": "700"
     }
   }
 }
