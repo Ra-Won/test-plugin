@@ -39,20 +39,20 @@
   --border-warning: #ef7717;
   --border-negative: #d64545;
   --border-positive: #3ba55d;
-  --border-xl: 2;
-  --border-md: 1;
-  --border-lg: 1.5;
+  --border-xl: 2px;
+  --border-md: 1px;
+  --border-lg: 1.5px;
   --border-brand-hovered: #0171d6;
   --border-brand-pressed: #015db0;
   --border-alternative: #faf8fd;
-  --border-sm: 0.5;
+  --border-sm: 0.5px;
   --border-disable: #e4e4e4;
   --border-purple: #bb90de;
   /* --- border --- */
-  --border-xl: 2;
-  --border-md: 1;
-  --border-lg: 1.5;
-  --border-sm: 0.5;
+  --border-xl: 2px;
+  --border-md: 1px;
+  --border-lg: 1.5px;
+  --border-sm: 0.5px;
   /* --- family --- */
   --family-main: Inter;
   /* --- graph-color --- */
@@ -88,23 +88,23 @@
   --overlay-inverse-20: rgba(0, 0, 0, 0.2);
   --overlay-inverse-60: rgba(0, 0, 0, 0.6);
   /* --- radius --- */
-  --radius-xl: 16;
-  --radius-m: 4;
-  --radius-l: 8;
-  --radius-s: 2;
+  --radius-xl: 16px;
+  --radius-m: 4px;
+  --radius-l: 8px;
+  --radius-s: 2px;
   /* --- spacing --- */
-  --spacing-1x: 8;
-  --spacing-2x: 16;
-  --spacing-3x: 24;
-  --spacing-4x: 32;
-  --spacing-5x: 40;
-  --spacing-6x: 48;
-  --spacing-7x: 56;
-  --spacing-8x: 64;
-  --spacing-9x: 72;
-  --spacing-10x: 80;
-  --spacing-0o5x: 4;
-  --spacing-1o5x: 12;
+  --spacing-1x: 8px;
+  --spacing-2x: 16px;
+  --spacing-3x: 24px;
+  --spacing-4x: 32px;
+  --spacing-5x: 40px;
+  --spacing-6x: 48px;
+  --spacing-7x: 56px;
+  --spacing-8x: 64px;
+  --spacing-9x: 72px;
+  --spacing-10x: 80px;
+  --spacing-0o5x: 4px;
+  --spacing-1o5x: 12px;
   /* --- surface-color --- */
   --surface-l0: #ffffff;
   --surface-l1: rgba(1, 113, 214, 0.1);
@@ -139,272 +139,272 @@
   --text-purple-pressed: #7b36b5;
 }
 :root .body-l-light {
-  font-size: 16;
-  line-height: 24;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: 0;
   font-weight: 300;
 }
 :root .body-l-regular {
   font-weight: 400;
-  font-size: 16;
-  line-height: 24;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: 0;
 }
 :root .body-l-semibold {
   font-weight: 600;
-  font-size: 16;
-  line-height: 24;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: 0;
 }
 :root .body-m-light {
   font-weight: 300;
-  font-size: 14;
-  line-height: 20;
+  font-size: 14px;
+  line-height: 20px;
   letter-spacing: 0;
 }
 :root .body-m-regular {
   font-weight: 400;
-  font-size: 14;
-  line-height: 20;
+  font-size: 14px;
+  line-height: 20px;
   letter-spacing: 0;
 }
 :root .body-m-semibold {
   font-weight: 600;
-  font-size: 14;
-  line-height: 20;
+  font-size: 14px;
+  line-height: 20px;
   letter-spacing: 0;
 }
 :root .body-s-light {
   font-weight: 300;
-  font-size: 12;
-  line-height: 18;
+  font-size: 12px;
+  line-height: 18px;
   letter-spacing: 0;
 }
 :root .body-s-regular {
   font-weight: 400;
-  font-size: 12;
-  line-height: 18;
+  font-size: 12px;
+  line-height: 18px;
   letter-spacing: 0;
 }
 :root .body-s-semibold {
   font-weight: 600;
-  font-size: 12;
-  line-height: 18;
+  font-size: 12px;
+  line-height: 18px;
   letter-spacing: 0;
 }
 :root .body-xs-light {
   font-weight: 300;
-  font-size: 10;
-  line-height: 16;
+  font-size: 10px;
+  line-height: 16px;
   letter-spacing: 0;
 }
 :root .body-xs-regular {
   font-weight: 400;
-  font-size: 10;
-  line-height: 16;
+  font-size: 10px;
+  line-height: 16px;
   letter-spacing: 0;
 }
 :root .body-xs-semibold {
   font-weight: 600;
-  font-size: 10;
-  line-height: 16;
+  font-size: 10px;
+  line-height: 16px;
   letter-spacing: 0;
 }
 :root .body-xl-light {
   font-weight: 300;
-  font-size: 18;
-  line-height: 26;
+  font-size: 18px;
+  line-height: 26px;
   letter-spacing: 0;
 }
 :root .body-xl-regular {
   font-weight: 400;
-  font-size: 18;
-  line-height: 26;
+  font-size: 18px;
+  line-height: 26px;
   letter-spacing: 0;
 }
 :root .body-xl-semibold {
   font-weight: 600;
-  font-size: 18;
-  line-height: 26;
+  font-size: 18px;
+  line-height: 26px;
   letter-spacing: 0;
 }
 :root .heading-xl-light {
   font-weight: 300;
-  font-size: 40;
-  line-height: 48;
+  font-size: 40px;
+  line-height: 48px;
   letter-spacing: -1;
 }
 :root .heading-xl-regular {
   font-weight: 400;
-  font-size: 40;
-  line-height: 48;
+  font-size: 40px;
+  line-height: 48px;
   letter-spacing: -1;
 }
 :root .heading-xl-semibold {
   font-weight: 600;
-  font-size: 40;
-  line-height: 48;
+  font-size: 40px;
+  line-height: 48px;
   letter-spacing: -1;
 }
 :root .heading-l-light {
   font-weight: 300;
-  font-size: 32;
-  line-height: 40;
+  font-size: 32px;
+  line-height: 40px;
   letter-spacing: -1;
 }
 :root .heading-l-regular {
   font-weight: 400;
-  font-size: 32;
-  line-height: 40;
+  font-size: 32px;
+  line-height: 40px;
   letter-spacing: -1;
 }
 :root .heading-l-semibold {
   font-weight: 600;
-  font-size: 32;
-  line-height: 40;
+  font-size: 32px;
+  line-height: 40px;
   letter-spacing: -1;
 }
 :root .heading-m-light {
   font-weight: 300;
-  font-size: 24;
-  line-height: 32;
+  font-size: 24px;
+  line-height: 32px;
   letter-spacing: -0.5;
 }
 :root .heading-m-regular {
   font-weight: 400;
-  font-size: 24;
-  line-height: 32;
+  font-size: 24px;
+  line-height: 32px;
   letter-spacing: -0.5;
 }
 :root .heading-m-semibold {
   font-weight: 600;
-  font-size: 24;
-  line-height: 32;
+  font-size: 24px;
+  line-height: 32px;
   letter-spacing: -0.5;
 }
 :root .heading-s-light {
   font-weight: 300;
-  font-size: 20;
-  line-height: 28;
+  font-size: 20px;
+  line-height: 28px;
   letter-spacing: -0.5;
 }
 :root .heading-s-regular {
   font-weight: 400;
-  font-size: 20;
-  line-height: 28;
+  font-size: 20px;
+  line-height: 28px;
   letter-spacing: -0.5;
 }
 :root .heading-s-semibold {
   font-weight: 600;
-  font-size: 20;
-  line-height: 28;
+  font-size: 20px;
+  line-height: 28px;
   letter-spacing: -0.5;
 }
 :root .heading-xs-light {
   font-weight: 300;
-  font-size: 16;
-  line-height: 24;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: -0.5;
 }
 :root .heading-xs-regular {
   font-weight: 400;
-  font-size: 16;
-  line-height: 24;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: -0.5;
 }
 :root .heading-xs-semibold {
   font-weight: 600;
-  font-size: 16;
-  line-height: 24;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: -0.5;
 }
 :root .heading-2xs-light {
   font-weight: 300;
-  font-size: 14;
-  line-height: 20;
+  font-size: 14px;
+  line-height: 20px;
   letter-spacing: 0;
 }
 :root .heading-2xs-regular {
   font-weight: 400;
-  font-size: 14;
-  line-height: 20;
+  font-size: 14px;
+  line-height: 20px;
   letter-spacing: 0;
 }
 :root .heading-2xs-semibold {
   font-weight: 600;
-  font-size: 14;
-  line-height: 20;
+  font-size: 14px;
+  line-height: 20px;
   letter-spacing: 0;
 }
 :root .heading-2xl-light {
   font-weight: 300;
-  font-size: 48;
-  line-height: 56;
+  font-size: 48px;
+  line-height: 56px;
   letter-spacing: -1;
 }
 :root .heading-2xl-regular {
   font-weight: 400;
-  font-size: 48;
-  line-height: 56;
+  font-size: 48px;
+  line-height: 56px;
   letter-spacing: -1;
 }
 :root .heading-2xl-semibold {
   font-weight: 600;
-  font-size: 48;
-  line-height: 56;
+  font-size: 48px;
+  line-height: 56px;
   letter-spacing: -1;
 }
 :root .heading-3xl-light {
   font-weight: 300;
-  font-size: 56;
-  line-height: 64;
+  font-size: 56px;
+  line-height: 64px;
   letter-spacing: -1;
 }
 :root .heading-3xl-regular {
   font-weight: 400;
-  font-size: 56;
-  line-height: 64;
+  font-size: 56px;
+  line-height: 64px;
   letter-spacing: -1;
 }
 :root .heading-3xl-semibold {
   font-weight: 600;
-  font-size: 56;
-  line-height: 64;
+  font-size: 56px;
+  line-height: 64px;
   letter-spacing: -1;
 }
 :root .heading-4xl-light {
   font-weight: 300;
-  font-size: 64;
-  line-height: 72;
+  font-size: 64px;
+  line-height: 72px;
   letter-spacing: -1;
 }
 :root .heading-4xl-regular {
   font-weight: 400;
-  font-size: 64;
-  line-height: 72;
+  font-size: 64px;
+  line-height: 72px;
   letter-spacing: -1;
 }
 :root .heading-4xl-semibold {
   font-weight: 600;
-  font-size: 64;
-  line-height: 72;
+  font-size: 64px;
+  line-height: 72px;
   letter-spacing: -1;
 }
 :root .heading-5xl-light {
   font-weight: 300;
-  font-size: 72;
-  line-height: 80;
+  font-size: 72px;
+  line-height: 80px;
   letter-spacing: -1;
 }
 :root .heading-5xl-regular {
   font-weight: 400;
-  font-size: 72;
-  line-height: 80;
+  font-size: 72px;
+  line-height: 80px;
   letter-spacing: -1;
 }
 :root .heading-5xl-semibold {
   font-weight: 600;
-  font-size: 72;
-  line-height: 80;
+  font-size: 72px;
+  line-height: 80px;
   letter-spacing: -1;
 }
