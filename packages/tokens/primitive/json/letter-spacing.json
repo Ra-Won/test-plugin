@@ -1,19 +1,19 @@
 {
   "letter-spacing": {
     "xs": {
-      "value": -1
+      "value": "-1px"
     },
     "s": {
-      "value": -0.5
+      "value": "-0.5px"
     },
     "none": {
-      "value": 0
+      "value": "0px"
     },
     "m": {
-      "value": 0.5
+      "value": "0.5px"
     },
     "l": {
-      "value": 1
+      "value": "1px"
     }
   }
 }
