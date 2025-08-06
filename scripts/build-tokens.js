@@ -7,8 +7,8 @@ const distDir = path.join(__dirname, '..', 'packages', 'tokens', 'dist');
 // Helper to format any token name part (replaces spaces and dots with hyphens)
 const formatName = (name) => name.toLowerCase().replace(/[\. ]/g, '-');
 
-// Helper to convert a JSON token object to a string of SCSS variables
-function jsonToScss(obj, prefix = '') {
+// ✅ UPDATED: Helper now accepts a boolean to add 'px' units
+function jsonToScss(obj, prefix = '', addPxUnit = false) {
   let scssString = '';
   for (const key in obj) {
     const newPrefix = prefix ? `${prefix}-${formatName(key)}` : formatName(key);
@@ -16,14 +16,20 @@ function jsonToScss(obj, prefix = '') {
 
     if (token && typeof token.value !== 'undefined') {
       let scssValue = token.value;
+      
+      // If the value is an alias, handle it
       if (typeof scssValue === 'string' && scssValue.startsWith('{') && scssValue.endsWith('}')) {
-        // Handle alias references, e.g., {color.brand.500} -> #{$color-brand-500}
         const ref = scssValue.slice(1, -1).replace(/\./g, '-');
         scssValue = `#{$${ref}}`;
+      } 
+      // ✅ ADDED: If the flag is true and the value is a number, add 'px'
+      else if (addPxUnit && typeof scssValue === 'number') {
+        scssValue = `${scssValue}px`;
       }
+
       scssString += `$${newPrefix}: ${scssValue};\n`;
     } else if (typeof token === 'object' && token !== null) {
-      scssString += jsonToScss(token, newPrefix);
+      scssString += jsonToScss(token, newPrefix, addPxUnit); // Pass the flag down in recursion
     }
   }
   return scssString;
@@ -75,7 +81,6 @@ async function buildTokens() {
 
   if (!fs.existsSync(distDir)) fs.mkdirSync(distDir);
 
-  // --- 1. Generate SCSS partials from JSON source files ---
   for (const type of tokenTypes) {
     const jsonDir = path.join(srcDir, type, 'json');
     const scssDir = path.join(srcDir, type, 'scss');
@@ -92,16 +97,16 @@ async function buildTokens() {
             Object.assign(semanticTokens, jsonContent);
           }
           
-          // ✅ CORRECTED: Special handling for body.json and heading.json
           if (type === 'semantic' && (file === 'body.json' || file === 'heading.json')) {
-            const scssContent = generateTypographyScss(jsonContent);
+            const scssContent = generateTypographyClasses(jsonContent);
             const scssFileName = `_${path.basename(file, '.json')}.scss`;
             fs.writeFileSync(path.join(scssDir, scssFileName), scssContent);
             console.log(`Generated typography class file: ${scssFileName}`);
           } else {
-            // Standard variable generation for all other files
             const prefix = (type === 'primitive') ? '' : type;
-            const scssContent = jsonToScss(jsonContent);
+            // ✅ UPDATED: Set the flag to true only for the 'unit.json' file
+            const shouldAddPx = (type === 'primitive' && file.includes('unit'));
+            const scssContent = jsonToScss(jsonContent, prefix, shouldAddPx);
             const scssFileName = `_${path.basename(file, '.json')}.scss`;
             fs.writeFileSync(path.join(scssDir, scssFileName), scssContent);
             console.log(`Generated SCSS partial: ${scssFileName}`);
